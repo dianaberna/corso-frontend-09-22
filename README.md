@@ -8,3 +8,9 @@ Docente: Diana Bernabei
 Dario Purpi
 
 Ludovico Maggio
+
+
+
+
+
+Eren Tulumcu
