@@ -9,3 +9,6 @@ mateusz olszewski
 
 
 
+Dario Purpi
+
+Ludovico Maggio
