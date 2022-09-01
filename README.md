@@ -14,8 +14,8 @@ Ludovico Maggio
 
 Eren Tulumcu
 
-Eren Tulumcu
-
 Kateryna Nepop
 
 Alberto Cangialosi
+
+Alessandro Cotone 
