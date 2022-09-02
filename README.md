@@ -43,3 +43,6 @@ Francesca Chiari
 Alessandra Magri
 
 Alessandra Magri2
+
+Lucia Vitale
+
