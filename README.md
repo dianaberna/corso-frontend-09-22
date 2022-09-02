@@ -26,6 +26,8 @@ Docente: **_Diana Bernabei_**
 
 **_Alessandro Piras_**
 
+**_Alessandro Amodio_**
+
 **_Fatima Cangialosi_**
 
 **_Pantaleo Oscuri_**
@@ -49,3 +51,5 @@ Docente: **_Diana Bernabei_**
 **_Catana Evelina_**
 
 Ludovico
+
+Alex
