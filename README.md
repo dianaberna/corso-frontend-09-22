@@ -41,3 +41,5 @@ Michela Cerma--
 Giovanni Brienza
 
 Francesca Chiari
+
+Alessandra Magri
