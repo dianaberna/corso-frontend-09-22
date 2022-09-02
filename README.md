@@ -36,7 +36,7 @@ teresa godino
 
 Tarascio Christopher
 
-Michela Cerma--
+Michela Cerma
 
 Giovanni Brienza
 
@@ -44,9 +44,4 @@ Francesca Chiari
 
 Alessandra Magri
 
-Lucia Vitale -----
-
-
 Lucia Vitale
-
-MODIFICA
