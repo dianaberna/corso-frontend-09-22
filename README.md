@@ -35,3 +35,5 @@ teresa godino
 Tarascio Christopher
 
 Giovanni Brienza
+
+Francesca Chiari
