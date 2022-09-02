@@ -41,5 +41,3 @@ Giovanni Brienza
 Francesca Chiari
 
 Alessandra Magri
-
-Alessandra Magri2
