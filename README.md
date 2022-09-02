@@ -32,11 +32,11 @@ Pantaleo Oscuri
 
 Valentina Bernacchia
 
-teresa godino mod
+Teresa Godino
 
 Tarascio Christopher
 
-Michela Cerma--
+Michela Cerma
 
 Giovanni Brienza
 
