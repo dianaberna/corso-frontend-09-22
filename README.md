@@ -28,6 +28,8 @@ Fatima Cangialosi
 
 Pantaleo Oscuri
 
-Valentina Bernacchia 
+Valentina Bernacchia
 
 teresa godino
+
+Tarascio Christopher
