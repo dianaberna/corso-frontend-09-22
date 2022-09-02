@@ -24,6 +24,8 @@ Alessandro Cotone
 
 Francesca Sprovieri
 
+Alessandro Piras
+
 Fatima Cangialosi
 
 Pantaleo Oscuri
@@ -34,10 +36,16 @@ teresa godino
 
 Tarascio Christopher
 
---- modifica diana
-
 Michela Cerma--
 
 Giovanni Brienza
 
-Francesca Chiari--
+Francesca Chiari
+
+Alessandra Magri
+
+Lucia Vitale -----
+
+
+Lucia Vitale
+
