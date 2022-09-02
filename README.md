@@ -6,6 +6,8 @@ Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno.
 
 Docente: Diana Bernabei
 
+Corsisti:
+
 Mateusz Olszewski
 
 Dario Purpi
@@ -45,7 +47,6 @@ Francesca Chiari
 Alessandra Magri
 
 Lucia Vitale -----
-
 
 Lucia Vitale
 
