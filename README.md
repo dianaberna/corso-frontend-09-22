@@ -50,5 +50,3 @@ Lucia Vitale -----
 Lucia Vitale
 
 MODIFICA
-
-Branch Valentina 
