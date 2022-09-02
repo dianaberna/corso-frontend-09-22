@@ -1,4 +1,4 @@
-# Progetto Corso Frontend Developer Tree_Opinno
+# Progetto Corso Frontend Developer
 
 ## Tree_Opinno
 
