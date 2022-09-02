@@ -24,6 +24,8 @@ Alessandro Cotone
 
 Francesca Sprovieri
 
+Alessandro Piras
+
 Fatima Cangialosi
 
 Pantaleo Oscuri
@@ -41,3 +43,9 @@ Giovanni Brienza
 Francesca Chiari
 
 Alessandra Magri
+
+Lucia Vitale -----
+
+
+Lucia Vitale
+
