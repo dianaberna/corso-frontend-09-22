@@ -25,3 +25,5 @@ Alessandro Cotone
 Francesca Sprovieri
 
 Fatima Cangialosi
+
+Pantaleo Oscuri
