@@ -36,7 +36,7 @@ Docente: **_Diana Bernabei_**
 
 **_Teresa Godino_**
 
-**_Tarascio Christopher_**
+**_Tarascio Christopher i am noob_**
 
 **_Michela Cerma_**
 
@@ -54,13 +54,14 @@ Docente: **_Diana Bernabei_**
 
 **_Salvatore_**
 
+<<<<<<< HEAD
 pioli is on fire
 
+=======
+>>>>>>> e8c6b64b8ff575c549b510741cc4dde4d176c606
 olszewskibranch
 
 modificaf
-
-
 
 Modifica ALeP
 
