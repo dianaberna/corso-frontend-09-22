@@ -36,7 +36,7 @@ Docente: **_Diana Bernabei_**
 
 **_Teresa Godino_**
 
-**_Tarascio Christopher_**
+**_Tarascio Christopher i am noob_**
 
 **_Michela Cerma_**
 
@@ -59,8 +59,6 @@ HELLO WORLD!
 olszewskibranch
 
 modificaf
-
-
 
 Modifica ALeP
 
