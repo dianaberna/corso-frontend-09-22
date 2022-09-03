@@ -50,6 +50,4 @@ Docente: **_Diana Bernabei_**
 
 **_Catana Evelina_**
 
-Ludovico
-
-Alex
+**_Alex_**
