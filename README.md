@@ -36,7 +36,7 @@ Docente: **_Diana Bernabei_**
 
 **_Teresa Godino_**
 
-**_Tarascio Christopher_**
+**_Tarascio Christopher i am noob_**
 
 **_Michela Cerma_**
 
@@ -54,12 +54,9 @@ Docente: **_Diana Bernabei_**
 
 **_Salvatore_**
 
-
 olszewskibranch
 
 modificaf
-
-
 
 Modifica ALeP
 
