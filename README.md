@@ -54,10 +54,8 @@ Corsisti:
 
 **_Catana Evelina_**
 
-**_Alex_**
+**_Salvatore Nastro_**
 
-**_Salvatore_**
-
-**Gianmarco Bisol**
+**_Gianmarco Bisol_**
 
 **_Massimiliano Marengo_**
