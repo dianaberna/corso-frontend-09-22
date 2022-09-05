@@ -4,15 +4,13 @@
 
 _Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno._
 
-Docente: **_Diana Bernabei_**
+Docente: 
 
-<<<<<<< HEAD
+**_Diana Bernabei_**
+
 Corsisti:
 
-Mateusz Olszewski
-=======
 **_Mateusz Olszewski_**
->>>>>>> main
 
 **_Dario Purpi_**
 
@@ -52,15 +50,6 @@ Mateusz Olszewski
 
 **_Alessandra Magri_**
 
-Lucia Vitale
-
-MODIFICA
-
-branch 'a_cangialosi' di Alberto Cangialosi
-
-~~Infiltrato~~ ESTRATTO
-
-prova
 **_Lucia Vitale_**
 
 **_Catana Evelina_**
@@ -71,33 +60,4 @@ prova
 
 **Gianmarco Bisol**
 
-
-HELLO WORLD!
-
-
-
-pioli is on fire11111
-
-
-olszewskibranch
-
-modificaf
-
-Modifica ALeP
-
 **_Massimiliano Marengo_**
-
-Modifica Fatto da Eren 
-
-prova
-
-modifica
-
-nuova modifica
-vefvf
-
-NUOVA
-
-fnreobvueib
-
-fnanvfo
