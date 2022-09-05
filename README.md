@@ -40,7 +40,7 @@ Corsisti:
 
 **_Teresa Godino_**
 
-**_Tarascio Christopher i am noob_**
+**_Tarascio Christopher_**
 
 **_Michela Cerma_**
 
