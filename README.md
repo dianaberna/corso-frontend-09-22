@@ -1,54 +1,61 @@
-# Progetto Corso Frontend Developer Tree_Opinno
+# Progetto Corso Frontend Developer
 
-## secondo titolo
+## Tree_Opinno
 
-Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno.
+_Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno._
 
-Docente: Diana Bernabei
+Docente: 
 
-Mateusz Olszewski
+**_Diana Bernabei_**
 
-Dario Purpi
+Corsisti:
 
-Ludovico Maggio
+**_Mateusz Olszewski_**
 
-Francesco Saverio Mazzi
+**_Dario Purpi_**
 
-Eren Tulumcu
+**_Ludovico Maggio_**
 
-Kateryna Nepop
+**_Francesco Saverio Mazzi_**
 
-Alberto Cangialosi
+**_Eren Tulumcu_**
 
-Alessandro Cotone
+**_Kateryna Nepop_**
 
-Francesca Sprovieri
+**_Alberto Cangialosi_**
 
-Alessandro Piras
+**_Alessandro Cotone_**
 
-Fatima Cangialosi
+**_Francesca Sprovieri_**
 
-Pantaleo Oscuri
+**_Alessandro Piras_**
 
-Valentina Bernacchia
+**_Alessandro Amodio_**
 
-teresa godino
+**_Fatima Cangialosi_**
 
-Tarascio Christopher
+**_Pantaleo Oscuri_**
 
-Michela Cerma--
+**_Valentina Bernacchia_**
 
-Giovanni Brienza
+**_Teresa Godino_**
 
-Francesca Chiari
+**_Tarascio Christopher_**
 
-Alessandra Magri
+**_Michela Cerma_**
 
-Lucia Vitale -----
+**_Giovanni Brienza_**
 
+**_Francesca Chiari_**
 
-Lucia Vitale
+**_Alessandra Magri_**
 
-MODIFICA
+**_Lucia Vitale_**
 
-Modifica
+**_Catana Evelina_**
+
+**_Salvatore Nastro_**
+
+**_Gianmarco Bisol_**
+
+**_Massimiliano Marengo_**
