@@ -38,7 +38,7 @@
         <form action="search.php" method="get">
             <label for="query">🔎</label>
             <input type="search" name="query" id="query">
-            <input type="submit" value="Cerca">vvvvv
+            <input type="submit" value="Cerca">
         </form>
 
         <!-- login form -->
@@ -76,14 +76,14 @@
             <!-- filtra post del blog -->
             <aside id="filter-articles">
 
-                <fieldset>
-                    <!-- form  1 -->
-                    <form action="filter_articles.py" method="get" id="form1">
+                <!-- form  1 -->
+                <form action="filter_articles.py" method="get" id="form1">
+                    <fieldset>
                         <label for="tags-of-interest">Filtra</label>
                         <input type="search" name="tags-of-interest" id="tags-of-interest" placeholder="html, css, js, python">
                         <input type="reset" value="Reset">
-                    </form>
-                </fieldset>
+                    </fieldset>
+                </form>
 
                 <!-- form  2 -->
                 <form action="filter_articles.py" method="get" id="form2">
