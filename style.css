@@ -6,3 +6,15 @@ nav li {
 li {
     margin: 15px;
 }
+
+code {
+    background-color: gainsboro;
+    padding-left: 2.4px;
+    padding-right: 2.4px;
+}
+
+#login-form {
+    background-color: rgba(158, 253, 253, 0.375);
+    margin: 5px;
+    padding: 5px;
+}
