@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Registrazione</h1>
+        <h1>Dati nuovo Utente</h1>
         <form action="" method="post">
            <mark><label>insersci nome: </label></mark>
            <br>
@@ -23,10 +23,40 @@
              <input type="date">
 
              <p></p>
-             <mark><label></label></mark>
+             <input type="radio" id="M" name="sesso" value="Maschio">  
+             <b><label for="M">Maschio</label></b><br>
 
+             <input type="radio" id="F" name="sesso" value="Femmina">  
+             <b><label for="F">Femmina</label></b><br>
+
+             <input type="radio" id="A" name="sesso" value="Altro">  
+             <b><label for="A">Altro</label></b>
+
+             <p></p>                
+             <input type="reset" value="Reset"><br>
 
         </form>
+
     </header>
+    <section>
+        <form action="" method="post"><br>
+
+            <mark><label> Email:</label></mark><br>
+            <input type="email">
+
+            <p></p>
+            <mark><label>password(massimo 8 caratteri)</label></mark><br>
+            <input type="password" maxlength="8"><br>
+
+            <input type="reset" Value="Reset">
+            <input type="submit" value="submit">
+            <p></p>
+            <a href="Index.html"value="indietro">Torna alla pagina Iniziale</a>
+            
+
+        </form>
+       
+    </section>
+
 </body>
 </html>
