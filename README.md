@@ -2,6 +2,8 @@
 
 Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno.
 
+Deploy: [Link](https://dianaberna.github.io/corso-frontend-09-22/)
+
 Docente: 
 
 **_Diana Bernabei_**
