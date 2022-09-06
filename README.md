@@ -45,7 +45,3 @@ Docente: **_Diana Bernabei_**
 **_Alessandra Magri_**
 
 **_Lucia Vitale_**
-
-Lucia Vitale
-
-Trillallero 
