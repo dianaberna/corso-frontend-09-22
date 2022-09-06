@@ -1,3 +1,8 @@
+dt {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
 nav li {
     display: inline-block;
     margin: 15px;
@@ -19,17 +24,23 @@ code {
     padding: 5px;
 }
 
-main {
+article {
     width: 67%;
 }
 
 
 /* TODO fix this scrolling sidebar */
 
+
+/*
 #filter-articles {
     border: solid black 2px;
     border-radius: 2px;
     width: 33%;
     position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
     right: 10px;
+    z-index: 2;
 }
+*/

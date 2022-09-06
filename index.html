@@ -7,8 +7,8 @@
     <meta name="title" content="File per branch">
     <meta name="description" content="File creato per branch">
     <meta name="keywords" content="branch, github, prova, html">
-    <meta name="author" content="Ludovico">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta name="author" content="Alberto Cangialosi">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -75,9 +75,26 @@
 
             <!-- filtra post del blog -->
             <aside id="filter-articles">
-                <form action="filter_articles.py" method>
+
+                <!-- form  1 -->
+                <form action="filter_articles.py" method="get" id="form1">
                     <label for="tags-of-interest">Filtra</label>
                     <input type="search" name="tags-of-interest" id="tags-of-interest" placeholder="html, css, js, python">
+                    <input type="reset" value="Nuovo Filtro">
+                </form>
+
+                <!-- form  2 -->
+                <form action="filter_articles.py" method="get" id="form2">
+                    <legend>FILTRA</legend>
+
+                    <input type="checkbox" name="tags-checkbox" value="HTML" id="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="tags-checkbox" value="CSS" id="css">
+                    <label for="html">CSS</label>
+                    <input type="checkbox" name="tags-checkbox" value="JS" id="js">
+                    <label for="html">JS</label>
+                    <input type="checkbox" name="tag-checkbox" value="PYTHON" id="python">
+                    <label for="python">Python</label>
                     <input type="reset" value="Nuovo Filtro">
                 </form>
             </aside>
