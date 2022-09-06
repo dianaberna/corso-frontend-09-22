@@ -35,8 +35,11 @@
         </ul>
 
         <!-- barra di ricerca -->
-        <label for="query">🔎</label>
-        <input type="search" name="query" id="query">
+        <form action="search.php" method="get">
+            <label for="query">🔎</label>
+            <input type="search" name="query" id="query">
+            <input type="submit" value="Cerca">
+        </form>
     </nav>
 
 
@@ -45,7 +48,7 @@
 
         <!-- barra di caricamento -->
         <label for="loading">Loading...</label>
-        <progress id="loading">...</progress>
+        <progress id="loading">.∙●</progress>
 
         <hr>
 
