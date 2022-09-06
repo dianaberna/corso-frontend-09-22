@@ -1,37 +1,29 @@
 
 p{
-    color: red;
-}
-
-.speciale{
     color: blue;
 }
 
-#prova {
+.red{
+    color: red;
+}
+
+#special {
+    background-color: black;
+    color: white;
+}
+
+div p{
+    color: orange;
+}
+
+div > p{
+    color: purple;
+}
+
+div ~ p{
     background-color: yellow;
 }
 
-/* #ciao p{
-    color:fuchsia;
-} */
-
-/* #ciao > p{
-    background-color: orange;
-}
-
-#gatto{
-    background-color: black;
-    color: white;
-} */
-
-/* #gatto ~ p{
-    background-color: deeppink;
-}
-
-#gatto + p{
-    background-color: darkgreen;
-}
- */
-p + p{
-    background-color: aquamarine;
+div + p{
+    background-color: pink;
 }
