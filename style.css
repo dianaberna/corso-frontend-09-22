@@ -1,3 +1,15 @@
 body {
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.444);
 }
+h1, h2,h3,h4,h5,h6 {
+    color: darkorange;
+}
+p {
+    color: darkblue;
+}
+#menu1 {text-align: center;}
+.apple {margin-left: 39em;}
+#menu2 {text-align: right;}
+.google {align-items: right;}
+#menu3 {text-align: left;}
+header p,a {color: orangered;} 
