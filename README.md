@@ -52,7 +52,7 @@ Corsisti:
 
 **_Lucia Vitale_**
 
-**_Catana Evelinaa_**
+**_Catana Evelina_**
 
 **_Salvatore Nastro_**
 
