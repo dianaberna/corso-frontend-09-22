@@ -34,13 +34,14 @@ article {
 
 /*
 #filter-articles {
+    background: white;
     border: solid black 2px;
     border-radius: 2px;
+    margin: 5px;
     width: 33%;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0px;
-    right: 10px;
+    right: -20px;
     z-index: 2;
 }
 */
