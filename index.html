@@ -8,7 +8,7 @@
     <meta name="description" content="File creato per branch">
     <meta name="keywords" content="branch, github, prova, html">
     <meta name="author" content="Ludovico">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -55,6 +55,7 @@
 
 
     <main>
+        <!-- breadcrumb -->
         <nav>Bread > Crumb > Style</nav>
 
         <!-- barra di caricamento -->
@@ -71,6 +72,15 @@
 
             <h2>Aggiornamenti</h2>
             <p>File creato per branch</p>
+
+            <!-- filtra post del blog -->
+            <aside id="filter-articles">
+                <form action="filter_articles.py" method>
+                    <label for="tags-of-interest">Filtra</label>
+                    <input type="search" name="tags-of-interest" id="tags-of-interest" placeholder="html, css, js, python">
+                    <input type="reset" value="Nuovo Filtro">
+                </form>
+            </aside>
 
             <!-- elemento dettagli -->
             <details>
@@ -90,11 +100,14 @@
 
             <!-- lista di descrizione, termine-definizione -->
             <div id="description-list">
+                <h2>Analisi logica</h2>
                 <dl>
-                    <dt>parola</dt>
-                    <dd>unità di misura di una frase</dd>
-                    <dt>periodo</dt>
-                    <dd>Spazio di tempo caratterizzato da particolari condizioni o avvenimenti</dd>
+                    <dt>parola :</dt>
+                    <dd>unità di misura di una frase.</dd>
+                    <dt>frase :</dt>
+                    <dd>Soggetto + predicato + complemento.</dd>
+                    <dt>periodo :</dt>
+                    <dd>Un'unità complessa del discorso, composta da più frasi semplici, o proposizioni, combinate in una sola struttura dal senso compiuto.</dd>
                 </dl>
             </div>
         </article>
