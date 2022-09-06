@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
 <body>
     <header>
         <div>
-            <h1 align="center"><em>Pagina Super Segreta</em></h1>
+            <h1><em>Pagina Super Segreta</em></h1>
         </div>
         <hr>
     </header>
     <main>
-        <br>
-        <div>
-            <div align="center">
-                <img align="center" width="100px" height="100px" src="/assets/BIB_login_unine.png">
+        <div id="login-form">
+            <div>
+                <img id="login-image" width="100px" height="100px" src="/assets/BIB_login_unine.png" alt="immagine di login">
             </div>
-            <br>
-            <form align="center">
+            <form>
                 <label for="username"><b>Username</b></label>
                 <br>
-                <input name="username" id="username">
+                <input name="username" id="username" class="loginTextbox">
                 <br>
                 <label for="password"><b>Password</b></label>
                 <br>
-                <input name="password" id="password">
-                <br><br>
-                <button align="center">Invia</button>
-                <br><br>
+                <input name="password" id="password" class="loginTextbox">
+                <br>
+                <button id="send-button">Invia</button>
             </form>
         </div>
     </main>
     <footer>
         <hr>
-        <p align="center">Shhhhhhhh</p>
+        <p><em>Copiright 2022</em></p>
     </footer>
 </body>
 </html>
