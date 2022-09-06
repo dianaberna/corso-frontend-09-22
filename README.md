@@ -1,8 +1,6 @@
-# Progetto Corso Frontend Developer
+# Progetto Corso Frontend Developer Tree_Opinno
 
-## Tree_Opinno
-
-_Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno._
+Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno.
 
 Docente: 
 
