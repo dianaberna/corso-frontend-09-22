@@ -12,29 +12,94 @@
 </head>
 
 <body>
-    <h1>File per branch</h1>
-    <h2>pagina html</h2>
-    <p>File creato per branch</p>
-    <details>
-        <summary>
-            What can I do with <code>&lt;details&gt;</code> tag in HTML5?
-        </summary>
-        Creating a quick FAQ element or even give more information about something as its own name suggests, but with <code>&lt;summary&gt;</code> we can customize it a little more.
+    <!-- Header in testa -->
+    <header>
+        <!-- logo -->
+        <img src="./html.png" alt="Logo Ufficiale HTML5" title="HTML5 è fico" style="width: 64px;">
+        <h1>a_cangialosi</h1>
+        <h2>My Branch</h2>
+    </header>
 
-    </details>
-    <details>
-        <summary>Entities. Cosa sono e perchè abbandonarli?</summary>
-        <p>
-            Potrà capitare che gli <code>`entities`</code>, come quelli che ho usato nelle tag di summary e details, saranno presto deprecati e rimpiazzati. Quindi sarebbe bene abituarsi ad usare i caratteri speciali che sono già stati inseriti tra quelli
-            accettati da UTF-8. Es. © invece di &copy;
-        </p>
-    </details>
-    <dl>
-        <dt>parola</dt>
-        <dd>unità di misura di una frase</dd>
-        <dt>periodo</dt>
-        <dd>Spazio di tempo caratterizzato da particolari condizioni o avvenimenti</dd>
-    </dl>
+    <!-- Navbar dell' Header -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="https://github.com/dianaberna/corso-frontend-09-22/tree/main" title="Jump to GitHub">Main Branch</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <nav>Bread > Crumb > Style</nav>
+
+        <!-- barra di caricamento -->
+        <label for="loading">Loading...</label>
+        <progress id="loading">...</progress>
+
+        <hr>
+
+        <article>
+            <!-- progresso della lettura -->
+            <div id="reading-progress">
+                <progress value="35" max="100">10%</progress>
+            </div>
+
+            <h2>Aggiornamenti</h2>
+            <p>File creato per branch</p>
+
+            <!-- elemento dettagli -->
+            <details>
+                <summary>
+                    What can I do with <code>&lt;details&gt;</code> tag in HTML5?
+                </summary>
+                Creating a quick FAQ element or even give more information about something as its own name suggests, but with <code>&lt;summary&gt;</code> we can customize it a little more.
+
+            </details>
+            <details>
+                <summary>Entities. Cosa sono e perchè abbandonarli?</summary>
+
+                Potrà capitare che gli <code>`entities`</code>, come quelli che ho usato nelle tag di summary e details, saranno presto deprecati e rimpiazzati. Quindi sarebbe bene abituarsi ad usare i caratteri speciali che sono già stati inseriti tra
+                quelli accettati da UTF-8. Es. © invece di &copy;
+
+            </details>
+
+            <!-- lista di descrizione, termine-definizione -->
+            <div id="description-list">
+                <dl>
+                    <dt>parola</dt>
+                    <dd>unità di misura di una frase</dd>
+                    <dt>periodo</dt>
+                    <dd>Spazio di tempo caratterizzato da particolari condizioni o avvenimenti</dd>
+                </dl>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#">Chi Siamo</a>
+            </li>
+            <li>
+                <a href="#">Like us on X 👍</a>
+            </li>
+            <li>
+                <a href="#">Contatti</a>
+            </li>
+            <li>
+                Copyright: © Settembre 2022
+            </li>
+        </ul>
+
+    </footer>
+
 </body>
 
 </html>
