@@ -1,5 +1,19 @@
+main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #login-form {
     text-align: center;
+}
+
+#login-form input
+{
+    margin: 12px;
+}
+
+#login-form label
+{
+    color: darkblue;
 }
 
 #login-image
@@ -12,14 +26,10 @@
     margin-bottom: 12px;
 }
 
-.loginTextbox
-{
-    margin: 12px;
-}
-
 header
 {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer
