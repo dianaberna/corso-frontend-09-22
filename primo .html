@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+    <!--lang= serve per la lingua del sito-->
+<head>
+    <meta charset="UTF-8">
+    <!--caratteri spseciali serve per quello-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport adatta il sito in base alla grandezza del device con il tag width=device-width con scala iniziale initial-scale=1.0-->
+    <title>Primo html5</title>
+    <!--titolo il titolo che si vede nella finestrella in alto non nella finestra di web-->
+</head>
+<body>
+    <header>
+       <h1> ciao mondo io sono l'header </h1>
+    <!--commento-->
+    <h2>esempio di form</h2>
+
+    <form action="" method="get">
+    <!--method serve a far capire come spedire i dati esistono 2 modi Get e Post 
+    Get fa vedere i dati anche nel URL post no e serve per le password essenzialmente,
+    mentre action serve a spedire il Form nella pagina back and quindi ci va messo il file 
+    esempio Login.php-->
+
+        <p>
+            <label>inserisci nome: </label>
+            <!--label è l'etichetta che sta sopra e spiega cosa va inserito serve all'utente-->
+            <input type ="text">
+        </p>
+        
+        <p>
+            <label>inserisci il tempo: </label>
+            <input type="time">
+        </p>
+
+        <p>
+            <label>inserisci la data: </label>
+            <input type="date">
+        </p>
+
+        <p>
+            <label> inserisci il colore: </label>
+            <input type ="color">
+
+        </p>
+
+            <input type="button" value="sono inutile">
+            <input type ="reset" value="Reset">
+            <input type="submit" value="Submit">
+      
+
+    </form>
+
+    <h2>Sesso:</h2>
+      <form action ="" method="get">
+
+         <input type="radio" id="M" name="man" value="M">
+         <label for="M">Man</label><br>
+
+         <input type="radio" id="W" name="woman" value="W">
+         <label for="W">Woman</label><br>
+         <input type ="reset" value="Reset">
+      </form>
+
+ <!--br e hr sono tag che non hanno chiusura. br si usa per forzare lo andare a capo non lascia spazi a differenza di <p>
+ hr serve per fare una riga di separazione -->
+
+</header>
+
+<main>
+   
+    <h1>titolo 1 (piu importante)</h1>
+    <h2>titolo 2 (meno importante)</h2>
+    <!--fino ad h6-->
+    <p>paragrafo quindi quando si chiude va a capo da solo</p>
+    <p>ha differenza di br tiene uno spazietto</p>
+    <details>
+       <summary> 
+        Lista 
+      </summary> 
+       contenuto <br>
+       contenuto 2<br>
+       contenuto 3 
+    </details>
+
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> link a documentazione HTML</a>
+    <!--target="_blank" apre il link in un altra pagina web -->
+
+    <ul>
+        <li> primo</li>
+        <li>secondo </li>
+        <li>terzo </li>
+    </ul>
+    <!--ul crea una lista a puntini-->
+    <ol>
+        <li> primo</li>
+        <li>secondo </li>
+        <li>terzo </li>
+    </ol>
+    <!--ol crea una lista numerata--> 
+    <img width="800px" height="500px" src="the-last-of-us-part-ii-39288.1200x675.webp" alt="The Last Of Us part II Ellie ed Abby">
+    <!--come inserire un immagine e la relativa descrizione -->
+
+
+</main>
+
+<footer>
+
+    <hr>
+    ---- sono il footer -----
+    <!--il footer è il pie di pagina.-->
+
+</footer>
+</body>
+</html>
