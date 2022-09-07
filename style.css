@@ -1,3 +1,32 @@
+header {
+    background-color: rgb(232, 232, 13);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header>img,
+header>h1,
+header>h2 {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+header>nav>ul>li {
+    background-color: #fff;
+}
+
+header+nav {
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+main {
+    margin: 10px 20px;
+}
+
 dt {
     text-transform: capitalize;
     font-weight: bold;
