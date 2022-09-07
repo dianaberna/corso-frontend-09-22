@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= initial-scale=1.0">
     <title>Registrazione</title>
+    <link rel="stylesheet" href="../CSS/StyleNuovoUtente.css">
 </head>
 <body>
     <header>
+        
         <h1>Dati nuovo Utente</h1>
         <form action="" method="post">
-           <mark><label for="nome">insersci nome: </label></mark>
+
+           <mark><label class="Utente" for="nome">insersci nome: </label></mark>
            <br>
             <input type="text" name="Nome" id="nome">
-
             <p></p>
-             <mark><label for="cognome">insersci cognome: </label></mark><br>
+
+             <mark><label class="Utente" for="cognome">insersci cognome: </label></mark><br>
              <input type="text" name="cognome" id="cognome" >
 
              <p></p>
-             <mark><label for="date">Data di nascita:</label></mark><br>
+             <mark><label class="Utente" for="date">Data di nascita:</label></mark><br>
              <input type="date" id="date" name="date">
 
              <p></p>
              <input type="radio" id="M" name="sesso" value="Maschio">  
-             <b><label for="M">Maschio</label></b><br>
+             <b><label class="Button" for="M">Maschio</label></b><br>
 
              <input type="radio" id="F" name="sesso" value="Femmina">  
-             <b><label for="F">Femmina</label></b><br>
+             <b><label class="Button" for="F">Femmina</label></b><br>
 
              <input type="radio" id="A" name="sesso" value="Altro">  
-             <b><label for="A">Altro</label></b>
+             <b><label class="Button" for="A">Altro</label></b>
 
              <p></p>                
              <input type="reset" value="Reset"><br>
