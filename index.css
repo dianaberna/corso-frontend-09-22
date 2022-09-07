@@ -1,16 +1,23 @@
-*{
-    justify-content: center;
-    align-self: end;
-    background-color: wheat;
+body{
+    background-color: #f0f2f5;
 
 }
-div {
-    font-family: arial;
-    font-size: 24px;
-    margin: 25px;
-    width: 350px;
-    height: 200px;
-    outline: dashed 1px black  ;
-    display: flex;
-    justify-content: center;
+.logo{
+    width: 250;
+    height: 100;
+}
+
+.accedi{
+    background-color: #1877f2;
+    border-radius: 6px;
+    width: 332px;
+    height: 100;
+
+}
+
+.informazioniAccount{
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    height: 150px;
 }
