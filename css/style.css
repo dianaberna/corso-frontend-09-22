@@ -5,6 +5,20 @@ body{
     padding: 0 100px 0 100px;
 }
 
+h1 > span {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #FF912B;
+}
+
+/* #furbo{
+    background: transparent;
+    border-radius: 10px;
+    height: 10px;
+    width: 255px;
+    box-shadow: 0 55px 0 0 #000;
+} */
+
 .card{
     background-color: #ffffff;
     box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.25);
@@ -19,15 +33,15 @@ body{
 
 
 div.card div.score{
-   background-color: #ffffff; 
-   border-radius: 20px;
-   font-weight: bold;
-   position: absolute;
-   margin: 10px 0 0 10px;
-   padding: 5px 15px;
-   display: flex;
-   align-items: center;
-
+    background-color: #ffffff; 
+    border-radius: 20px;
+    font-weight: bold;
+    position: absolute;
+    margin: 15px 0 0 15px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 5px rgba(255,255,255,0.5);
 }
 
 div.score svg {
@@ -69,4 +83,11 @@ div.score svg {
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description > button > svg {
+    width: 20px;
+    fill: #ffffff;
 }
