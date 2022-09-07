@@ -1,0 +1,20 @@
+.center {text-align: center;}
+p, h2 {color: red;
+       font-family: Georgia, "Times New Roman", serif;
+    }
+h1 {
+    color: black;
+    background-color: red;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input{
+    font-family: Georgia, "Times New Roman", serif;
+}
