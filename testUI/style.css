@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 
 body{
-  margin: 0;
+  margin: 20px;
   padding: 0;
   box-sizing: border-box;
-
   font-family: 'Raleway', sans-serif;
 }
 ul{
   list-style: none;
 }
-a{
+nav a{
   text-decoration: none;
 }
 input,button{
   outline: none;
   border: none;
 }
-/***** NAVIGATION *****/
+
+/* navigazione */
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -43,28 +44,47 @@ nav ul li a{
   transition: 0.5s ease-in-out;
 }
 nav ul li a:hover{
-  background-color: #46ff54;
+  background-color: rgb(129, 2, 2);
   color: #fff;
 }
+nav ul li a:active, a:visited{
+  color: rgb(0, 0, 0);
+}
+
 .main{
   width: 100%;
   height: 768px;
   position: relative;
 }
-.testo_nome,::placeholder{
-  background-color: rgb(129, 2, 2);
+.testo_nome{
+  background-color: rgba(129, 2, 2, 0.5);
   color: rgb(255, 255, 255);
-  border-radius: 10px;
   height: 20px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-left: 5px;
+}
+::placeholder{
+  color: rgb(255, 255, 255);
 }
 .manda{
-  height: 25px;
-  width: 90px;
-  color: rgb(129, 2, 2);
-  background-color: #fff;
-  border-color:rgba(129, 2, 2, 0.2);
-  border-radius: 0.1mm;
-  border-style:solid;
+  padding: 15px 35px;
+  color: #fff;
+  background-color: rgb(129, 2, 2);
+  border-radius: 10px;
+  border-style: solid;
+  text-shadow: 1px 1px 0 rgb(59, 59, 59);
+}
+.manda:hover{
+  background-color: rgba(129, 2, 2, 0.5);
+  transition: 0.5s ease-in-out;
+}
+fieldset{
+  padding: 25px;
+  border: none;
+}
+
+fieldset legend{
+  color: rgb(129, 2, 2) ;
 }
