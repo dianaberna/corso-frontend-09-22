@@ -1,10 +1,13 @@
-.center {text-align: center;}
-p, h2 {color: red;
-       font-family: Georgia, "Times New Roman", serif;
+body {text-align: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+}
+
+p, h2 {font-family: Georgia, "Times New Roman", serif;
     }
 h1 {
     color: black;
-    background-color: red;
     font-family: Georgia, "Times New Roman", serif;
     font-weight: bold;
 }
@@ -17,4 +20,9 @@ label {
 
 input{
     font-family: Georgia, "Times New Roman", serif;
+}
+
+
+#button{
+    background-color: #FBAB7E;
 }
