@@ -1,3 +1,21 @@
+/* Fonts */
+
+@import url('');
+
+/* Reset CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Header */
+
 header {
     background-color: rgb(232, 232, 13);
     color: #fff;
@@ -10,18 +28,43 @@ header>h1,
 header>h2 {
     display: inline-block;
     margin: 0 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
-header>nav>ul>li {
-    background-color: #fff;
+header>nav {
+    margin-left: 100px;
+    align-self: right;
+    margin-left: 300px;
 }
+
+header>nav>ul>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/* Searchbox and Login */
+
+nav>ul,
+ul+form {
+    display: inline;
+    align-items: right;
+}
+
+
+/* Breadcrumb */
 
 header+nav {
     background-color: #000;
     color: #fff;
     font-size: 22px;
-    padding-left: 20px;
+    padding: 4px 0 2px 20px;
 }
+
+
+/* Main */
 
 main {
     margin: 10px 20px;
