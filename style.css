@@ -66,6 +66,10 @@ label {
   padding: 20px;
   border-radius: 8px;
 }
+div > h1,
+p {
+  margin: 10px;
+}
 
 /* stili e colori */
 
@@ -74,10 +78,11 @@ a) #E94560  #0F3460
 */
 
 #sezione1-stile {
-  background: white;
+  background: #e94560;
+  color: white;
 }
 #sezione2-stile {
-  background: white;
+  background: E94560;
 }
 #logoFramy {
   height: 100px;
