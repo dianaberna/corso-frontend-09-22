@@ -9,6 +9,7 @@ Docente:
 **_Diana Bernabei_**
 
 Corsisti:
+Lorenzo Becchetti
 
 **_Mateusz Olszewski_**
 
