@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #222;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  position: relative;
+}
+.sezione {
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px #dedede;
+}
+.introLanding {
+  background-image: url("photographer.jpg");
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 10px 10px 5px #dedede;
+  border-radius: 8px;
+}
+.sezioneInput {
+  margin: 20px;
+}
+.sezioneBottone {
+  margin: 20px;
+}
+.bottone {
+  background-color: #faf4b7;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+}
+.bottone:hover {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  padding: 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* stili e colori */
+
+/* palette colori
+a) #CDF0EA | #F9F9F9 | #ECC5FB | #ECC5FB | #FAF4B7
+b) #FFC4C4 | #FFF5E4
+*/
+
+#sezione1-stile {
+  background: #cdf0ea;
+}
+#sezione2-stile {
+  background: #ecc5fb;
+}
