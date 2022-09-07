@@ -24,18 +24,24 @@ body{
 }
 .Display{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:40px 500px 0 500px ;
 
 }   
 
-.Utente{
+.Utente, .Utente2{
     font-size: 20px;
     color:rgb(7, 211, 75);
     font-weight: 500;
-    padding:20px;
 }
 
+.Utente{
+    margin: 10px 0 0 20px;
+}
+
+.Utente2{
+    margin: 20px 10px 10px 100px;
+}
 .scelta{
     color:black;
 }
