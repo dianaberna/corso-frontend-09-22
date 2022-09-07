@@ -10,17 +10,17 @@
     <header>
         <h1>Dati nuovo Utente</h1>
         <form action="" method="post">
-           <mark><label>insersci nome: </label></mark>
+           <mark><label for="nome">insersci nome: </label></mark>
            <br>
-            <input type="text" value="Nome">
+            <input type="text" name="Nome" id="nome">
 
             <p></p>
-             <mark><label>insersci cognome: </label></mark><br>
-             <input type="text" value="cognome">
+             <mark><label for="cognome">insersci cognome: </label></mark><br>
+             <input type="text" name="cognome" id="cognome" >
 
              <p></p>
-             <mark><label>Data di nascita:</label></mark><br>
-             <input type="date">
+             <mark><label for="date">Data di nascita:</label></mark><br>
+             <input type="date" id="date" name="date">
 
              <p></p>
              <input type="radio" id="M" name="sesso" value="Maschio">  
@@ -39,14 +39,14 @@
 
     </header>
     <section>
-        <form action="" method="post"><br>
+        <form action="FirstPage.html" method="post"><br>
 
-            <mark><label> Email:</label></mark><br>
-            <input type="email">
+            <mark><label for="E"> Email:</label></mark><br>
+            <input type="email" name="email" id="E">
 
             <p></p>
-            <mark><label>password(massimo 8 caratteri)</label></mark><br>
-            <input type="password" maxlength="8"><br>
+            <mark><label for="P">password(massimo 8 caratteri)</label></mark><br>
+            <input type="password" name="password" id="P" maxlength="8"><br>
 
             <input type="reset" Value="Reset">
             <input type="submit" value="submit">

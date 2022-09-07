@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+body{
+    background-image: url(https://c.wallhere.com/photos/93/6e/PlayStation_simple_black_minimalism_simple_background_abstract_video_games_digital_art-255872.jpg!d);  
+}
+
+nav{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#Login{
+    border: groove 10px white;
+     margin: 100px 600px 10px 600px;
+
+}
+
+#NuovoUtente{
+    border: double 10px white;
+    margin: 0 600px 10px 600px;
+
+}
