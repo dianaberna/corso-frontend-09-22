@@ -35,8 +35,11 @@ label {
 }
 .introLanding {
   background-image: url("img/cyber1.jpg");
+  background-position: center;
+  background-size: cover;
   margin: 20px;
   padding: 50px;
+  height: 300px;
   text-align: center;
   box-shadow: 5px 5px 5px 5px #dedede;
   color: white;
@@ -69,6 +72,11 @@ label {
 div > h1,
 p {
   margin: 10px;
+}
+
+#sezioneVantaggi,
+#sezione1-stile {
+  width: 40%;
 }
 
 /* stili e colori */
