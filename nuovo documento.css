@@ -1,0 +1,35 @@
+body{
+    padding: 0 100 px 0 100px;
+    background-color: red;
+    
+    
+}
+
+.card{
+    background-color: rgb(155, 36, 36);
+    box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.25);
+    width: 365px;
+    height: 420px;
+    border-radius: 10px;
+    padding: 30px 24px;
+}
+
+div.card  div.score{
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    position: absolute;
+    margin: 10px 0 0 10px;
+    padding: 5px;
+    display: flex ;
+    align-items: center;
+
+}
+
+div.score svg{
+    padding-left: 5px;
+
+}
+.card > button{
+    background-color: rgb(189, 135, 34);
+}
