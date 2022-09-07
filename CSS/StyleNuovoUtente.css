@@ -3,18 +3,25 @@
 
 body{
     font-family: 'Combo', cursive;
+    background-color: rgba(0, 0, 0, 0.937);
 
 }
 
+div > h1 {
+    height: 62px;
+    margin: 50px 0 0 0;
+    background-size: contain;
+    border-radius: 25px;
+    background-image: url(https://sm.ign.com/t/ign_it/screenshot/default/videogames-controller-1920x1080_75ss.1280.jpg);
+    box-shadow: -3px -1px 30px 21px rgba(57,162,22,0.53);
+    padding: 15px;
+}
 
 
  h1{
     text-align: center;
-    background-image: url(https://sm.ign.com/t/ign_it/screenshot/default/videogames-controller-1920x1080_75ss.1280.jpg);
-    background-size: 200px;
     size:20px;
-    margin:20px 0 0 0;
-    padding: auto;
+    margin:50px 0 0 0;
     font-family: 'Combo';
     font-weight: 900;
     color: rgba(3, 255, 66, 0.892)
@@ -40,8 +47,8 @@ body{
 }
 
 .Utente2{
-    margin: 20px 10px 10px 100px;
+    margin: 30px 10px 0px 100px;
 }
 .scelta{
-    color:black;
+    color:white
 }
