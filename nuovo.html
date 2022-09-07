@@ -6,9 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      font-family: Arial;
+    }
     p {
       margin: 0px;
+      font-size: 13px;
+      font-weight: bold;
     }
+
+    input {
+      background-color: rgb(236, 236, 236);
+      border: none;
+    }
+
+    input::placeholder {
+      color: rgb(168, 168, 168);
+    }
+
     .flex {
       display: flex;
     }
@@ -50,9 +65,39 @@
       padding: 8px 30px;
     }
 
+    .website-bar {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 365px;
+      padding-left: 15px;
+    }
+
+    .message-bar {
+      padding-top: 8px;
+      padding-bottom: 120px;
+      padding-right: 365px;
+      padding-left: 15px;
+    }
+
     .button {
       margin-top: 40px;
     }
+
+    .container {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 11px 20px;
+      font-size: 14px;
+      border: none;
+      background-color: rgb(67, 121, 67);
+      color:white;
+      font-weight: bold;
+      border-radius: 2px;
+    }
+
   </style>
 </head>
 <body>
@@ -71,15 +116,15 @@
   </div>
   <div class="website">
     <p>Your Website</p>
-    <input type="text" placeholder="https://">
+    <input class="website-bar" type="text" placeholder="https://">
   </div>
 
   <div class="message">
     <p>Message</p>
-    <input type="text" placeholder="Your message here">
+    <input class="message-bar" type="text" placeholder="Your message here">
   </div>
 
-  <button class="button">Submit</button>
+  <button class="button">SUBMIT</button>
   </div>
 
 </body>
