@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,25 @@
 <body>
     <header>
         
-        <h1>Dati nuovo Utente</h1>
-        <form action="" method="post">
+       <div> <h1>Dati nuovo Utente</h1>
+       </div>
+       
+       <div class="Display">
+          <form class="Utente" action="" method="post"> 
 
-           <mark><label class="Utente" for="nome">insersci nome: </label></mark>
-           <br>
+          <P><label class="Utente" for="nome">insersci nome: </label>
             <input type="text" name="Nome" id="nome">
-            <p></p>
+            </P>
+            
 
-             <mark><label class="Utente" for="cognome">insersci cognome: </label></mark><br>
-             <input type="text" name="cognome" id="cognome" >
+             <p><label class="Utente" for="cognome">insersci cognome: </label><br>
+             <input type="text" name="cognome" id="cognome" ></p>
 
-             <p></p>
-             <mark><label class="Utente" for="date">Data di nascita:</label></mark><br>
-             <input type="date" id="date" name="date">
+             
+             <p><label class="Utente" for="date">Data di nascita:</label><br>
+             <input type="date" id="date" name="date"></p>
 
-             <p></p>
+             <div class="scelta"><p>
              <input type="radio" id="M" name="sesso" value="Maschio">  
              <b><label class="Button" for="M">Maschio</label></b><br>
 
@@ -34,32 +37,28 @@
 
              <input type="radio" id="A" name="sesso" value="Altro">  
              <b><label class="Button" for="A">Altro</label></b>
+             </div></p>
 
              <p></p>                
              <input type="reset" value="Reset"><br>
+       </form>
 
-        </form>
 
-    </header>
-    <section>
-        <form action="FirstPage.html" method="post"><br>
+        <form class="Utente" action="FirstPage.html" method="post">
+            <label for="E"> Email:</label><br>
+            <input type="email" name="email" id="E"><br><br>
 
-            <mark><label for="E"> Email:</label></mark><br>
-            <input type="email" name="email" id="E">
 
-            <p></p>
-            <mark><label for="P">password(massimo 8 caratteri)</label></mark><br>
-            <input type="password" name="password" id="P" maxlength="8"><br>
+            <label for="P">password(massimo 8 caratteri)</label><br>
+            <input type="password" name="password" id="P" maxlength="8"><br><br>
 
             <input type="reset" Value="Reset">
-            <input type="submit" value="submit">
-            <p></p>
-            <a href="Index.html"value="indietro">Torna alla pagina Iniziale</a>
-            
+            <input type="submit" value="submit"><br><br>
+
+            <a href="Index.html"value="indietro">Torna alla pagina Iniziale</a> 
 
         </form>
-       
-    </section>
-
+    </div>
+</header>
 </body>
 </html>
