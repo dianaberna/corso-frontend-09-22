@@ -10,3 +10,6 @@ h1 {
     border: 2px double #A417A2;
     font-family: 'Comic Neue', cursive;
 }
+legend {
+    font-family: 'Comic Neue', cursive;
+}
