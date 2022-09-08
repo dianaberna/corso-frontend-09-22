@@ -24,25 +24,24 @@ body{
     display: block;
     /* flex-direction: column; */
 }
-.cappuccio, .voto, .prezzo{
+.labels div{
     position: absolute;
-    font-weight: 600;
     border-radius: 4.2rem;
     font-size: 2.4rem;
     color: #2F2105;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 1px 10px rgba(255,255,255,0.5); 
-    box-shadow: 0px 0px 1px 10px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 1px 7px rgba(255,255,255,0.5); 
+    box-shadow: 0px 0px 1px 7px rgba(255,255,255,0.5);
 }
 .cappuccio{
     width: 27.1rem;
     height: 5.7rem;
     display: flex;
-    margin-left: -42.8rem;
+    margin-left: -46.8rem;
+    margin-top: 2rem;
+    font-weight: 400;
     justify-content: center;
     align-items: center;
-    -webkit-box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1); 
-    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);
 }
 .voto{
     width: 13.3rem;
@@ -51,7 +50,7 @@ body{
     display:flex;
     align-items: center;
     margin-top: 8rem;
-    margin-left: -8.8rem;
+    margin-left: -11.8rem;
     justify-content: center;
 }
 .voto svg{
@@ -62,6 +61,7 @@ body{
     width: 14.1rem;
     height: 5.7rem;
     display: flex;
+    font-weight: 400;
     margin-left: -40rem;
     margin-top: 32rem;
     justify-content: center;
