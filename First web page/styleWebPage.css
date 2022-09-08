@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,700;1,300;1,400&display=swap");
+body {
+  background-color: #181823;
+  font-family: "Combo";
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  margin-top: 40px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.underline {
+  background-color: #f03a76;
+  margin: 0 0 50px 735px;
+  border-radius: 10px;
+  height: 5px;
+  width: 50px;
+}
+
+div + form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Combo";
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: #C7E0FA;
+}
+
+form div.left #email {
+  border-radius: 6px;
+  width: 440px;
+  color: #C7E0FA;
+  height: 35px;
+  display: block;
+  background-color: transparent;
+  margin-top: 7px;
+  padding-left: 20px;
+}
+
+
+form div.left #message {
+  border-radius: 6px;
+  color: #C7E0FA;
+  width: 440px;
+  height: 110px;
+  display: block;
+  background-color: transparent;
+  font-weight: 100;
+  margin-top: 7px;
+  padding-left: 20px;
+
+}
+
+div.right {
+  margin-right: 275px;
+  margin-bottom: 35px;
+}
+div.left {
+  margin-left: 275px;
+}
+
+form div.right #phone {
+  display: block;
+  border-radius: 6px;
+  color: #C7E0FA;
+  width: 440px;
+  height: 35px;
+  display: block;
+  background-color: transparent;
+  font-weight: 100;
+  margin-bottom: 35px;
+  margin-top: 7px;
+  padding-left: 20px;
+
+}
+
+form div.right #title {
+  display: block;
+  border-radius: 6px;
+  color: #C7E0FA;
+  width: 440px;
+  height: 35px;
+  display: block;
+  background-color: transparent;
+  font-weight: 100;
+  margin-top: 7px;
+  padding-left: 20px;
+
+}
+
+.button {
+  margin-top: -47px;
+  margin-left: 1100px;
+}
+
+button {
+  background-color: #f03a76;
+  text-align: right;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #C7E0FA;
+  font-size: large;
+  border: 0px;
+  letter-spacing: 2px;
+  box-shadow: 0px 10px 15px  rgba(240,58,118,0.18);
+}
