@@ -6,6 +6,8 @@
 p{
     color: blue;
     font-family: 'Pacifico', serif;
+    text-decoration: underline;
+    margin: 10px;
 }
 
 .red, .error{
