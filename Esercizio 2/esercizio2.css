@@ -1,0 +1,22 @@
+html{
+    font-size: 100%;
+}
+
+button{
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0;
+}
+
+#buttonContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    }
+img
+{
+    width: 100%;
+}
