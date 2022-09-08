@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+.card {
+	align-items: center;
+	background-color: #000000;
+	box-sizing: border-box;
+	display: flex;
+	gap: 150px;
+	flex-direction: row;
+	padding: 0 185px;
+}
+.description h2 {
+	color: #DEECF9;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+.description > div {
+	border: 4px solid #F03A76;
+	border-radius: 4px;
+	width: 70px;
+}
+.description p {
+	color: #C7E0FA;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	line-height: 38px;
+	margin-top: 20px;
+}
