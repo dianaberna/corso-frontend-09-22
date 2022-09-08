@@ -29,6 +29,7 @@ h1 > span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 div.card div.score {
@@ -102,4 +103,72 @@ ul {
   justify-content: center;
   gap: 40px;
   padding-inline-start: 0px;
+}
+
+.background {
+  background-color: #F6EBDA;
+  padding: 10px;
+  height: 484px;
+  width: -1400px;
+}
+.columns {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 100px;
+}
+
+.columns > image {
+  margin-top:-160px;
+}
+
+#image {
+  border-radius: 12px;
+  margin-top:-82px;
+  box-shadow:  10px  10px 5px #dedede,
+              -10px -10px 5px #dedede,
+               10px -10px 5px #dedede,
+              -10px  10px 5px #dedede;
+              -moz-box-shadow:  10px  10px 5px #dedede;
+              -webkit-box-shadow:  10px  10px 5px #dedede;
+            
+}
+.text{
+  margin-left: 40px;
+  width: 40%;
+
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+h2 > span {
+  background-image: url(/css/Rectangle7.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 1px;
+}
+
+p{
+  color: #7E7D7A;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.text > button {
+  background-color: #2F2105;
+  color: #F4AE26;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  border: 0px;
+  border-radius: 33px;
+  justify-content: center;
+  padding: 10px 24px;
+  width: 142px;
+  height: 38px;
 }
