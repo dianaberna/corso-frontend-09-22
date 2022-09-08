@@ -124,14 +124,15 @@ ul {
 
 #image {
   border-radius: 12px;
-  margin-top:-82px;
   box-shadow:  10px  10px 5px #dedede,
               -10px -10px 5px #dedede,
                10px -10px 5px #dedede,
               -10px  10px 5px #dedede;
               -moz-box-shadow:  10px  10px 5px #dedede;
               -webkit-box-shadow:  10px  10px 5px #dedede;
-            
+  margin-top:-82px;
+  background-color: #fff;
+  width: 370px;
 }
 .text{
   margin-left: 40px;
