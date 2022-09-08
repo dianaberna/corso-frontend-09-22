@@ -1,0 +1,74 @@
+   *{
+    margin: 0;
+   }
+
+
+body{
+    display: flex;
+    background-color: white;
+    font-family:'Poppins', sans-serif;
+}
+.titles h1{
+    margin-top: 6px;
+
+}
+.titles{
+    margin-bottom: -50px;
+    margin-left: 60px;
+    font-weight:bolder;
+}
+.titles h3{
+    margin-top: 33px ;
+    color: #FFCB45;
+}
+
+.review, .card{
+    margin-top: 80px;
+    margin-left: 60px;
+    padding: 25px;
+    height: 155px;
+    width: 452px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+.card {
+    margin-top: 80px;
+    margin-left: 60px;
+    padding: 25px; 
+    height: 155px;
+    width: 452px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+.stelle svg{
+    padding-top: 10px;
+    width: 20px;
+    height: 20px;
+    fill: #FFCB45;
+}
+.foto-name{
+    display: flex;
+    align-items: center;
+}
+.star-name{
+    padding-left: 20px;
+}
+.description{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(29, 29, 29, 0.7);
+}
+.star-name{
+   padding-top: -20px;
+}
+.cards{
+    display: flex;
+}
+.dot{
+    margin: 10px 0 0 235px;
+    width: 7px;
+    height: 7px;
+    background-color:#FFCB45;
+    border-radius: 50%;
+}
