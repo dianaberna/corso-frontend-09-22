@@ -1,0 +1,45 @@
+h1 {
+    font-size: 24px;
+    color: black;
+}
+.rectangular {
+    background-color : white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius : 8px;
+    padding : 10px;
+}
+#button1 {
+    color: #FF902B;
+    border-color: #FF902B;
+}
+#button2 {
+    color: #FFD28F;
+    border-color: #FFD28F;
+}
+#carrello {
+    background-color:#FF912B;
+    border: 0px;
+    padding: 10px;
+    border-radius: 64px;
+}
+.card {
+    border: 2px solid black;
+    width: 340px;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.buttongroup {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
