@@ -49,6 +49,12 @@ div p{
     font-size: 30px;
 }
 
+@media screen and (max-width: 480px){
+    div p{
+        background-color: yellow;
+    }
+}
+
 div p.error{
     background-color: aquamarine;
 }
