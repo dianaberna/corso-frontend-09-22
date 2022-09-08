@@ -1,0 +1,30 @@
+#delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.furbo {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.delivery-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delivery-card {
+    width: 305px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    padding: 10px 20px 20px 2px;
+}
+
+.delivery-card>* {
+    margin: 10px;
+}
