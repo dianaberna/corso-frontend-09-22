@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6EBDA;
+}
+.container{
+    display: inline;
+    padding: 80px;
+}
+.sinistra{
+    width: 35%;
+    font-size: 48px;
+    font-weight: 600;
+    color: #2F2105;
+}
+.sinistra span{
+    color: #FF912B;
+}
+.cerchio{
+    background-color: #2F2105;
+    height: 416px;
+    width: 416px;
+    border-radius: 208px;
+    margin-left: 700px;
+    display: flex;
+}
+.cerchio img{
+    margin-bottom: 50px;
+    margin-left: 32px;
+}
+.etichette{
+    display: flex;
+    flex-direction: column;
+}
+
+.cappuccino, .rate, .price{
+    border-radius: 42px;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 20px 40px;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.5); 
+    box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.5);
+}
+.cappuccino{
+    width: 271px;
+    height: 27px;
+    margin-left: -564px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.rate{
+    width: 133px;
+    height: 27px;
+    font-weight: 700;
+    margin-left: -85px;
+    margin-top: 26px;
+    display:flex;
+    align-items: center;
+}
+.rate svg{
+    margin-left: 9px;
+    margin-bottom: 3px;
+}
+.price{
+    width: 141px;
+    height: 27px;
+    margin-left: -455px;
+    margin-top: 136px;
+    font-weight: 600;
+}
