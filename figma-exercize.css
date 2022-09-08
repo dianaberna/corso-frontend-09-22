@@ -12,7 +12,7 @@
     text-decoration-color: orange;
 }
 
-.delivery-section {
+.delivery-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     background-color: blue;
-    padding: 10px 20px 20px 2px;
+    padding: 10px 20px 20px 10px;
 }
 
 .delivery-card>* {
@@ -38,4 +38,23 @@
 .delivery-card>img {
     width: 159px;
     height: 159px;
+}
+
+#delivery button {
+    border: none;
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: orange;
+    padding: 7px 0px;
+    margin: 10px 360px 5px;
+    color: white;
+    gap: 20px;
+}
+
+#delivery svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
 }
