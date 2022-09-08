@@ -2,47 +2,32 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 0 100px 0 100px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
+.logoPng {
+  height: 20px;
+}
 nav > div {
-  width: 20rem;
-}
-.logo {
-  height: 8rem;
-}
-.logoTesto {
-  width: auto;
-}
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding-inline-start: 0px;
-}
-li > a {
-  text-decoration: none;
-  color: #2f2105;
+  margin: 2px;
+  width: 20%;
 }
 
-li > a:hover {
-  text-decoration: none;
-  color: #fff42b;
+.ricerca {
+  width: 40%;
 }
+
 .searchBar {
   border-radius: 35px;
   border-width: 0.1px;
   border-style: none;
   color: #92929255;
   height: 40px;
-  width: 222px;
+  width: 400px;
   box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 30%);
   background: url(vectorSearchBar.png) no-repeat scroll center left 10px;
   background-size: 15px;
