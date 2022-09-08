@@ -1,0 +1,22 @@
+body {
+    background-color :aqua  ;
+}
+
+header  {
+    background-color: rgb(126, 229, 23);
+    color: blue;
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 50px 10px 50px 70px;
+    padding: 50px 10px 50px 70px;
+}
+header > img {
+    border-radius: 50% ;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color:yellow;
+}

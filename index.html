@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
+        <img width=80px height=80px src="data:image/jpeg;base64,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" alt="logo veterinario">
         questo è l header 
-      <hr>
     </header>
-
-    <main> <h1> AMICA CAVIA PERUVIANA </h1>
+    
+    <hr>
+    <main><h1> AMICA CAVIA PERUVIANA </h1>
         <!-- modulo numero 1 -->
         <form>   
             <label for="name"> nome </label> 
@@ -22,8 +25,8 @@
             <label for="codice fiscale"> codice fiscale </label>
             <input type="text" name="" id="codice fiscale
             "> <br>
-            <img width="100px" 
-            height="100px" src="https://www.nonsprecare.it/wp-content/uploads/2021/10/porcellino-dindia.jpg " alt="un porcellino in braccio alla padrona"> <br>
+            <img width="400px" 
+            height="200px" src="https://www.nonsprecare.it/wp-content/uploads/2021/10/porcellino-dindia.jpg " alt="un porcellino in braccio alla padrona"> <br>
 
             <input type="button" value="IT" name="lingua"><br>
             <input type="button" value="ING" name="lingua"><br>
@@ -31,8 +34,20 @@
             <label for="vol"> volume(tra 0 e 50):</label>
             <input type="range" id="vol" name="vol" min="0" max="50" value="25">
 
-            <input type="submit" value="Submit>"
-            
+            <input type="submit" value="Submit">
+          <p> select  the correct bottom </p>
+          <input type="radio" name="stop" value="stop"> stop </br>
+          <input type="radio" name="play" value="play"> play </br>
+          <input type="radio" name="rewind" value="rewind"> rewind </br>
+          <input type="submit" value="submit">
+
+          <label for="favcolor">select your favourite color:</label>
+          <input type="color" id="favcolor" name="favcolor"
+          value="#ff0000">
+          <input type="submit" value="Submit">
+
+
+
           
         </form>
        <hr>
