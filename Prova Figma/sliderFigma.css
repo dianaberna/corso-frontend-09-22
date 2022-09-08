@@ -93,3 +93,7 @@ button{
     font-weight: 500;
     font-size: 24px;
 }
+
+button:hover{
+    color:#683CB8;
+}
