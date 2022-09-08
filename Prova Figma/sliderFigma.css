@@ -1,0 +1,95 @@
+@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Bold.ttf");
+@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Regular.ttf");
+
+body {
+    font-family: "Lato";
+    background-color: #181823;
+    font-size: 18;
+    color: #DEECF9;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenitore{
+    display: flex;
+}
+
+.slider{
+    width: 750px;
+    height: 460px;
+    display: flex;
+    
+}
+
+.slider > button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18;
+    color: #DEECF9;
+    position: absolute;
+}
+
+#right {
+    left: 720px;
+    top: 250px;
+}
+
+
+#left {
+    left: 10px;
+    top: 250px;
+}
+
+.portfolio{
+    width: 554px;
+    height: 190px;
+    right: 100px;
+    margin-left: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #C7E0FA;
+    ;
+} 
+
+/* prova stile della riga di divisione */
+hr{
+    width:120px; 
+    height:150px; 
+    text-align:left; 
+    margin-left:0; 
+    color:#683CB8; 
+    border-color:#683CB8; 
+    background-color:#683CB8; 
+    border-radius: 100;
+}
+
+button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50px;
+    width: 188px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18;
+    color: #DEECF9;
+    position: absolute;
+    top: 250px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
