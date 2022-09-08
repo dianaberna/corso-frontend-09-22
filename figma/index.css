@@ -1,0 +1,63 @@
+*{
+    background-color: gray;
+}
+.box>span{
+    display: flex;
+    
+    background-color: transparent;
+}
+
+.box {
+    margin-bottom: 15px;
+    padding: 12px 25px ;
+    text-align: left;
+    width: 375px;
+    height: 125px;
+    background-color: white;
+    border-radius: 18px;
+}
+.title{    
+    background-color: transparent;
+    color: #F79BB9;
+    font-size: 19px;
+}
+.commento{
+    background-color: transparent;
+    color: #F03A76;
+    font-size: 21px;
+    font-weight: bold;
+  
+}
+#ButtonDiv>button{ border-style: none;
+    font-size: 20px;
+    color: white;    
+    width: 82px;
+    height: 32px;
+    display: inline;
+    background-color: #3ADAD9;
+    border-radius: 7px;
+}
+
+#ButtonDiv{background-color: transparent;
+    display: flex;
+    justify-content: end;
+}
+.puntinoDomanda{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    position: absolute;
+}
+svg{
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+#stellaGrigio{
+    fill: gray;
+}
+
+.title,.commento,svg{
+    margin-bottom: 10px;
+}
