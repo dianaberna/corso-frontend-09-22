@@ -65,7 +65,7 @@ nav ul li a:active, a:visited{
   font-size: 15px;
   margin-left: 5px;
 }
-::placeholder{
+.testo_nome::placeholder{
   color: rgb(255, 255, 255);
 }
 .manda{
