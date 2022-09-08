@@ -4,6 +4,9 @@
     justify-content: space-around;
 }
 
+
+/* Non così furbo fino adesso */
+
 .furbo {
     text-decoration: underline;
     text-decoration-color: orange;
@@ -27,4 +30,12 @@
 
 .delivery-card>* {
     margin: 10px;
+}
+
+
+/* Zoom per uniformare le immagini per le delivery-card */
+
+.delivery-card>img {
+    width: 159px;
+    height: 159px;
 }
