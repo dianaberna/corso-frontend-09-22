@@ -111,14 +111,14 @@ ul {
   height: 484px;
   width: -1400px;
 }
-.columns {
+.container {
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
 }
 
-.columns > image {
+.container > image {
   margin-top:-160px;
 }
 
@@ -168,7 +168,6 @@ p{
   line-height: 20px;
   border: 0px;
   border-radius: 33px;
-  justify-content: center;
   padding: 10px 24px;
   width: 142px;
   height: 38px;
