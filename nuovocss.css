@@ -1,0 +1,19 @@
+body{
+padding:0 100px 0 100px;
+}
+
+.card{
+    background-color: rgb(253, 253, 253);
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.399);
+    width: 356x;
+    height: 385px;
+    
+    border-radius: 10px;
+    padding: 30px 24px;
+
+}
+
+
+.card > button{
+    background-color: orange;
+}

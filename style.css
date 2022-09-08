@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(71, 71, 248);
+    background-color: rgb(104, 171, 248);
 }
 div{
     color: aliceblue;
@@ -7,4 +7,25 @@ div{
 
 fieldset{
     color:aliceblue;
+}
+
+.immagine{
+    margin: 0px;
+    padding: 10px;
+    border:10px;
+    border-radius: 10px;
+    width: 120px;
+
+}
+h1{
+    background-color: rgb(53, 5, 244);
+    border-radius: 50px;
+    padding: 3px;
+    margin: 10px;
+    text-align:center;
+    position: absolute;
+}
+
+ul{
+    color: black;
 }
