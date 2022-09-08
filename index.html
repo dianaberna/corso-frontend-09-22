@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <header>
+    <div id="containerFooter">
         <div>
-            <h1><em>Pagina Super Segreta</em></h1>
+            <h3 class="titleFooterSection">Navigate</h3>
+            <ul id="listWithArrows">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+            </ul>
         </div>
-        <div id="navDiv">
-            <hr>
-            <nav>
-                <ul id="navList">
-                    <li>LOGIN</li>
-                    <li>HELP</li>
-                    <li>CONTATTI</li>
-                </ul>
-            </nav>
-            <hr>
+        <div>
+            <h3 class="titleFooterSection">Social Media</h3>
+            <ul class="ulNoArrows">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+            </ul>
         </div>
-    </header>
-    <main>
-        <div id="login-form">
+        <div>
+            <h3 class="titleFooterSection">About Us</h3>
+            <ul class="ulNoArrows">
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+        
+        <div id="footerText">
             <div>
-                <img id="login-image" width="80px" height="80px"
-                 src="/assets/BIB_login_unine.png" alt="immagine di login">
+                <h2>TECH-WORLD</h2>
+                <span>Copyright 2022</span>    
             </div>
-            <form>
-                <label for="username"><b>Username</b></label>
-                <br>
-                <input type="email" name="username" id="username">
-                <br>
-                <label for="password"><b>Password</b></label>
-                <br>
-                <input type="password" name="password" id="password">
-                <br>
-                <button type="submit" id="send-button">Invia</button>
-            </form>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, orci tempor eget interdum. Egestas fermentum tellus gravida ut mauris, pulvinar libero suspendisse ornare. Viverra nulla aliquam nullam interdum pretium gravida mi. Porttitor duis sagittis vel et.</p>
         </div>
-    </main>
-    <footer>
-        <hr>
-        <p><em>Copyright 2022</em></p>
-    </footer>
+    </div>
+    
 </body>
 </html>
