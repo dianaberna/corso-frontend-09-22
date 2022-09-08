@@ -1,0 +1,43 @@
+@media ( min-width: 360px ) {
+    *{margin:5px;
+        
+    margin-top: 10px;} 
+    h2{
+        font-weight: bold;
+    }
+.iconebottom{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subtitles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    background-color: gray;
+    width: 170px;
+    height: 250px;
+}
+.boxs{
+    display: flex;
+    justify-content: space-between;
+
+}
+.ultimaimage{
+    background-color: gray;
+    width: 350px;
+    height: 200px;
+}
+#contenitoreimg{
+    display: flex;
+    justify-content: center;
+}
+
+#lasciaSpazio{
+    height: 20px;
+}
+
+}

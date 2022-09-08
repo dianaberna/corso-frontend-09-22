@@ -8,7 +8,8 @@
 }
 
 .box {
-    margin-bottom: 15px;
+    
+    margin-bottom: 35px;
     padding: 12px 25px ;
     text-align: left;
     width: 375px;
@@ -42,13 +43,14 @@
     display: flex;
     justify-content: end;
 }
-.puntinoDomanda{
+.puntino{
     width: 40px;
     height: 40px;
     background-color: white;
     margin-bottom: 25px;
     border-radius: 16px;
     position: absolute;
+ 
 }
 svg{
     background-color: transparent;
