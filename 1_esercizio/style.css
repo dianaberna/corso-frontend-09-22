@@ -1,0 +1,97 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  position: relative;
+}
+h1,
+h2,
+.bottone {
+  font-family: "Chakra Petch";
+}
+p,
+label {
+  font-family: "Chakra Petch", sans-serif;
+}
+.header {
+  height: 10%;
+  text-align: center;
+  box-shadow: 5px 5px 5px #dedede;
+}
+.sezione {
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 5px #dedede;
+}
+.introLanding {
+  background-image: url("img/cyber1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  padding: 50px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px #dedede;
+  color: white;
+  border-radius: 8px;
+}
+.form-iscriviti {
+  margin: 10px;
+}
+.sezioneInput {
+  margin: 20px;
+}
+.sezioneBottone {
+  margin: 20px;
+}
+.bottone {
+  background-color: #0f3460;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+}
+.bottone:hover {
+  background-color: #1b4477;
+  font-weight: bold;
+  padding: 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+div > h1,
+p {
+  margin: 10px;
+}
+
+#sezioneVantaggi,
+#sezione1-stile {
+  width: 40%;
+}
+
+/* stili e colori */
+
+/* palette colori
+a) #E94560  #0F3460
+*/
+
+#sezione1-stile {
+  background: #e94560;
+  color: white;
+}
+#sezione2-stile {
+  background: E94560;
+}
+#logoFramy {
+  height: 100px;
+}
