@@ -11,7 +11,7 @@ p {font-size: 14px;}
 
 #testo {
     margin-top: 50px;
-    padding-inline-start: 50px;
+/*    padding-inline-start: 50px; */
 }
 
 #grigliafoto {
@@ -42,13 +42,19 @@ margin-left: -24px;
     
 }
 
-#review {
-    background-color: rgba(208, 198, 198, 0.559);
+.review {
+    background-color: rgba(227, 218, 218, 0.559);
     height: 160px; width: 420px;
     border-radius: 10px;
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 20px;
+
+}
+#review2 {
+   
+    margin-left: 500px;
+    margin-top: -237px;
 
 }
 
@@ -68,10 +74,11 @@ span {color: #FFCB45;}
 
 #pallini 
 {
+
+}
+
+.contenitorereview {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-    justify-content: space-around;
+    flex-direction: column;
+
 }
