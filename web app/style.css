@@ -1,0 +1,85 @@
+*{
+    margin: 0 5px 0 5px;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;}
+.bar{
+    margin-left: -5px;
+    margin-top: 30px;
+}
+
+.title{
+    font-size: 14.4px;
+    margin-top: 18px;
+    font-weight: bolder;
+}
+.card{
+    padding: 12px 8px;
+    margin-top: 15px;
+    border: 1px solid #A8A8A8 ;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.all-cards svg{
+    margin: 0 0 0 10px;
+    width: 22px;
+    height: 22px;
+}
+input[type='radio']{
+    transform: scale(1.5);
+}
+.card p{
+    padding-top: 4px;
+    color: #A8A8A8;
+    font-size: 12px;
+}
+.desc{
+    margin: 13px 0 27px 5px;
+    color: #A8A8A8;
+    font-size: 14px;
+}
+.desc2{
+    margin: 30px 0 0 5px;
+    color: #A8A8A8;
+    font-size: 13px;
+}
+.card:hover{
+    color: #005819;
+    border: 2px solid #005819;
+    fill: #005819;
+}
+button{
+    margin-top: 83px;
+    margin-left: -1px;
+    
+    font-weight: bold;
+    padding: 20px 9px;
+    background-color: #262626;
+    color: white;
+    width: 95%;
+    height: 56px;
+    border-radius: 64px;
+}
+.titles-inside{
+    width: 100%;
+}
+.bar > progress::-webkit-progress-value {
+    background-color: #24A148!important;
+    border-top-left-radius:  20px;
+    border-bottom-left-radius:  20px;
+}
+.bar > progress{
+    -webkit-appearance: none;
+    height: 8px;
+    width: 95%;
+    
+}
+.bar > progress::-webkit-progress-bar{
+    border-radius: 20px;
+    background-color: #d0d0d0;
+}
