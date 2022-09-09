@@ -1,0 +1,44 @@
+div {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    
+
+}
+
+p {
+margin-bottom: 0%;
+margin-top: 0%;
+}
+
+#freccia  {
+justify-content: left;
+margin-bottom: 0%;
+margin-top: 0%;
+
+}
+
+#menù {
+     margin-left: 90%;
+     
+}
+
+/* p #freccia #menù {
+    flex-direction: row;      da rivedere
+
+} */
+.container {
+
+    background-image: url(https://cutewallpaper.org/27/black-and-white-watch-wallpaper/903114910.jpg
+    );
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    margin: 0%;
+    padding: 0%;
+
+
+
+}
+
