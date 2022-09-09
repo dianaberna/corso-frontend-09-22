@@ -1,48 +1,14 @@
 :root {
-  --margin: 1.5rem;
+  --content_margin: 1.5rem;
 }
 
 html {
   font-size: 100%;
-  font-family: Work Sans, sans serif;
+  font-family: Work Sans, sans-serif;
 }
 
 body {
   margin: 0;
-}
-
-header button {
-  border-radius: 100%;
-  width: 3.2rem;
-  height: 3.2rem;
-  border: 0;
-  background-color: white;
-}
-
-#buttonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: var(--margin);
-  margin-left: var(--margin);
-  margin-right: var(--margin);
-}
-#insideImageContent {
-  background-image: url("Assets/ce3a9bb8e7c0db43aee96eee627d74dc.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 20rem;
-  top: 0;
-  left: 0;
-  justify-content: space-between;
-  border-radius: 0 0 40px 40px;
-}
-img {
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 h1 {
@@ -58,9 +24,46 @@ h4 {
   font-size: small;
 }
 
+header img {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header button {
+  border-radius: 100%;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0;
+  background-color: white;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: var(--content_margin);
+  margin-left: var(--content_margin);
+  margin-right: var(--content_margin);
+  position: sticky;
+  top: var(--content_margin);
+}
+#insideImageContent {
+  background-image: url("Assets/ce3a9bb8e7c0db43aee96eee627d74dc.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20rem;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  border-radius: 0 0 40px 40px;
+}
+
 #timeValue {
-  margin-bottom: var(--margin);
-  margin-left: var(--margin);
+  margin-bottom: var(--content_margin);
+  margin-left: var(--content_margin);
   align-self: flex-start;
   padding: 0.8rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -70,7 +73,7 @@ h4 {
 }
 
 main {
-  padding: 1rem var(--margin) 1rem var(--margin);
+  padding: 1rem var(--content_margin) 1rem var(--content_margin);
 }
 
 #rating-delivery div {
@@ -99,6 +102,7 @@ main button {
   border-radius: 0.25rem;
   margin: 0 0 0.5rem 0;
 }
+
 main button:hover {
   background-color: rgb(16, 140, 255);
   color: white;
@@ -121,6 +125,16 @@ hr {
   margin: 1.5rem 0;
   border-color: #dadada;
 }
+
+/* Dish CSS Rules */
+
+#dishes-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+
 .dish {
   display: flex;
   flex-direction: row;
@@ -143,4 +157,44 @@ hr {
 }
 .dish h5:not(:last-child) {
   margin: 0 0 0.5rem 0;
+}
+
+footer{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  bottom:0;
+  border-top: 1px solid lightgray;
+}
+#footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: var(--content_margin);
+}
+
+footer button{
+  border: 0;
+  background-color: transparent;
+}
+
+.add-button{
+  height: 5rem;
+  width: 5rem;
+  background-color: #F4F4F4;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); 
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  margin: -4rem 0;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #dishes-container{
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dish{
+  width: calc(50% - 2rem);
+}
 }
