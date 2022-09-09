@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 16px; 
+}
+
+.title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slideshow{
+    margin-top: 42px;
+}
+
+#pallini {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+}
+
+.title2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.title2 > p{
+    font-weight: 600;
+}
+
