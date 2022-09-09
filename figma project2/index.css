@@ -1,0 +1,54 @@
+
+@media  (max-width: 480px) {
+
+    .tutto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header{padding: 25px;
+        display: flex;
+        align-items: center;
+        gap:55% ;
+    }
+    header>.column{
+         /* dopo */}
+
+    .annunci{
+        padding-left: 25px;
+        display: flex;
+        margin-top: 35px;
+        gap: 50px;
+        overflow: auto ;
+    }
+    .annunci::-webkit-scrollbar {
+        display: none;
+    }
+
+    .annuncio{
+        width: 220px;
+    }
+    .annuncio > img{
+        width: 220px;
+        height: 300px;
+    }
+    #DescrizioneAnnuncio{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    }
+    .titolo{
+        flex-direction: column;
+    }
+    .imageButtons{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .imageButtons>img{
+        width: 80%;
+    }
+}
