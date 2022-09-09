@@ -20,25 +20,28 @@
 
     <!-- headr con foto profilo, nome dell'app e botton per la casella dei messaggi -->
     <header>
-        <button>
-            <img src="" alt="pfp" title="Profile Picture.. Yeah! IDK why that ''acronym''">
-        </button>
-        <h1>LITFIT</h1>
-        <button>
-            <img src="" alt="IN" title="Inbox">
-        </button>
+        <div>
+            <button>
+                <img src="" alt="pfp" title="Profile Picture.. Yeah! IDK why that ''acronym''">
+            </button>
+            <h1>LITFIT</h1>
+            <button>
+                <img src="" alt="IN" title="Inbox">
+            </button>
+        </div>
+
+        <hr>
+
+        <nav>
+            <button><code>‹<⟨❮</code></button>
+            <input type="date" name="" id="" value="TODAY">
+            <button><img src="" alt="Edita"></button>
+        </nav>
     </header>
 
-    <hr>
-
-    <nav>
-        <button><code>‹<⟨❮</code></button>
-        <input type="date" name="" id="" value="TODAY">
-        <button><img src="" alt="Edita"></button>
-    </nav>
 
     <!-- Indeciso se usare un `<progress>` or un `<div>` stiloso  -->
-    <div id="progress-bar"><progress min="0%" max="100%" value="10%"></progress> </div>
+    <div id="progress-bar"><progress min="0" max="100" value="10%"></progress> </div>
     <img src="" alt="Contattore Calorie">
 
     <!-- lista di bottone, alcune a espansion -->
@@ -50,9 +53,13 @@
     </ul>
 
     <!-- navbar delle schede principali -->
-    <nav>
+    <nav id="tab-bar">
         <ul>
-            <li>calendario</li>
+            <li>
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2H17V1C17 0.45 16.55 0 16 0C15.45 0 15 0.45 15 1V2H5V1C5 0.45 4.55 0 4 0C3.45 0 3 0.45 3 1V2H2C0.9 2 0 2.9 0 4V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM17 20H3C2.45 20 2 19.55 2 19V7H18V19C18 19.55 17.55 20 17 20Z" fill="white"/>
+                    </svg>
+            </li>
             <li>posizione</li>
             <li>amici</li>
             <li>favoriti</li>

@@ -16,13 +16,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header,
-nav,
-nav ul {
+header div,
+header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 1.3rem;
     height: 3rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+#tab-bar ul {
+    border-top: 0.2rem solid aliceblue;
+    background: #525252;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
