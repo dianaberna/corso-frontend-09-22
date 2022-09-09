@@ -1,58 +1,146 @@
+:root {
+  --margin: 1.5rem;
+}
+
 html {
   font-size: 100%;
   font-family: Work Sans, sans serif;
 }
 
-body
-{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-button {
+header button {
   border-radius: 100%;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
   border: 0;
   background-color: white;
 }
 
 #buttonContainer {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+  margin-right: var(--margin);
 }
-#insideImageContent{
-    background-image: url("ce3a9bb8e7c0db43aee96eee627d74dc.jpg");
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 20rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    border-radius: 40px;
+#insideImageContent {
+  background-image: url("Assets/ce3a9bb8e7c0db43aee96eee627d74dc.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20rem;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  border-radius: 0 0 40px 40px;
 }
 img {
   width: 100%;
   top: 0;
   left: 0;
-
 }
 
-#timeValue
-{
-  margin-bottom: 2rem;
-  margin-left: 2rem;
+h1 {
+  font-weight: 600;
+  font-size: larger;
+}
+h3 {
+  font-weight: 600;
+  font-size: medium;
+}
+h4 {
+  font-weight: 500;
+  font-size: small;
+}
+
+#timeValue {
+  margin-bottom: var(--margin);
+  margin-left: var(--margin);
   align-self: flex-start;
   padding: 0.8rem;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   color: white;
-  font-size: 1.2rem;
+  font-size: medium;
+}
+
+main {
+  padding: 1rem var(--margin) 1rem var(--margin);
+}
+
+#rating-delivery div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.icons,
+#infoIcon {
+  height: 1rem;
+  width: auto;
+}
+#rating-delivery h4 {
+  margin: 0rem 1.5rem 0 0.5rem;
+}
+main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  background-color: #c4c4c4;
+  border: 0;
+  font-family: inherit;
+  border-radius: 0.25rem;
+  margin: 0 0 0.5rem 0;
+}
+main button:hover {
+  background-color: rgb(16, 140, 255);
+  color: white;
+}
+main button + div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+#infoIcon {
+  height: 0.8rem;
+}
+#infoIcon + span {
+  font-weight: 400;
+  font-size: small;
+}
+hr {
+  margin: 1.5rem 0;
+  border-color: #dadada;
+}
+.dish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0 1rem 0;
+}
+.dish img {
+  width: 3em;
+  margin: 0 0 0 1rem;
+}
+.dish p {
+  font-size: x-small;
+  font-weight: 400;
+}
+.dish h5 {
+  margin: 0;
+}
+.dish h5:not(:last-child) {
+  margin: 0 0 0.5rem 0;
 }
