@@ -16,6 +16,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+section {
+    margin: 2rem;
+}
+
 header div,
 header nav {
     display: flex;
@@ -34,6 +38,8 @@ ul li {
     border-top: 0.2rem solid aliceblue;
     background: #525252;
     width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
