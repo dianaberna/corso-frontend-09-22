@@ -15,10 +15,11 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     z-index: 0;
+    padding-bottom: 3rem;
 }
 
 button {
-    background-color: #000;
+    background-color: #303030;
     height: 3.2rem;
     width: 3.2rem;
     border: none;
@@ -27,6 +28,13 @@ button {
     justify-content: center;
     /* flex-direction: row-reverse; */
     align-self: center;
+}
+
+button:active,
+button:hover,
+.function:active,
+.function:hover {
+    background-color: #595959;
 }
 
 button img,
@@ -42,10 +50,10 @@ header div,
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.3rem;
-    height: 5rem;
+    /* gap: 1.3rem; */
+    height: 4rem;
 }
 
 #litfit {
@@ -58,18 +66,62 @@ header nav {
 
 main {
     /* height: 3000px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 section {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+    justify-content: center;
+    align-items: center;
     gap: 0.9rem;
 }
 
+
+/* TENTATIVO di customizzare la progress bar */
+
+
+/*
+#progress-bar {
+    position: absolute;
+    height: 0.4rem;
+    color: #f259005a;
+    background-color: #f259005a;
+}
+*/
+
+#calories #rail {
+    height: 9rem;
+    width: 9rem;
+    border: 0.4rem solid #f259005a;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calories h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+#calories p {
+    display: flex;
+    justify-content: center;
+    color: #ababab;
+    font-size: 1.2rem;
+}
+
 .function {
-    border: 0.1rem solid white;
+    border: 0.1rem solid #ababab;
     border-radius: 0.5rem;
     height: 5rem;
     padding: 0 1.2rem;
@@ -83,6 +135,11 @@ section {
     grid-template-rows: 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 0px;
+}
+
+.function:hover,
+.function:active {
+    border: 0.1rem solid white;
 }
 
 .circle {
@@ -115,4 +172,9 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#tab-bar li:hover,
+#atab-bar li:active {
+    background: #696969;
 }
