@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
 /* Reset  */
 
@@ -11,13 +11,24 @@ body {
     /* Reset (maybe) */
     /* margin: 0;
     padding: 0; */
-    /* background-color: black;
-    color: white; */
+    background-color: #292929;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 section {
     margin: 2rem;
+}
+
+button {
+    height: 3.2rem;
+    width: 3.2rem;
+    border: none;
+    border-radius: 50%;
+}
+
+ul li {
+    list-style: none;
 }
 
 header div,
@@ -27,11 +38,15 @@ header nav {
     justify-content: space-around;
     align-items: center;
     gap: 1.3rem;
-    height: 3rem;
+    height: 5rem;
 }
 
-ul li {
-    list-style: none;
+#litfit {
+    font-size: 38px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: #000;
 }
 
 main {
