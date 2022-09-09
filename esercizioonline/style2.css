@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+h1 {
+    /* Playing now */
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    color: black;
+}
+div {
+    position: absolute;
+    background: url(.jpg), #C4C4C4;
+}
+h2 {
+    /* Hello darkness my old friend */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+    color: black;
+}
+h3 {
+    /* Umm, Idk */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    align-items: center;
+    color: black;
+}
+body {
+    font-family: 'Work Sans';
+}
