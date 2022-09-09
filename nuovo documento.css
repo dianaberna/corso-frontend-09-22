@@ -43,18 +43,26 @@ margin-right: 20%;
 table {
 
     margin-top:15%;
-    margin-left: 2.5%;
+   color: rgb(255, 255, 255);
+    font-size:x-large;
+    text-align: center;
 }
 
-ul {
-    color: rgb(255, 255, 255);
-    font-size:xx-large;
-    margin-top: 30%;
-    
-    
-    
-        
-    
+button {
+
+   font-family: Poppins; 
+   margin-top:50%;
+   border-radius: 30px;
+   background-color:#3A595D;
+   color: #ffffff;
+   padding-left: 33%;
+   padding-right: 33%;
+   line-height: 260%;
+   
+}
+
+p {
+    color: #A8A8A8;
 }
 
 
