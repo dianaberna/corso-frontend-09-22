@@ -14,7 +14,7 @@ header {
     margin-top: 5rem;
     margin-left: 3rem;
     margin-right: 3rem;
-    gap: 26rem;
+    gap: 20rem;
     height: 2rem;
     padding-bottom: 2rem;
 }
@@ -71,7 +71,7 @@ h1 {margin-left: 3rem;
     margin-left: 2.5rem;
 }
 
-.pannel {margin-left: 3rem;
+.pannel {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -100,5 +100,3 @@ h5 {
     font-weight: 500;
 }
 
-.sfumatura {
-    background-image: linear-gradient(top right, #000000 0%, #000000 100%);}
