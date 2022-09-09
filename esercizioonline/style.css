@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+h1 {
+    /* Special Expertise from Us */
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(222, 236, 249, 1);
+}
+    hr {   
+    /* Line 11 */
+    width: 70px;
+    height: 0px;
+    border: 4px solid #F03A76;
+}
+    h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+/* or 211% */
+    text-align: center;
+    color: rgba(199, 224, 250, 1);
+}
+    body {
+    font-family: 'Lato';
+}
