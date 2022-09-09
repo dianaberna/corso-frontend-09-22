@@ -1,16 +1,60 @@
+body {background-color : rgb(0, 0, 0);
+font-family:Poppins;
+}
+
+
+
+
+
 
 hr{
-    width:100% ;
-    color: black;
-    background-color: black;
+    width:95% ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     
 }
 
-p {
+div hr{
+    width:23% ;
+    color: rgb(0, 0, 0);
+    background-color: #3A595D;
+    border-color: #3A595D;
+    position: absolute; 
+    
+}
+
+h3 { 
 
     font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    
 
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+line-height: 140%;
+font-size:medium;
+margin-right: 20%;
+
+}
+
+table {
+
+    margin-top:15%;
+    margin-left: 2.5%;
+}
+
+ul {
+    color: rgb(255, 255, 255);
+    font-size:xx-large;
+    margin-top: 30%;
+    
+    
+    
+        
+    
 }
 
 
