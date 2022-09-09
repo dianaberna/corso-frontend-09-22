@@ -1,5 +1,11 @@
-@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Bold.ttf");
-@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Regular.ttf");
+/*@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Bold.ttf");
+@import url("E:\progetti git\corso-frontend-09-22\Prova Figma\Lato-Regular.ttf");*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+}*/
 
 body {
     font-family: "Lato";
@@ -52,26 +58,25 @@ body {
     right: 100px;
     margin-left: 50px;
     
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: #C7E0FA;
-    ;
 } 
 
 /* prova stile della riga di divisione */
 hr{
     width:120px; 
-    height:150px; 
+    height:5px; 
     text-align:left; 
     margin-left:0; 
     color:#683CB8; 
-    border-color:#683CB8; 
-    background-color:#683CB8; 
-    border-radius: 100;
+    border-radius: 100px;
+    border: 0 ;
+    background-color: #683CB8;
 }
 
 button{
@@ -90,7 +95,7 @@ button{
 
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 24px;
 }
 
