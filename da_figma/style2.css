@@ -5,6 +5,7 @@
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
     font-size: 10px;
+    color: #333333;
 }
 h1{
     font-size: 2rem;
@@ -37,4 +38,130 @@ header > div{
     border-style: none;
     border-radius: 2.5rem;
     background-color: #C4C4C4;
+}
+.btn_profile:hover{
+    background-color: #595959;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+#action{
+    margin-top: 1.5rem;
+}
+#action div{
+    display: flex;
+    gap: 1.5rem;
+}
+#action input{
+    display: none;
+}
+#action label{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.5% 4%;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 1.6rem;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#action input:checked + label{
+    border: 0.1rem solid #333333;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.find{
+    margin-top: 2.4rem;
+}
+.find > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.find form{
+    display: flex;
+    align-items: center;
+}
+#find_text{
+    width: 28.1rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #525252;
+    border-style: none;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    padding-left: 4.9rem;
+}
+#find_text:focus{ /* ???? */
+    border-style: none;
+    outline: none;
+}
+.find .magnifier{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 2rem;
+}
+.find .filter{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+
+
+.category{
+    margin-top: 1.8rem;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.category div{
+    width: 9rem;
+    height: 9rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #d0d0d0;
+    border-radius: 0.4rem;
+    margin-right: 1.6rem;
+    display: flex;
+    align-items:flex-end;
+    padding-left: 0.9rem;
+    padding-bottom: 0.6rem;
+}
+
+
+.notify{
+    margin-top: 1.8rem;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.notify .content{
+    width: 29rem;
+    height: 14rem;
+    background-color: #F4F4F4;
+    padding: 1.6rem 3.25rem;
+    margin-right: 1.2rem;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+}
+.notify .content div{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.notify .content p{
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
 }
