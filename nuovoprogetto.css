@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Roboto&display=swap');
+@media screen and(max-width:480px){}
+html,body{margin:0 ;padding:0;}
+body{ 
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+    .contenitore{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+   
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+ }
+    
+#bottone {
+    background: none;
+    border-radius: 24px;
+    border-color: red;
+    border-width: 1px ;
+    size-adjust: 50px;
+   /* padding-left: 150px;
+    padding-right: 150px;*/
+    color:red;
+   /* margin-top: 120px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-style: solid;
+    
+    
+}
+
+span{
+    font-size: smaller;
+
+}
+
+
+
+
