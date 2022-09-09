@@ -2,22 +2,24 @@ body {
     background-color: black;
     color: white;
 }
-header {    display: flex;
-}
+
 h1 { 
     font-size: 70px;
-    margin-bottom: -20px;
-    
+    margin: 0x 700px 0px 30px;
 }
-span { color: purple;}
+
 h5 {
     font-weight: 400;
+    margin: 0x 700px 0px 30px;
 
 }
 button {
-    background-color:purple;
+    width:500px;
+    background-color: red;
     color: white;
-    padding: 10px 20px 10px 20px;
+   
+    margin: 0px 80px 60px 20px;
+    padding: 10px 20px 10px 35px;
     border-radius:50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -25,5 +27,6 @@ button {
 img {
     width: 700px;
     height: 700px;
+    margin: 0px 100px 0px 50px;
 }
 
