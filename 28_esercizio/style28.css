@@ -1,24 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-body {
+/* NAV > 600px */
+* {
+  /* box-sizing: border-box; */
   font-family: "Poppins", sans-serif;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
+
 .logoPng {
   height: 20px;
 }
 nav > div {
   margin: 2px;
-  width: 20%;
+}
+
+a {
+  color: black;
 }
 
 .ricerca {
-  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .searchBar {
@@ -37,6 +46,9 @@ nav > div {
 .searchBar:hover {
   box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 60%);
   border-color: #ffffff;
+}
+.filtroRicerca {
+  float: left;
 }
 button > svg {
   height: 22px;
@@ -60,4 +72,66 @@ button > div {
   bottom: 28px;
   left: 20px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+}
+
+/* NAV <= 600px */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+  }
+  nav > div {
+    margin: 2px;
+  }
+  .searchBar {
+    width: 260px;
+  }
+  .filtroRicerca {
+    margin-left: 20px;
+  }
+  .cart {
+    position: absolute;
+    left: 80%;
+    bottom: 90%;
+  }
+}
+
+/* AREA CATEGORIE  */
+.filtroCategorie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 20px;
+}
+.filtroCategorieTesto {
+  text-decoration: underline;
+  color: lightgrey;
+}
+.categorie a {
+  text-decoration: none;
+}
+.categorie {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.categoria {
+  display: flex;
+  height: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 60%);
+}
+.nomeCategoria {
+  margin-left: 5px;
+}
+.imgCategoria {
+  margin-right: 5px;
 }
