@@ -1,0 +1,84 @@
+html { font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    gap: 25rem;
+
+}
+.menudx {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 2rem;
+}
+
+.menusx {display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+
+}
+p,h3 {font-size: 1.5rem;}
+
+.sottomenu {display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    margin-left: 5rem;
+
+}
+p >span {
+    text-decoration: none;
+    border-bottom: 0.3rem solid black;
+    padding-bottom: 1.8rem;
+}
+
+h1 {margin-left: 5rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+.slider {display: flex;}
+.box {margin-top: 1rem;
+    margin-left: 5rem;
+}
+.box2 {margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+.pannel {margin-left: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0.6;
+}
+h4 {
+    margin-top: -7rem;
+    margin-left: 1.5em;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+#pannello1 {padding-bottom: 2rem;}
+#pannello2 {padding-bottom: 2rem;}
+#pannello3 {
+    padding-bottom: 2rem;}
+
+h5 {
+    margin-top: -5rem;
+    margin-left: 1.5em;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.sfumatura {
+    background-image: linear-gradient(top right, #000000 0%, #000000 100%);}
