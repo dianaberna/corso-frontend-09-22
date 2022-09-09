@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* CALENDARIO */
+
+.calendario-container {
+  display: flex;
+  justify-content: center;
+}
+.calendario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: red;
+  height: 50vh;
+  width: 80%;
+}
+/* area selezione del mese/anno */
+.data {
+  display: flex;
+  padding: 2px;
+  margin: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.meseAnno {
+  position: relative;
+  right: 250%;
+}
+.selezioneMese {
+  position: relative;
+  left: 250%;
+}
+.selezioneMese div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* area selezione delle settimane */
+.settimane {
+  background-color: white;
+  height: 35vh;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  /* CALENDARIO */
+  /* area selezione del mese/anno */
+  .meseAnno {
+    position: relative;
+    right: 20%;
+  }
+  .selezioneMese {
+    position: relative;
+    left: 20%;
+  }
+}
