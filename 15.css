@@ -1,93 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
 
-@media only screen and (max-width: 600px) {
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
     body {
+      font-family: 'Work Sans', sans-serif;
       background-color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+     
     }
-  }
+body>div{
+  padding:1rem;
+  
+
+}
+  
 
 .testosopra{
-    font-family: 'Work Sans', sans-serif;
+    
     text-align: center;
     font-weight: 700;
     size: 20px;
-    line-height: 22px;
+    padding-top: 2rem;
+    
 }
 
 .testosotto{
-    font-family: 'Work Sans', sans-serif;
+    
     font-weight: normal;
     text-align: center;
 }
 
-.bottone{
-    position: static;
-    background-color: white;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    width: 342px;
-    height: 70px;
-    left: 0px;
-    top: 0px;
-    padding-left: 31px;
+.contenitore{
+
+background-color: #f4f4f4;
+height: 4rem;
+box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+display: flex;
+padding-left: 1rem;
+padding-right: 1rem;
+align-items: center;
+margin-top: 4rem;
+
+
 }
 
+.bottone{
+   
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 1rem;
+    height: 70px;
+    }
+
 .numero{
-    font-family: 'Work Sans', sans-serif;
+    
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
+    
 
     /* 206-312-9956 */
     
-    position: sticky;
-    width: 96px;
-    height: 18px;
-    margin-top: -45px;
-    top: 20px;
-    left: 153px;
+    
+    
+    
+   
   }
 
   .linea{
-    position: absolute;
+    
     width: 26px;
     height: 0px;
-    left: 122px;
-    top: 204px;
-    bottom: 763px;
+    /*left: 122px;
+    top: 0px;
+    bottom: 763px;*/
 
-    border: 2px solid #D0D0D0;
+    border: 1px solid #D0D0D0;
     transform: rotate(90deg);
  }
 
-a{
-    background-color: #161616 ;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-   
-    position: absolute;
-    width: 342px;
-    height: 54px;
-    left: 24px;
-    top: 702px;
-}
+ input,select{
+  background: transparent;
+  border: 0;
+ }
 
- .sendcodetesto{
-    font-family: 'Work Sans', sans-serif;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 22px;
-
-    color: white;
-
-    position: absolute;
-    width: 342px;
-    height: 54px;
-    left: 135px;
-    top: 697px;
-    bottom: 52px;
-    right: 24px;
-}
- 
+ @media screen and (min-width: 600px) {
+  .contenitore{
+    width: 30rem;
+  }
+ }
