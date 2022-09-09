@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.4rem;
+}
+body{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    padding: 2.4rem;
+    max-width: 390px;
+    max-height: 844px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 2rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+header > div{
+    display: flex;
+    gap: 2.1rem;
+}
+.btn_profile{
+    width: 5rem;
+    height: 5rem;
+    border-style: none;
+    border-radius: 2.5rem;
+    background-color: #C4C4C4;
+}
