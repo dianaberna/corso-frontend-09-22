@@ -104,7 +104,7 @@ button > div {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   height: 20px;
 }
 .filtroCategorieTesto {
@@ -122,7 +122,8 @@ button > div {
 }
 .categoria {
   display: flex;
-  height: 20px;
+  background-color: #d0d0d0;
+  height: 30px;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
@@ -134,4 +135,91 @@ button > div {
 }
 .imgCategoria {
   margin-right: 5px;
+}
+
+/*  AREA PRODOTTI */
+.areaProdotti {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.schedaProdotto {
+  width: 340px;
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+}
+.fotoProdotto {
+  background-image: url(imgSvg/Rectangle\ 102.png);
+  border-radius: 12px;
+  width: 340px;
+  height: 180px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* Caricamento foto prodotto */
+
+#user1 {
+  background-image: url(imgSvg/Rectangle\ 102.png);
+}
+#user2 {
+  background-image: url(imgSvg/pizza.jpg);
+  background-size: contain;
+}
+
+.fotoProdotto > div {
+  background-color: rgba(82, 82, 82, 0.8);
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.testoProdotto {
+  margin: 2px;
+  padding: 5px;
+  width: 258px;
+}
+.costoSpedizioneProdotto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+.costoSpedizioneProdotto > span {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.tagProdotto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tagProdotto > div {
+  border-radius: 4px;
+  background-color: #d0d0d0;
+  padding: 5px;
+  font-size: 12px;
+  margin: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .areaProdotti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FOOTER */
+.footer {
+  height: 90px;
+  background-color: red;
 }
