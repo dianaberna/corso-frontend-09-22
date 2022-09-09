@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap");
+
+body {
+    background-color: #333333;
+    font-family: "Roboto", sans-serif;
+  }
+
+  svg{
+    width: 6%;
+    height: 10%;
+  }
+
+  #search
+  {
+    border-radius: 7px;
+    background-color: #A8A8A8;
+    
+  }
+  nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+nav >div >div{
+    width: 70%;
+}
+
