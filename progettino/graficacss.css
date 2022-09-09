@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+    button{
+        background-color: black ;
+        border-radius: 20px;
+        border: 0px;
+        padding: 10px 20px 10px 20px;
+        color: white;
+    }
+
+    div{
+        background-color: white;
+        width: 300px;
+        padding: 7px;
+        border-radius: 30px;
+    }
+    input{
+        border: 0px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
