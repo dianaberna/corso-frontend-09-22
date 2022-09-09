@@ -1,5 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
 
-p{
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: white;
+    }
+  }
+
+.testosopra{
     font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    size: 20px;
+    line-height: 22px;
 }
+
+.testosotto{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.bottone{
+    position: static;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: 342px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    padding-left: 31px;
+}
+
+.numero{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* 206-312-9956 */
+    
+    position: sticky;
+    width: 96px;
+    height: 18px;
+    margin-top: -45px;
+    top: 20px;
+    left: 153px;
+  }
+
+  .linea{
+    position: absolute;
+    width: 26px;
+    height: 0px;
+    left: 122px;
+    top: 204px;
+    bottom: 763px;
+
+    border: 2px solid #D0D0D0;
+    transform: rotate(90deg);
+ }
+
+a{
+    background-color: #161616 ;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+   
+    position: absolute;
+    width: 342px;
+    height: 54px;
+    left: 24px;
+    top: 702px;
+}
+
+ .sendcodetesto{
+    font-family: 'Work Sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: white;
+
+    position: absolute;
+    width: 342px;
+    height: 54px;
+    left: 135px;
+    top: 697px;
+    bottom: 52px;
+    right: 24px;
+}
+ 
