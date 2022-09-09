@@ -13,6 +13,10 @@ h2{
     font-size: 16px; 
 }
 
+.containers {
+    margin-bottom: 30px;
+}
+
 .title{
     display: flex;
     justify-content: space-around;
@@ -35,5 +39,27 @@ h2{
 }
 .title2 > p{
     font-weight: 600;
+}
+
+.reviews {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.space > h2{
+    margin-bottom: 10px;
+}
+#scorereview{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#bold {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 30px;
 }
 
