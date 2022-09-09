@@ -1,0 +1,24 @@
+*{
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.followers-views-cont {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.profile-info img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
