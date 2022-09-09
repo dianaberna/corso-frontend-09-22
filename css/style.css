@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 100px 0 100px;
+}
+
+/* h1 > span {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #ff912b;
+
+} */
+h2 span{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #ff912b;
+  text-decoration-thickness:5px ;
+} 
+h3,h4{
+  text-align: center;
+}
+
+
+.box{
+  display: flex;
+
+  gap: 200px;
+ position: absolute;
+ 
+  
+}
+.box > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #furbo{
+    background: transparent;
+    border-radius: 10px;
+    height: 10px;
+    width: 255px;
+    box-shadow: 0 55px 0 0 #000;
+} */
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  width: 356px;
+  height: 385px;
+  border-radius: 10px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.card div.score {
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-weight: bold;
+  position: absolute;
+  margin: 15px 0 0 15px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+div.score svg {
+  padding-left: 5px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2f2105;
+  margin-left: 20px;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7e7d7a;
+  align-items: center;
+}
+
+.description p {
+  width: 50%;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.description > button {
+  background-color: #ff912b;
+  border: 0;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description > button > svg {
+  width: 20px;
+  fill: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-inline-start: 0px;
+}
