@@ -16,10 +16,11 @@ p{
 body{
     margin-top: 5rem;
     margin-left: 5rem;
+    margin-bottom: 5rem;
     padding: 2.4rem;
     max-width: 390px;
     max-height: 844px;
-    border: 1px solid rgb(182, 182, 182);
+    border: 4px solid rgb(0, 0, 0);
     border-radius: 2rem;
 }
 header{
@@ -38,10 +39,10 @@ header > div{
     border-style: none;
     border-radius: 2.5rem;
     background-color: #C4C4C4;
+    transition: 0.3s ease-in-out;
 }
 .btn_profile:hover{
     background-color: #595959;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -137,11 +138,15 @@ header > div{
     align-items:flex-end;
     padding-left: 0.9rem;
     padding-bottom: 0.6rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.category div:hover{
+    opacity: 0.5;
 }
 
-
 .notify{
-    margin-top: 1.8rem;
+    margin-top: 1.9rem;
     display: inline-flex;
     flex-wrap: nowrap;
 }
@@ -164,4 +169,67 @@ header > div{
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6rem;
+}
+
+
+.sale{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+.sale a{
+    transition: 0.3s ease-in-out;
+}
+.sale a:hover{
+    opacity: 0.5;
+}
+
+
+#products{
+    margin-top: 1.5rem;
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    transition: 0.2s ease-in-out;
+}
+.container:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.timing{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.6rem 2.4rem;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 3rem;
+    margin-left: 18rem;
+    margin-top: -3.5rem;
+}
+.timing div, .res_name{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.timing p, .res_desc_rate .res_desc, .res_info{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.res_desc_rate{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.res_desc_rate div svg{
+    margin-right: 1.13rem;
+}
+.res_info{
+    margin-top: 0.5rem;
+}
+.res_desc_rate .res_desc{
+    padding-right: 1rem;
 }
