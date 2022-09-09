@@ -9,17 +9,28 @@ body {
     width: 452px;
     height: 210px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.nome-recensore {
-    margin-left: 25px;
-    margin-top: 30px;
-    margin-right: 214 px;
-    width: 140px;
-    height: 21px;
-   
+.box > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
+.box > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.box > div > div > p {
+    font-weight: bold;
+    margin-bottom: 2px;
+
+}
 .img-recensore {
     width: 59px;
     height: 60px;
