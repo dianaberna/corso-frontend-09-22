@@ -34,10 +34,20 @@ ul li {
     list-style: none;
 }
 
+main {
+    /* height: 3000px; */
+}
+
+#tab-bar {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0;
+}
+
 #tab-bar ul {
     border-top: 0.2rem solid aliceblue;
     background: #525252;
-    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-around;
