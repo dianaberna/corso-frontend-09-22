@@ -221,5 +221,34 @@ button > div {
 /* FOOTER */
 .footer {
   height: 90px;
-  background-color: red;
+  box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 60%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  /* non so e lasciarlo perchè da cellulare non funziona */
+  position: relative;
+  top: 80px;
+}
+
+/* .footer > div {
+} */
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  height: 82px;
+  width: 82px;
+  border-radius: 50px;
+  position: relative;
+  bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    position: relative;
+    top: 10px;
+  }
 }
