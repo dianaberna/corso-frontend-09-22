@@ -2,34 +2,50 @@ html { font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max widht: 480px) 
+{
+    
+}
+
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     margin-top: 5rem;
-    margin-left: 5rem;
-    gap: 25rem;
-
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 26rem;
+    height: 2rem;
+    padding-bottom: 2rem;
+}
+h3 {
+    margin-top: 0rem;
+    font-size: 1.5rem;
 }
 .menudx {
+    max-height: 1.5rem;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content:flex-start;
     gap: 2rem;
 }
 
-.menusx {display: flex;
+.menusx {
+    max-height: 2rem;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 2rem;
 
 }
-p,h3 {font-size: 1.5rem;}
+p {font-size: 1.5rem;}
 
 .sottomenu {display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 2.5rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
 
 }
 p >span {
@@ -38,27 +54,31 @@ p >span {
     padding-bottom: 1.8rem;
 }
 
-h1 {margin-left: 5rem;
+h1 {margin-left: 3rem;
     margin-top: 2rem;
     font-weight: 500;
     font-size: 2rem;
 
 }
-.slider {display: flex;}
+.slider {
+    display: flex;
+}
+
 .box {margin-top: 1rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 .box2 {margin-top: 1rem;
     margin-left: 2.5rem;
 }
 
-.pannel {margin-left: 5rem;
+.pannel {margin-left: 3rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    opacity: 0.6;
+    opacity: 0.7;
 }
+
 h4 {
     margin-top: -7rem;
     margin-left: 1.5em;
