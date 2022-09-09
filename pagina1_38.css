@@ -10,15 +10,76 @@
   flex-direction: column;
 }
 
+.container-followers {
+  display: flex; 
+  align-items: center; 
+  justify-content:  center;
+}
+
 .followers-views-cont {
   display:flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 140px;
   margin-top: 20px;
 }
 
 .profile-info img {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.container {
+  display: inline-block;
+
+  
+}
+
+.buttons button {
+  width: 80px;
+  height: 38px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(208, 208, 208);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.col img {
+  width: 18px;
+  margin-right: 7px;
+}
+
+.col h3 {
+  font-size: 14px;
+  color: grey;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  margin-top: 20px;
+}
+
+.grid img {
+  width: 150px;
+  height: 150px;
 }
