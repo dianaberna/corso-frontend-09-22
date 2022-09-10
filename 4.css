@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;900&display=swap');
 
 :root {
-    --content_DARKGREY: #525252;
-    --content_LIGHTGREY: #c3c3c3;
-    --content_TEAL: #00FFE3;
+    --primary-color: #525252; /* DARKGREY */
+    --secondary-color: #c3c3c3; /* LIGHTGREY */
+    --tertiary-color: #00FFE3; /* TEAL */
 }
 
 * {
@@ -13,11 +13,24 @@
 
 body  {
     font-family: 'Work Sans', sans-serif;
+/* 
+    background-color: #000;
+    color: #fff;
+*/
 }
 
 button {
     border-style: none;
     background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 #ui-nav {
@@ -35,10 +48,15 @@ button {
 }
 
 #ui-nav nav button {
-    background-color: var(--content_LIGHTGREY);
+    background-color: var(--secondary-color);
     width: 3rem;
     height: 3rem;
     border-radius: 1.5rem;
+}
+
+#ui-nav nav button:hover {
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 #artist {
