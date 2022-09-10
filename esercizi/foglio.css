@@ -1,0 +1,18 @@
+body{background-color:bisque}
+
+    #titolo{
+        font-size: 80px; 
+    
+        background-color:rosybrown;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-bottom: 10cm;border-top: 10cm;
+        
+
+
+        }
+
+
+        .sped{
+         font-size:50px;
+         background-color:blueviolet;
+        }
