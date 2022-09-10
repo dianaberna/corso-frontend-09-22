@@ -1,0 +1,57 @@
+html, body { padding: 0; margin:0 ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    
+    font-family: "WorkSans", sans-serif; 
+    color: #000000; 
+    
+}
+
+h1 { font-size: 14px;
+     display: flex;
+     align-items: center;
+   
+    }
+
+
+    p { font-size: 12px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    
+   .first { font-size: 36px;
+        text-align:left;
+        display: flex;
+        align-items: center;
+        padding-right: 31px;
+        padding-left: 25px;
+        padding-top: 26px;
+        padding-bottom: 30px;
+    }
+   
+   .Random { font-size:  24px;
+             text-align: left;
+             font-weight: bold;
+             padding-left: 25px;
+             padding-top: 14px;
+           }
+
+
+   .Ran { font-size:  24px;
+    text-align: right;
+    font-weight: lighter;
+    padding-left: 50px;
+      }
+      
+.Ran2 { font-size:24px;
+    text-align: right;
+    font-weight: lighter;
+    padding-right: 59px;
+    padding-top: 4px;
+    padding-bottom: 4px
+}
