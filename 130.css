@@ -86,15 +86,12 @@ section {
 
 /* TENTATIVO di customizzare la progress bar */
 
-
-/*
 #progress-bar {
     position: absolute;
     height: 0.4rem;
     color: #f259005a;
     background-color: #f259005a;
 }
-*/
 
 #calories #rail {
     height: 9rem;
