@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.balance-container {
+  display: flex;
+  align-items: center;
+}
+
+.balance-container p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.balance-container p {
+  margin-right: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.rectangle-container {
+  margin-right: 35px;
+}
+
+.rectangle-container img {
+  width: 43px;
+}
+
+.current-money {
+  font-weight: 600;
+}
+
+.line {
+  border-bottom: 5px solid rgb(208, 208, 208);
+  margin-top: 15px;
+}
+
+.card-title {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card1 {
+  width: 159px;
+  height: 222px;
+  border: none;
+  background-color: rgb(208, 208, 208);
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position:relative;
+}
+
+ .card1 img {
+  position: absolute;
+ }
+
+ .v1 {
+  bottom: 0px;
+ }
+
+ .v2 {
+  right: 30px;
+  bottom: 160px
+ }
+
+ .v3 {
+  right: 25px;
+  bottom: 10px;
+ }
+
+ .v4 {
+  bottom: 10px;
+  right: 12px;
+ }
+
+.card2 {
+  width: 159px;
+  height: 222px;
+  border: none;
+  background-color: rgb(208, 208, 208);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.cards-container button {
+  transform: rotate(-90deg);
+}

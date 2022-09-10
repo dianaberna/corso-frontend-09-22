@@ -29,12 +29,6 @@
   margin-bottom: 20px;
 }
 
-.container {
-  display: inline-block;
-
-  
-}
-
 .buttons button {
   width: 80px;
   height: 38px;
@@ -75,11 +69,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   margin-top: 20px;
-}
-
-.grid img {
-  width: 150px;
-  height: 150px;
 }
