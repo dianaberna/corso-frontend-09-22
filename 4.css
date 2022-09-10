@@ -7,12 +7,17 @@
 }
 
 * {
-margin: 0 ;
-padding: 0 ;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 body  {
     font-family: 'Work Sans', sans-serif;
+}
+
+button {
+    border-style: none;
+    background-color: transparent;
 }
 
 #ui-nav {
@@ -21,18 +26,27 @@ body  {
     top: 0;
 }
 
-header nav {
+#ui-nav nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 4.2rem 1.2rem;
+    margin: 4.2rem 1.2rem 1.2rem 1.2rem;
 }
 
-header nav button {
+#ui-nav nav button {
     background-color: var(--content_LIGHTGREY);
     width: 3rem;
     height: 3rem;
-    border-style: none;
     border-radius: 1.5rem;
+}
+
+#artist {
+    width: 100vw;
+}
+
+.play-button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -2.7rem;
 }
