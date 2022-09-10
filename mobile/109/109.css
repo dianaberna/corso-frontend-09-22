@@ -1,0 +1,129 @@
+/* #region generali */        
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+html {
+	font-size: 16px;
+}
+body {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	color: #000000;
+	margin: 0;
+	padding: 6.25rem 1.5rem 0 1.5rem;
+}
+h2, p, h3 {
+	margin: 0;
+}
+div {
+	overflow: scroll;
+}
+/* #endregion generali */
+
+/* #region frame text */
+.frame {
+	display: flex;
+	flex-direction: column;
+}
+.titles {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding-bottom: 0.7rem;
+}
+.titles h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 2rem;
+}
+.frame > p:nth-child(2),
+.frame > p:nth-last-child(3),
+.option p:nth-child(2),
+.option p:nth-child(3),
+.option > p:last-child {
+	color: #262626;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.125rem;
+}
+/* best deal */
+.option > p:nth-child(3) {
+	background-color: #262626;	
+	border-radius: 4px;
+	color: #ffffff;
+	padding: 0.313rem;
+	width: fit-content;
+}
+/* #endregion frame text */
+
+/* #region container-wrap */
+.container-wrap {
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wrap {
+    align-items: center;
+	border: 0.188rem solid #000000;
+	border-radius: 24px;
+	display: flex;
+    flex-direction: row;
+	gap: 0 1.125rem;
+    justify-content: flex-start;
+	padding: 1rem 1.125rem;
+}
+.option {
+	display: flex;
+	flex-direction: column;
+	gap: 0.125rem 0;
+}
+.option h3 {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+}
+/* month membership */
+.option p:nth-child(2),
+#member {
+	color: #A8A8A8;
+	font-weight: 500;
+}
+/* start free trial */
+.frame > p:nth-last-child(3) {
+	font-weight: 600;
+}
+.frame button {
+	background-color: #262626;
+	border-radius: 64px;
+	color: #ffffff;
+}
+.frame > p:last-child {
+	font-size: 0.75rem;
+}
+/* #endregion container-wrap */
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem; 
+	align-items: center;
+	padding: 2.5rem 0 0 0;
+}
+.description p:first-child {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.125rem;	
+}
+.description p:last-child {
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	text-align: left;
+}
+.description button {
+	padding: 1.125rem 5.25rem;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.25rem;
+}

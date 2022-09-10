@@ -1,0 +1,64 @@
+/* #region Radio */
+.container-radio {
+	position: relative;
+	padding-left: 2.188rem;	
+	cursor: pointer;
+}
+.container-radio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.checkmark {
+	background: url("./unchecked.png") no-repeat center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1.563rem;
+	width: 1.563rem;
+}
+/* cambia sfondo del contenitore al check del bottone
+parent:has(>child input:checked)
+.container-radio input:checked -> genitore {
+	background-color: #F4F4F4;
+  } */
+.checkmark:after {
+	content: "";
+	display: none;
+	position: absolute;
+}
+.container-radio input:checked ~ .checkmark:after {
+	display: block;
+}
+.container-radio .checkmark:after {
+	background: url("./checked.png") no-repeat center;
+	top: 0;
+	left: 0;
+	width: 1.563rem;
+	height: 1.563rem;
+}
+/* #endregion Radio */
+
+/* #region Tooltip */
+.tooltip-container {
+	align-self: flex-end;
+	background-color: #0043ce;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 0.75rem;
+	margin: 0 0.563rem 0.563rem 0; 
+	padding: 0.5rem;
+	position: relative;
+}
+.tooltip-container::after {
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #0043ce;
+	content: "";
+	left: 20%;
+	top: 27px;	                            
+	position: absolute;
+}
+/* #endregion Tooltip */
