@@ -1,100 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap");
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: scroll;
-  
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
 }
-body::-webkit-scrollbar{
-  display: none;
+body::-webkit-scrollbar {
+    display: none;
 }
-
 
 body {
-  background-color: #333333;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  margin-left: 5%;
-  margin-right: 5%;
+    background-color: #333333;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 svg {
-  width: 6%;
-  height: 10%;
-  fill: white;
+    width: 6%;
+    height: 10%;
+    fill: white;
 }
 
 .image {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    align-items: center;
 }
 .image > p {
     width: 80%;
 }
 
 div.image + div {
-  margin-top: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img + p {
-  font-size: x-large;
-  text-align: center;
-  font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
 }
 
 img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 div.bodyText > p {
-  text-align: center;
-  line-height: 25px;
-  font-size: 0.9rem;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.9rem;
 }
 
 div.button {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 button {
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 150px;
-  width: 100%;
-  color: white;
-  margin-bottom: 5%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 150px;
+    width: 100%;
+    color: white;
+    margin-bottom: 5%;
 }
 
 footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
-@media  screen and (min-width: 780px){
- 
+@media screen and (min-width: 780px) {
     div.image + div {
         margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
+    }
+    div.image > svg {
+        width: 2%;
+    }
 
-      div.bodyText > p {
+    div.bodyText > p {
         text-align: center;
         line-height: 25px;
         font-size: 0.9rem;
-        margin-bottom:15%;
-      }
+        margin-bottom: 15%;
+    }
 
-      button{
+    button {
         width: 50%;
-      }
-    
+    }
 }
