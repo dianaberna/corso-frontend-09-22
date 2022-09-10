@@ -16,7 +16,7 @@ h2, p, h3 {
 	margin: 0;
 }
 div {
-	overflow: scroll;
+	overflow: auto;
 }
 /* #endregion generali */
 
