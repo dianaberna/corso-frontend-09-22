@@ -89,8 +89,21 @@ section {
 #progress-bar {
     position: absolute;
     height: 0.4rem;
+    /*
     color: #f259005a;
     background-color: #f259005a;
+    */
+}
+
+::-moz-progress-bar {
+    background-color: #f259005a;
+}
+
+progress {
+    background-color: transparent;
+    border-radius: 1rem;
+    height: 0.4rem;
+    overflow: scroll;
 }
 
 #calories #rail {
