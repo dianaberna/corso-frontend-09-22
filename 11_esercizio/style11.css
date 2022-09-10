@@ -77,13 +77,10 @@ body {
 #nomeGiorno {
   color: lightgray;
 }
-.tabgiorniSetnumeri-container {
-  margin-top: 20px;
-}
+
 #numeroGiorno:hover {
   background-color: rgba(211, 211, 211, 0.2);
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .giorniSet > span {
@@ -94,15 +91,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .giorniSetNumeri > span {
-  margin-left: 20px;
-  margin-right: 18px;
-}
-.spazioGiorni {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  width: 10%;
+  padding: 20px;
 }
 
 /* Selezione orario */
@@ -162,7 +155,34 @@ body {
   background-color: white;
   border-radius: 8px;
 }
+.filtroSchedule {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.prenotazioni-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.prenotazioneImpegno {
+  width: 100%;
+
+  background-color: green;
+  border-radius: 12px;
+}
+.fotoPrenotazione {
+  height: 100px;
+  width: 100px;
+}
+
+/* 
+<div class="fotoPrenotazione"></div>
+        <div class="nomePrenotazione"></div>
+        <div class="dataPrenotazione"></div> */
 @media only screen and (max-width: 600px) {
   /* CALENDARIO */
   /* area selezione del mese/anno */
