@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;900&display=swap');
+
+:root {
+    --content_DARKGREY: #525252;
+    --content_LIGHTGREY: #c3c3c3;
+    --content_TEAL: ##00FFE3;
+}
+
+* {
+margin: 0 ;
+padding: 0 ;
+}
+
+body  {
+    font-family: 'Work Sans', sans-serif;
+}
