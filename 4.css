@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;900&display=swap');
-
 :root {
-    --primary-color: #525252; /* DARKGREY */
-    --secondary-color: #c3c3c3; /* LIGHTGREY */
-    --tertiary-color: #00FFE3; /* TEAL */
+    --primary-color: #525252;
+    /* DARKGREY */
+    --secondary-color: #c3c3c3;
+    /* LIGHTGREY */
+    --tertiary-color: #00FFE3;
+    /* TEAL */
 }
 
 * {
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
-body  {
+body {
     font-family: 'Work Sans', sans-serif;
-/* 
+    /*
     background-color: #000;
     color: #fff;
 */
@@ -66,5 +68,25 @@ button:hover {
 .play-button {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -2.7rem;
+    margin: -2.7rem 1.2rem 0 0;
+}
+
+#song-album {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.3rem;
+    overflow: scroll;
+}
+
+.album-card {
+    width: 40vw;
+}
+
+.album-frame {
+    width: 28vw;
+    height: 28vw;
+    background-color: var(--primary-color);
+    border: 1rem solid var(--secondary-color);
+    border-radius: 0.4rem;
 }
