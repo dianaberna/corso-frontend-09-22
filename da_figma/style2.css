@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-
-*{
+*{/* 
     margin: 0px;
-    padding: 0px;
+    padding: 0px; */
     font-family: 'Work Sans', sans-serif;
     font-size: 10px;
     color: #333333;
@@ -13,16 +12,6 @@ h1{
 p{
     font-size: 1.4rem;
 }
-body{
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-    padding: 2.4rem;
-    max-width: 390px;
-    max-height: 844px;
-    border: 4px solid rgb(0, 0, 0);
-    border-radius: 2rem;
-}
 header{
     display: flex;
     justify-content: space-between;
@@ -32,6 +21,10 @@ header{
 header > div{
     display: flex;
     gap: 2.1rem;
+    align-items: center;
+}
+header > div h1, p{
+    margin: 0;
 }
 .btn_profile{
     width: 5rem;
@@ -66,6 +59,8 @@ header > div{
     align-content: center;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    border: 0.1rem solid #fff;
+    transition: 0.3s ease-in-out;
 }
 #action input:checked + label{
     border: 0.1rem solid #333333;
@@ -77,7 +72,7 @@ header > div{
 .find > div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .find form{
     display: flex;
@@ -103,22 +98,26 @@ header > div{
     background: transparent;
     cursor: pointer;
     position: absolute;
-    margin-left: 2rem;
+    margin-left: 1.2rem;
 }
 .find .filter{
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     cursor: pointer;
-    margin-right: 1rem;
+    padding-left: 1.3rem;
 }
 .category{
     margin-top: 1.8rem;
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    overflow: auto;
+    justify-content: flex-start;
+}
+.category::-webkit-scrollbar{
+    display: none;
 }
 .category div{
-    width: 9rem;
-    height: 9rem;
+    min-width: 9rem;
+    min-height: 9rem;
     font-size: 1.4rem;
     font-weight: 600;
     background-color: #d0d0d0;
@@ -135,13 +134,18 @@ header > div{
     opacity: 0.5;
 }
 .notify{
-    margin-top: 1.9rem;
-    display: inline-flex;
-    flex-wrap: nowrap;
+    padding-top: 1.9rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    overflow-y: scroll;
+    justify-content: flex-start;
+}
+.notify::-webkit-scrollbar{
+    display: none;
 }
 .notify .content{
-    width: 29rem;
-    height: 14rem;
+    min-width: 29rem;
+    min-height: 14rem;
     background-color: #F4F4F4;
     padding: 1.6rem 3.25rem;
     margin-right: 1.2rem;
@@ -161,8 +165,7 @@ header > div{
 .sale{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1.6rem;
+    justify-content:space-between;
 }
 .sale a{
     transition: 0.3s ease-in-out;
@@ -171,9 +174,15 @@ header > div{
     opacity: 0.5;
 }
 #products{
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
+    justify-content: flex-start;
+    overflow: auto;
 }
+#products::-webkit-scrollbar{
+    display: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -185,11 +194,14 @@ header > div{
     cursor: pointer;
 }
 .timing{
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
     background-color: #fff;
-    width: fit-content;
-    padding: 0.6rem 2.4rem;
+    min-width: 9.6em;
+    max-width: 9.6em;
+    min-height: 4.8em;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25); 
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
     border-radius: 3rem;
