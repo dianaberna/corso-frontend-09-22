@@ -3,7 +3,7 @@
 :root {
     --content_DARKGREY: #525252;
     --content_LIGHTGREY: #c3c3c3;
-    --content_TEAL: ##00FFE3;
+    --content_TEAL: #00FFE3;
 }
 
 * {
@@ -13,4 +13,26 @@ padding: 0 ;
 
 body  {
     font-family: 'Work Sans', sans-serif;
+}
+
+#ui-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4.2rem 1.2rem;
+}
+
+header nav button {
+    background-color: var(--content_LIGHTGREY);
+    width: 3rem;
+    height: 3rem;
+    border-style: none;
+    border-radius: 1.5rem;
 }
