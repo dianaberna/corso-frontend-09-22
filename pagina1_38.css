@@ -73,4 +73,19 @@
   align-items: center;
   justify-items: center;
   margin-top: 20px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid img {
+  width: 33vw;
+}
+
+@media screen and (min-width:600px) {
+  .grid {
+    margin: 20px  5vw;
+  }
+  .grid img {
+    width: 30vw;
+  }
 }

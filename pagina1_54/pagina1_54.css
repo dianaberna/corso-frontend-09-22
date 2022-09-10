@@ -4,18 +4,23 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.main-container {
+  margin-top: 10px;
+}
+
 .balance-container {
   display: flex;
   align-items: center;
 }
 
 .balance-container p {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
+  margin-bottom: 2px;
 }
 
 .balance-container p {
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .header {
@@ -43,7 +48,7 @@
 }
 
 .card-title {
-  margin-left: 10px;
+  margin-left: 30px;
   font-weight: 600;
   font-size: 19px;
   margin-top: 15px;
@@ -54,11 +59,11 @@
   width: 159px;
   height: 222px;
   border: none;
-  background-color: rgb(208, 208, 208);
-  margin-bottom: 10px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.18);
   border-radius: 8px;
   position:relative;
+  margin-right: 15px;
 }
 
  .card1 img {
@@ -70,8 +75,8 @@
  }
 
  .v2 {
-  right: 30px;
-  bottom: 160px
+  right: 25px;
+  top: 40px;
  }
 
  .v3 {
@@ -84,15 +89,135 @@
   right: 12px;
  }
 
+ .v5{
+  left: 10px;
+  top: 30px;
+ }
+
+ .v6 {
+  top:30px;
+  left: 20px;
+ }
+
+ .v7 {
+  top:30px;
+  left:28px;
+ }
+
+ .v8 {
+   top:30px;
+   left: 38px;
+ }
+
 .card2 {
   width: 159px;
   height: 222px;
   border: none;
-  background-color: rgb(208, 208, 208);
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.18);
   border-radius: 8px;
+  position:relative;
+} 
+
+.card2 img {
+  position: absolute;
+}
+
+.v9 {
+  bottom: 15px;
+  left: 15px;
+  width: 30px;
+}
+
+.v10 {
+  right: 0px;
+  top: 40px;
+}
+
+.v11 {
+  bottom: 42px;
+  left: 30px;
+  width: 7px;
 }
 
 .cards-container button {
   transform: rotate(-90deg);
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.add-button {
+  width: 110px;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  
+}
+
+.transactions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.transaction {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.transaction-amount {
+  font-size: 25px;
+}
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscription-button {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-size: 10px;
+}
+
+.transaction-pic {
+  width: 60px;
+}
+
+.transaction-title {
+  margin: 30px 0;
+}
+
+.line2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 3px;
+  border: 1px solid rgb(82, 82, 82);
+  background-color: rgb(82, 82, 82);
+  border-radius: 50px;
+  margin: 30px 0;
+}
+
+.background  {
+  background-color: rgb(236, 236, 236);
+  border-radius: 20px;
+}
+
+.first-container-transaction {
+  margin: 0 25px;
 }
