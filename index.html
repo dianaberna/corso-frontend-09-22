@@ -1,161 +1,224 @@
 <!DOCTYPE html>
 <html lang="it">
+    <head>
+        <meta charset="utf-8" />
+        <title>File per branch</title>
+        <meta name="title" content="File per branch" />
+        <meta name="description" content="File creato per branch" />
+        <meta name="keywords" content="branch, github, prova, html" />
+        <meta name="author" content="Alberto Cangialosi" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>File per branch</title>
-    <meta name="title" content="File per branch">
-    <meta name="description" content="File creato per branch">
-    <meta name="keywords" content="branch, github, prova, html">
-    <meta name="author" content="Alberto Cangialosi">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <!-- Header in testa -->
+        <header>
+            <!-- logo -->
+            <img
+                src="./html.png"
+                alt="Logo Ufficiale HTML5"
+                title="HTML5 è fico"
+                style="width: 64px"
+            />
+            <div>
+                <h1><code>a_cangialosi</code></h1>
+                <h2>my branch</h2>
+            </div>
 
-<body>
-    <!-- Header in testa -->
-    <header>
-        <!-- logo -->
-        <img src="./html.png" alt="Logo Ufficiale HTML5" title="HTML5 è fico" style="width: 64px;">
-        <div>
-            <h1><code>a_cangialosi</code></h1>
-            <h2>my branch</h2>
-        </div>
+            <!-- Navbar dell' Header -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a
+                            href="https://github.com/dianaberna/corso-frontend-09-22/tree/main"
+                            title="Jump to GitHub"
+                            >Main Branch</a
+                        >
+                    </li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <!-- barra di ricerca -->
+                <form action="search.php" method="get">
+                    <label for="query">🔎</label>
+                    <input type="search" name="query" id="query" />
+                    <input type="submit" value="Cerca" />
+                </form>
+                <!-- login form -->
+                <div id="login-form">
+                    <form action="login.py" method="post">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            placeholder="example@mail.com"
+                            name="email"
+                            id="email"
+                            required
+                        />
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            placeholder="12345678"
+                            name="password"
+                            id="password"
+                            required
+                        />
+                        <input type="submit" value="Log In" />
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- breadcrumb -->
+        <nav>Bread > Crumb > Style</nav>
 
-        <!-- Navbar dell' Header -->
-        <nav>
+        <main>
+            <!-- barra di caricamento -->
+            <label for="loading">Loading...</label>
+            <progress id="loading">.∙●</progress>
+
+            <hr />
+
+            <article>
+                <!-- progresso della lettura -->
+                <div id="reading-progress">
+                    <progress value="35" max="100">10%</progress>
+                </div>
+
+                <h2>Aggiornamenti</h2>
+                <p>File creato per branch</p>
+
+                <!-- filtra post del blog -->
+                <aside id="filter-articles">
+                    <!-- form  1 -->
+                    <form action="filter_articles.py" method="get" id="form1">
+                        <fieldset>
+                            <label for="tags-of-interest">Filtra</label>
+                            <input
+                                type="search"
+                                name="tags-of-interest"
+                                id="tags-of-interest"
+                                placeholder="html, css, js, python"
+                            />
+                            <input type="reset" value="Reset" />
+                        </fieldset>
+                    </form>
+
+                    <!-- form  2 -->
+                    <form action="filter_articles.py" method="get" id="form2">
+                        <fieldset>
+                            <legend>FILTRA</legend>
+
+                            <input
+                                type="checkbox"
+                                name="tags-checkbox"
+                                value="HTML"
+                                id="html"
+                            />
+                            <label for="html">HTML</label>
+                            <input
+                                type="checkbox"
+                                name="tags-checkbox"
+                                value="CSS"
+                                id="css"
+                            />
+                            <label for="html">CSS</label>
+                            <input
+                                type="checkbox"
+                                name="tags-checkbox"
+                                value="JS"
+                                id="js"
+                            />
+                            <label for="html">JS</label>
+                            <input
+                                type="checkbox"
+                                name="tag-checkbox"
+                                value="PYTHON"
+                                id="python"
+                            />
+                            <label for="python">Python</label>
+                            <input type="reset" value="Reset" />
+                        </fieldset>
+                    </form>
+                </aside>
+
+                <!-- elemento dettagli -->
+                <details>
+                    <summary>
+                        What can I do with <code>&lt;details&gt;</code> tag in
+                        HTML5?
+                    </summary>
+                    Creating a quick FAQ element or even give more information
+                    about something as its own name suggests, but with
+                    <code>&lt;summary&gt;</code> we can customize it a little
+                    more.
+                </details>
+                <details>
+                    <summary>
+                        Entities. Cosa sono e perchè abbandonarli?
+                    </summary>
+
+                    Potrà capitare che gli <code>`entities`</code>, come quelli
+                    che ho usato nelle tag di summary e details, saranno presto
+                    deprecati e rimpiazzati. Quindi sarebbe bene abituarsi ad
+                    usare i caratteri speciali che sono già stati inseriti tra
+                    quelli accettati da UTF-8. Es. © invece di &copy;
+                </details>
+
+                <!-- lista di descrizione, termine-definizione -->
+                <div id="description-list">
+                    <h2>Analisi logica</h2>
+                    <dl>
+                        <dt>parola :</dt>
+                        <dd>unità di misura di una frase.</dd>
+                        <dt>frase :</dt>
+                        <dd>Soggetto + predicato + complemento.</dd>
+                        <dt>periodo :</dt>
+                        <dd>
+                            Un'unità complessa del discorso, composta da più
+                            frasi semplici, o proposizioni, combinate in una
+                            sola struttura dal senso compiuto.
+                        </dd>
+                    </dl>
+                </div>
+
+                <div id="lorem">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, dignissimos, voluptates iste voluptate rem
+                        consequatur sequi eius architecto quia, sit sint
+                        aspernatur totam consectetur quas ex saepe? Provident,
+                        facere vero.
+                    </p>
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/000/269/436/non_2x/vector-cartoon-stone-agreement-panel-for-ui-game.jpg"
+                        alt="Lorem Ipsum Dolor"
+                        title="Ancient words echoing from eons ago"
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, dignissimos, voluptates iste voluptate rem
+                        consequatur sequi eius architecto quia, sit sint
+                        aspernatur totam consectetur quas ex saepe? Provident,
+                        facere vero.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <footer>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://github.com/dianaberna/corso-frontend-09-22/tree/main" title="Jump to GitHub">Main Branch</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Login</a></li>
+                <li>
+                    <a href="#">Chi Siamo</a>
+                </li>
+                <li>
+                    <a href="#">Like us on X 👍</a>
+                </li>
+                <li>
+                    <a href="#">Contatti</a>
+                </li>
+                <li>Copyright: © Settembre 2022</li>
             </ul>
-            <!-- barra di ricerca -->
-            <form action="search.php" method="get">
-                <label for="query">🔎</label>
-                <input type="search" name="query" id="query">
-                <input type="submit" value="Cerca">
-            </form>
-            <!-- login form -->
-            <div id="login-form">
-                <form action="login.py" method="post">
-                    <label for="email">E-mail</label>
-                    <input type="email" placeholder="example@mail.com" name="email" id="email" required>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="12345678" name="password" id="password" required>
-                    <input type="submit" value="Log In">
-                </form>
-            </div>
-        </nav>
-    </header>
-    <!-- breadcrumb -->
-    <nav>Bread > Crumb > Style</nav>
-
-    <main>
-
-        <!-- barra di caricamento -->
-        <label for="loading">Loading...</label>
-        <progress id="loading">.∙●</progress>
-
-        <hr>
-
-        <article>
-            <!-- progresso della lettura -->
-            <div id="reading-progress">
-                <progress value="35" max="100">10%</progress>
-            </div>
-
-            <h2>Aggiornamenti</h2>
-            <p>File creato per branch</p>
-
-            <!-- filtra post del blog -->
-            <aside id="filter-articles">
-
-                <!-- form  1 -->
-                <form action="filter_articles.py" method="get" id="form1">
-                    <fieldset>
-                        <label for="tags-of-interest">Filtra</label>
-                        <input type="search" name="tags-of-interest" id="tags-of-interest" placeholder="html, css, js, python">
-                        <input type="reset" value="Reset">
-                    </fieldset>
-                </form>
-
-                <!-- form  2 -->
-                <form action="filter_articles.py" method="get" id="form2">
-                    <fieldset>
-                        <legend>FILTRA</legend>
-
-                        <input type="checkbox" name="tags-checkbox" value="HTML" id="html">
-                        <label for="html">HTML</label>
-                        <input type="checkbox" name="tags-checkbox" value="CSS" id="css">
-                        <label for="html">CSS</label>
-                        <input type="checkbox" name="tags-checkbox" value="JS" id="js">
-                        <label for="html">JS</label>
-                        <input type="checkbox" name="tag-checkbox" value="PYTHON" id="python">
-                        <label for="python">Python</label>
-                        <input type="reset" value="Reset">
-                    </fieldset>
-                </form>
-            </aside>
-
-            <!-- elemento dettagli -->
-            <details>
-                <summary>What can I do with <code>&lt;details&gt;</code> tag in HTML5?</summary>
-                Creating a quick FAQ element or even give more information about something as its own name suggests, but with <code>&lt;summary&gt;</code> we can customize it a little more.
-
-            </details>
-            <details>
-                <summary>Entities. Cosa sono e perchè abbandonarli?</summary>
-
-                Potrà capitare che gli <code>`entities`</code>, come quelli che ho usato nelle tag di summary e details, saranno presto deprecati e rimpiazzati. Quindi sarebbe bene abituarsi ad usare i caratteri speciali che sono già stati inseriti tra
-                quelli accettati da UTF-8. Es. © invece di &copy;
-
-            </details>
-
-            <!-- lista di descrizione, termine-definizione -->
-            <div id="description-list">
-                <h2>Analisi logica</h2>
-                <dl>
-                    <dt>parola :</dt>
-                    <dd>unità di misura di una frase.</dd>
-                    <dt>frase :</dt>
-                    <dd>Soggetto + predicato + complemento.</dd>
-                    <dt>periodo :</dt>
-                    <dd>Un'unità complessa del discorso, composta da più frasi semplici, o proposizioni, combinate in una sola struttura dal senso compiuto.</dd>
-                </dl>
-            </div>
-
-            <div id="lorem">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dignissimos, voluptates iste voluptate rem consequatur sequi eius architecto quia, sit sint aspernatur totam consectetur quas ex saepe? Provident, facere vero.
-                </p>
-                <img src="https://static.vecteezy.com/system/resources/previews/000/269/436/non_2x/vector-cartoon-stone-agreement-panel-for-ui-game.jpg" alt="Lorem Ipsum Dolor" title="Ancient words echoing from eons ago">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dignissimos, voluptates iste voluptate rem consequatur sequi eius architecto quia, sit sint aspernatur totam consectetur quas ex saepe? Provident, facere vero.
-                </p>
-            </div>
-        </article>
-
-
-    </main>
-
-    <footer>
-        <ul>
-            <li>
-                <a href="#">Chi Siamo</a>
-            </li>
-            <li>
-                <a href="#">Like us on X 👍</a>
-            </li>
-            <li>
-                <a href="#">Contatti</a>
-            </li>
-            <li>
-                Copyright: © Settembre 2022
-            </li>
-        </ul>
-
-    </footer>
-
-</body>
-
+        </footer>
+    </body>
 </html>

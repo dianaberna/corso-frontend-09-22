@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 /* font per tutta la "pagina" */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #delivery {
@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 /* Non così furbo fino adesso */
 
@@ -36,14 +35,13 @@ body {
     padding: 10px 20px 20px 10px;
 }
 
-.delivery-card>* {
+.delivery-card > * {
     margin: 10px;
 }
 
-
 /* Zoom per uniformare le immagini per le delivery-card */
 
-.delivery-card>img {
+.delivery-card > img {
     width: 159px;
     height: 159px;
 }
