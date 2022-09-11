@@ -1,38 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 body {
-	font-family: 'Lato', sans-serif;
-	margin: 0;
+    font-family: "Lato", sans-serif;
+    margin: 0;
 }
-.globe {
-	align-items: center;
-	background-color: #181823;
-	box-sizing: border-box;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	gap: 150px;
-	padding: 100px 350px;
+
+#globe {
+    align-items: center;
+    background-color: #181823;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 16rem;
+    gap: 10rem;
 }
-.description h2 {
-	color: #DEECF9;
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 53px;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	text-transform: capitalize;
+
+#globe img {
+    width: 500px;
 }
-.description p {
-	color: #C7E0FA;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 0.5px;
-	line-height: 38px;
-	margin-top: 20px;
+
+#globe .description h2 {
+    color: #deecf9;
+    font-weight: 700;
+    text-transform: capitalize;
 }
-.description > div {
-	background-color: #14B8E4;
-	border-radius: 5px;
-	width: 70px;
-	height: 4px;
+
+#globe .description p {
+    color: #c7e0fa;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+#globe .description > div {
+    background-color: #14b8e4;
+    border-radius: 5px;
+    width: 70px;
+    height: 4px;
 }
