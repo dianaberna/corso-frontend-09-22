@@ -1,47 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-
-.contenitore{
-    display: flex;
-}
-
-.titolo{
-    width: 554px;
-    height: 190px;
-    right: 100px;
-    margin-left: 50px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    color: #C7E0FA;
-} 
-
-hr{
-    width:120px; 
-    height:5px; 
-    text-align:left; 
-    margin-left:0; 
-    color:#F03A76; 
-    border-radius: 100px;
-    border: 0 ;
-    background-color: #F03A76;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 body {
-    font-family: "Lato";
     background-color: #181823;
-    font-size: 18;
-    color: #DEECF9;
-    display: flex;
-    flex-direction: row;
+    font-family: "Lato";
+    color: #c7e0fa;
+    padding: 2rem 6rem;
+    font-size: 1rem;
 }
 
+#team {
+    display: flex;
+    justify-content: space-between;
+}
 
-.images{
-    width: 750px;
+#team div {
+    width: 50%;
+}
+
+#team hr {
+    width: 120px;
+    height: 5px;
+    text-align: left;
+    margin-left: 0;
+    color: #f03a76;
+    border-radius: 20px;
+    border: 0;
+    background-color: #f03a76;
+}
+
+#team img {
     height: 460px;
-    display: flex;
-    
 }
-
