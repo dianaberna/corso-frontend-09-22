@@ -111,3 +111,11 @@ button:hover {
     width: 1.6rem;
     height: 1.6rem;
 }
+
+.song-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
