@@ -1,0 +1,175 @@
+
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;;
+}
+
+.iphone{
+    width: 390px;
+    height: 786px;
+    border: 6px solid;
+    border-radius: 35px;
+}
+.navigazione{
+    width: 389px;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simbolo2{
+    margin-top: 5px;
+    margin-right: 24px;
+    margin-left: 342px;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+.simbolo{
+    margin: 20px 20px 20px ;
+    width: 20px;
+    height: auto;
+    display:flex;
+    }
+.simbolo3{
+    display: flex;
+    width: 35PX;
+    height: 28px;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0 20px 19px -20px #a09e9e;
+    margin: -50px auto 10px;
+}
+
+h1{
+font-size: 23px;
+margin-left: 16px;
+margin-top:-3px;
+}
+
+.scritta1{
+font-size:14px;
+margin-top: -12px;
+margin-left: 17px;
+font-weight: 600;
+}
+
+.container{
+    width: 390px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.box{
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background-color: rgb(199, 199, 199);
+}
+
+.ricerca{
+    width: 360px;
+    height: 26px;
+    margin-left: 13px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(118, 118, 128, 0.12);
+    margin-top: 0;
+    text-align:justify
+}
+
+
+.search-box{
+    width: 390px;
+    height: 28px;
+    margin-top: 35px;
+}
+.lentericerca{
+    width: 16px;
+    height: auto;
+}
+.microphono{
+    width: 19px;
+    height: auto;
+}
+
+.bottonibarraricerca{
+    display: flex;
+    margin: -23px 15px 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scritta2{
+    font-size: 20px;
+    margin-left: 16px;
+    margin-top: 33px;
+}
+
+
+.scritta3{
+    font-size: 16px;
+    margin-top: -10px;
+    margin-left: 17px;
+    font-weight: 100;
+}
+
+.container2{
+    width: 366px;
+    height: 320px;
+    border-radius: 16px;
+    background-color: #bdbdbd;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.BuyNow{
+    width: 302px;
+    height: 40px;
+    border-radius: 11px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.compra{
+    font-size: 90%; 
+}
+
+.scritta4{
+    font-size: 20px;
+    margin-left: 16px;
+    margin-top: 33px;
+}
+
+
+.scritta5{
+    font-size: 16px;
+    margin-top: -10px;
+    margin-left: 17px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
