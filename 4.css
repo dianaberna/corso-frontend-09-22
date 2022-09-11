@@ -77,6 +77,17 @@ button:hover {
     justify-content: space-between;
     gap: 1.3rem;
     overflow: scroll;
+    /* overflow-x: hidden; */
+    height: 10.2rem;
+    /* for IE and Edge */
+    -ms-overflow-style: none;
+    /* for Firefox */
+    scrollbar-width: none;
+}
+
+#song-album::-webkit-scrollbar {
+    /* for Chrome, Opera and Safari */
+    display: none;
 }
 
 .album-card {
@@ -89,4 +100,14 @@ button:hover {
     background-color: var(--primary-color);
     border: 1rem solid var(--secondary-color);
     border-radius: 0.4rem;
+}
+
+#song-album .play-button {
+    margin-right: 0.2rem;
+    margin-top: -2rem;
+}
+
+.smaller-play {
+    width: 1.6rem;
+    height: 1.6rem;
 }
