@@ -1,28 +1,227 @@
 @import url("https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap");
-
+/*Classi da levare e raggiungere con i selettori*/
+html,
 body {
-    background-color: #333333;
-    font-family: "Roboto", sans-serif;
-  }
-
-  svg{
-    width: 6%;
-    height: 10%;
-  }
-
-  #search
-  {
-    border-radius: 7px;
-    background-color: #A8A8A8;
-    
-  }
-  nav > div{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-nav >div >div{
-    width: 70%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
+body {
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 5% 6% 0 3%;
+}
+
+svg {
+  width: 6%;
+  height: 10%;
+  fill: white;
+}
+
+#search {
+  border-radius: 10px;
+  background-color: #a8a8a8;
+  width: 100%;
+  height: 30px;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > div > div {
+  width: 70%;
+}
+
+div.manager {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ciccioso {
+  border-width: 2px;
+  border-style: solid;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#invitations {
+  margin-left: -30px;
+  margin-right: -30px;
+  border-width: 0.5px;
+}
+hr {
+  border-width: 0.5px;
+}
+nav + div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.show {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #808080cc;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px 25px;
+  border-width: 0.1px;
+}
+
+button svg {
+  width: 50%;
+  height: 50%;
+}
+
+.testoC {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  margin-left: 2%;
+  align-self: center;
+}
+.jas {
+  font-weight: bolder;
+  font-size: large;
+}
+.student,
+.minutes {
+  font-size: smaller;
+}
+
+.checkOrNot {
+  display: flex;
+}
+#ShowMore {
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+}
+#Online {
+  margin-block-start: 1em;
+  margin-block-end: 0.5em;
+}
+
+.Art {
+  background-image: url(./Rectangle\ 281.png);
+  position: absolute;
+  width: 94%;
+  height: 100%;
+  margin: righ;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+.View > button {
+  width: 80px;
+  height: 35px;
+  color: white;
+  background-color: transparent;
+  border-width: 2px;
+  border-color: white;
+}
+
+.View {
+  margin-top: 50%;
+}
+
+.close > button {
+  width: 20px;
+  height: 20px;
+  background-color: #80808094;
+  border-color: transparent;
+}
+.close > button > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.Art > div {
+  margin-top: 5%;
+}
+
+.FirstClose {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5%;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  border-top: 50%;
+  border-bottom: -300px;
+  flex-wrap: wrap;
+  width: 70%;
+  top: 7.5rem;
+  left: 1rem;
+}
+
+h5 {
+  margin-block-start: 1.67em;
+  margin-block-end: 0.5rem;
+  font-weight: bolder;
+}
+.secondoParagrafo {
+  font-weight: 100;
+  font-size: x-small;
+}
+
+.Fri {
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+}
+
+.attendes {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+@media screen and (min-width: 700px) {
+  html,
+  body {
+    margin: 2% 10% 0 10%;
+  }
+  svg {
+    width: 2%;
+    height: 2%;
+    fill: white;
+  }
+  #search {
+    border-radius: 10px;
+    background-color: #a8a8a8;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    margin-right: 10%;
+  }
+  .Art {
+    width: 30%;
+    background-image: url(./Rectangle\ 281.png);
+    position: absolute;
+    height: 100%;
+    margin: righ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    width: 30%;
+  }
+}
