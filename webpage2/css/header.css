@@ -2,8 +2,7 @@
 header {
     display: flex;
     align-items: center;
-    gap: 30rem;
-    padding: 3rem 10rem;
+    gap: 10rem;
 }
 
 header span {

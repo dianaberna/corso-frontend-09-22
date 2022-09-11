@@ -1,5 +1,4 @@
 footer {
-    padding: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -16,7 +15,6 @@ footer ul.withArrows {
 }
 
 footer li {
-    font-size: 0.75rem;
     margin: 0 0 0.75rem 0;
 }
 

@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 6rem 16rem;
     gap: 10rem;
 }
 
