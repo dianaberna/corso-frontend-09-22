@@ -1,25 +1,14 @@
-
-
-p{
-    font-size:large;
-    font-style: normal;
-    font-family: 'Work Sans', sans-serif;
+p {
     margin-top: -1%;
     color: rgb(0, 0, 0);
-    
 }
 
-
 nav {
-
     width: 100%;
-    position:absolute;
-   justify-content:space-around;
-   display: flex;
-  margin-top: 8%;
-  
- 
-   
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 8%;
 }
 
 /* #pulsanti {
@@ -32,19 +21,12 @@ margin-top: 600px;
 } */
 
 .container {
-
     background-image: url(orologio.png);
     height: 100vh;
     background-repeat: no-repeat;
     width: 105%;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     margin-left: -2%;
     padding: 0%;
-    
-
-
-
-
 }
-
