@@ -1,56 +1,36 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
-    <link rel="stylesheet" href="sliderFigma.css" />
-</head>
-<body>
-    <!--<span id="scheda">--> <!--metto span per avere affiancati immagine e parte testuale-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slider</title>
+        <link rel="stylesheet" href="sliderFigma.css" />
+    </head>
+    <body>
+        <section id="portfolio">
+            <div class="slider">
+                <button id="left"><</button>
+                <img src="slider01.png" alt="img01" />
+                <button id="right">></button>
+            </div>
 
-    <div class="contenitore"> <!--div contenitore-->
+            <div class="text">
+                <h1>Portfolio</h1>
 
-        <div class="slider">
-            <img src="slider01.png" alt="img01">
+                <hr />
 
-            <!--bottone slider destro-->
-            <button id="right">
-                <p>></p>
-              </button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi risus duis nibh laoreet. Malesuada luctus tincidunt
+                    tortor consectetur netus facilisi dapibus laoreet orci.
+                    Viverra amet maecenas consectetur tincidunt felis, pretium
+                    posuere ut sapien. Cursus lacus vitae purus est viverra eu
+                    ornare tellus augue. Proin risus, sed diam ac. Aliquet.
+                </p>
 
-              <!--bottone slider sinistro-->
-              <button id="left">
-                <p><</p>
-              </button>
-        </div>
-        
-
-        <div class="portfolio">
-            <h1>
-                Portfolio
-            </h1>
-
-            <!--riga divisione, verificare lo stile!-->
-            <hr> 
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi risus duis nibh laoreet. Malesuada luctus tincidunt tortor consectetur netus facilisi dapibus laoreet orci. Viverra amet maecenas consectetur tincidunt felis, pretium posuere ut sapien. Cursus lacus vitae purus est viverra eu ornare tellus augue. Proin risus, sed diam ac. Aliquet.
-            </p> 
-
-            <button id="view_all">
-                <p>View All</p>
-              </button>
-
-        </div><!--fine div portfolio-->
-
-    </div>    <!--fine div contenitore-->
-    <!--</span>-->
-
-
-
-
-
-</body>
+                <button>View All</button>
+            </div>
+        </section>
+    </body>
 </html>
