@@ -1,0 +1,36 @@
+
+#strategic {
+    align-items: center;
+    background-color: #181823;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 16rem;
+    gap: 10rem;
+}
+
+#strategic img {
+    width: 500px;
+}
+
+#strategic .description h2 {
+    color: #deecf9;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#strategic .description p {
+    color: #c7e0fa;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+#strategic .description > div {
+    background-color: #14b8e4;
+    border-radius: 5px;
+    width: 70px;
+    height: 4px;
+}

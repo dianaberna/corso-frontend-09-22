@@ -1,0 +1,25 @@
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+    padding: 3rem 10rem;
+}
+
+header span {
+    color: #f03a76;
+}
+
+header button {
+    background-color: #f03a76;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 0;
+}
+
+header img {
+    width: 700px;
+    height: 700px;
+}
