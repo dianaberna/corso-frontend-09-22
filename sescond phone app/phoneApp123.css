@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap");
-/*Classi da levare e raggiungere con i selettori*/
+
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 body {
@@ -159,7 +158,7 @@ button svg {
 }
 
 .title {
-  position: relative;
+  position: absolute;  
   display: flex;
   flex-direction: column;
   line-height: 10px;
@@ -167,7 +166,7 @@ button svg {
   border-bottom: -300px;
   flex-wrap: wrap;
   width: 70%;
-  top: 7.5rem;
+  top: 38.5rem;
   left: 1rem;
 }
 
@@ -222,6 +221,7 @@ h5 {
     justify-content: space-around;
   }
   .title {
-    width: 30%;
+    width: 20%;
+    left: 20%;
   }
 }
