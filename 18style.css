@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html, body { padding: 0; margin:0 ;
+}
+
+body {    
+    font-family: "WorkSans", "sans-serif"; 
+    color: #000000; 
+    
+}
+
+.ty { position: absolute;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.eye { position: absolute;
+    display: flex;
+    padding-top: 28px;
+}
+
+h1{ font-size:20px;
+
+}
+
+.lorem { font-size: 14px;
+
+}
+
+.bo{ font-size: 18px;
+
+}
+
+h2{
+    font-size: 14px;
+}
+
+.fb { position: absolute;
+    padding-right: 16px; 
+  padding-bottom: 24px;
+
+}
+
