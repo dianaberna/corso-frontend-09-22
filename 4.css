@@ -112,10 +112,25 @@ button:hover {
     height: 1.6rem;
 }
 
+#song-singles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem
+}
+
 .song-card {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.4rem;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.song-card-img {
+    background-color: var(--secondary-color);
+    width: 23vw;
+    height: 23vw;
 }
