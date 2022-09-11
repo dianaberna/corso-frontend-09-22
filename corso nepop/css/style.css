@@ -1,13 +1,12 @@
-
 body {
-    background-color:#181823;
+    background-color: #181823;
 }
- h1, h3 {
-    color:rgba(222, 236, 249, 1);
-    ;
- }
+h1,
+h3 {
+    color: rgba(222, 236, 249, 1);
+}
 
-.accanto{
+.accanto {
     display: flex;
     gap: 200px;
 }
