@@ -1,60 +1,56 @@
 body {
-  color: white;
-  font-family: Lato;
+    color: white;
+    font-family: "Lato";
 }
 
-#containerFooter {
-  margin-top: 200px;
-  padding: 40px 20px;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-h2 {
-  margin: 0;
+footer {
+    padding: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
 }
 
-.titleFooterSection {
-  margin: 0 0 30px 0;
+footer ul.noArrows {
+    list-style: none;
+    padding: 0px;
 }
 
-#containerFooter ul.ulNoArrows {
-  list-style: none;
-  padding: 0px;
-}
-
-#listWithArrows {
-  list-style-image: url(bulletArrow.svg);
-  padding: 0px;
+.withArrows {
+    list-style-image: url(bulletArrow.svg);
+    padding: 0px;
 }
 
 li {
-  font-size: 12px;
-  color: #c7e0fa;
-  margin: 0 0 12px 0;
+    font-size: 0.75rem;
+    color: #c7e0fa;
+    margin: 0 0 0.75rem 0;
 }
 
 #footerText span {
-  margin: 0 0 0 30px;
-  color: #deecf9;
-  font-size: 10px;
+    margin: 0 0 0 30px;
+    color: #deecf9;
+    font-size: 0.6rem;
 }
 
 #footerText div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #footerText p {
-  font-size: 12px;
-  max-width: 300px;
-  color: #c7e0fa;
-  line-height: 25px;
-  margin: 50px 0 0 0;
+    font-size: 0.75rem;
+    max-width: 18.75rem;
+    color: #c7e0fa;
+    margin: 3rem 0 0 0;
 }
 
-#containerFooter div:not(:last-child) {
-  margin: 0 20px 0 0;
+footer div:not(:last-child) {
+    margin: 0 1.25rem 0 0;
 }
