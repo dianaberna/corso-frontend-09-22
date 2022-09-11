@@ -1,0 +1,58 @@
+
+
+
+.dashboard1{ /* deinizione delle righe e delle colonne della classe dashboard*/
+    display: grid;
+    width:100%;
+    height: 1024px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "sidebar content-1 content-2 content-3 content-4"
+        "sidebar content-5 content-6"
+        "sidebar content-7 content-8 content-9";       
+}
+
+/* Specifiche delle varie Areas della griglia*/
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: siderbar;
+}
+
+.content-1{
+    grid-area: content-1;
+}
+
+.content-2{
+    grid-area: content-2;
+}
+
+.content-3{
+    grid-area: content-3;
+}
+
+.content-4{
+    grid-area: content-4;
+}
+
+.content-5{
+    grid-area: content-5;
+}
+
+.content-6{
+    grid-area: content-6;
+}
+
+.content-7{
+    grid-area: content-7;
+}
+
+.content-8{
+    grid-area: content-8;
+}
