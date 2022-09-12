@@ -36,4 +36,15 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 1400px;
+body {
+    background-color: #181823;
+}
+h1,
+h3 {
+    color: rgba(222, 236, 249, 1);
+}
+
+.accanto {
+    display: flex;
+    gap: 200px;
 }
