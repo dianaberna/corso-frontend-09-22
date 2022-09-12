@@ -85,7 +85,8 @@ main {
   margin-bottom: 2rem;
 }
 .hotel-card img{
-    width: 100vw;
+  width: 100vw;
+
 }
 .hotel-card i:first-child{
     margin-top: 0.3rem;
