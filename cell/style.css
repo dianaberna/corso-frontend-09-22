@@ -1,8 +1,25 @@
-.button{
-    padding: 50px 10px 50px 10px;
-    border-radius: 10px;
-    border: 20px;  
-    position: absolute; 
-    border: 3px solid ;
+select{
+    border-radius: 15px;
+    /* padding: 5px; */
 }
+
+
+.primo{
+    display: flex;
+    flex-direction: column;
+}
+.secondo{
+
+}
+.tag{
+    background-color: transparent;
+    border: 1px solid;
+    border-color: beige;
+    border-radius: 30px;
+
     
+}
+
+.angolo {
+    border-radius: 30px;
+}
