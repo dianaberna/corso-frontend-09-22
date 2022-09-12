@@ -73,6 +73,13 @@ button:hover {
 
 #song-album {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12.8rem;
+}
+
+#song-album > div {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1.3rem;
