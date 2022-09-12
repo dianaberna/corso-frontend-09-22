@@ -13,9 +13,15 @@ body{
     background-repeat: no-repeat;
     height: 400px;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
  }
  button{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     margin: 16px;
     background: transparent;
     border: 0;
@@ -26,9 +32,7 @@ body{
     color: #fff;
     font-size: 48px;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
  }
  .about, .classes{
     color: #fff;
