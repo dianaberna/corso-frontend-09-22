@@ -4,22 +4,41 @@ select{
 }
 
 
-.primo{
-    display: flex;
-    flex-direction: column;
-}
+
 .secondo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
 }
-.tag{
+
+.secondo > div > h5,.secondo > div > h6{
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+.tag > button{
     background-color: transparent;
     border: 1px solid;
-    border-color: beige;
+    border-color: gray;
     border-radius: 30px;
+    padding: 5px 10px;
 
     
 }
+.tag > button:hover{
+    border-color: purple;
+}
 
-.angolo {
-    border-radius: 30px;
+.next   {
+    border-radius:15px ;
+    background-color: purple;
+    padding: 5px 10px; color: white;
+    border: 0;
+}
+
+.tag > button{
+    margin: 0 5px 5px 0;
 }
