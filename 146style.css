@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, body { padding: 0; margin:0 ;
+}
+
+body{
+    font-family: "Inter";
+    color: white;
+    background-color: #191919;
+}
+
+#file{  width:358px;
+}
+
+h1 { font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.list>div{ 
+align-items: center;
+text-align: center;
+box-sizing: border-box;
+width: 358px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-right-width: 1px;
+border-right-style: solid;
+border-left-width: 1px;
+border-left-style: solid;
+padding-bottom: 24px;
+padding-top: 24px;
+}
+
+.o {border-top:1px solid ;
+
+}
+.m{background-color: #3A595D;
+    border-color:#3A595D;
+}
+
+.list{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+.button {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size:16px;
+        text-align: center;
+         border-radius: 60px;
+        background-color: #3A595D;
+        color: white;
+        font-weight: bold;
+        width: 358px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .secbutton {
+        font-size:16px;
+        text-align: center;
+         color:#a8a8a8;
+        font-weight: bold;
+        width:358px;
+        display: flex;
+        align-items: center;
+        padding-left: 146px;
+        position: absolute;
+        text-decoration:none;
+    }
+
+       
+ 
