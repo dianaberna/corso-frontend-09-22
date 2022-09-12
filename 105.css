@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: #24a148;
-    --seconary-color: #d0d0d0;
+    --secondary-color: #d0d0d0;
 }
 
 body {
@@ -66,3 +66,36 @@ form {
     border: 0.18em solid var(--primary-color);
     border-radius: 0.6rem;
 }
+
+footer {
+    width: 100%;
+    /* height: 8vw; */
+    border-top: 0.15rem solid var(--secondary-color);
+    position: relative;
+}
+
+footer > div {
+    position: fixed;
+}
+
+footer button {
+    width: 88%;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 4vw 6vw;
+    border-radius: 50px;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+footer button:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+footer button:active {
+    background-color: rgb(108, 108, 108);
+}
+
+
