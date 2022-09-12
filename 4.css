@@ -71,6 +71,12 @@ button:hover {
     margin: -2.7rem 1.2rem 0 0;
 }
 
+.slim-text, .info-key {
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: var(--secondary-color);
+}
+
 #songs {
     padding: 2rem 0rem 2rem 2rem;
 }
