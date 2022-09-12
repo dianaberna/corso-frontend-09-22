@@ -83,6 +83,7 @@ main {
 }
 .hotel-card{
   margin-bottom: 2rem;
+  position: relative;
 }
 .hotel-card img{
   width: 100vw;
@@ -143,4 +144,29 @@ main {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .results-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100vw;
+  }
+  .hotel-card
+  {
+    width: 20rem;
+    margin: 0 0 var(--content_margin) var(--content_margin);
+    border: 1px solid lightgray;
+  }
+  .hotel-card img{
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .hotel-card:hover
+  {
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(58,89,93,0.23); 
+    box-shadow: 0px 0px 15px 5px rgba(58,89,93,0.23);
+  }
 }
