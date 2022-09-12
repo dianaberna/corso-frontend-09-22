@@ -27,8 +27,6 @@ border-radius: 30px;
 
 }
 
-
-
  button {
 
 display: flex;
@@ -60,15 +58,49 @@ flex-direction: column;
     left: 0px;
     right: 0px;
 
-    
-    
-   
 }
 
-#rettangolo p {
+#testo1 {
 
-    font-size: larger;
+    font-size:x-large;
+    margin: 15px 0px 7px 15px;
+    
 }
+
+#testo2 {
+    font-size: small;
+    margin: 0px 0px 0px 15px;
+ 
+
+}
+
+.stella {
+
+    margin-left: 70px;
+}
+
+#testo3 {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: -20px 30px;
+    font-size: small;
+}
+
+#ordine {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    margin: 45px 0px 0px 15px;
+    height: 30px;
+    width: 125px;
+    background-color: rgb(255, 255, 255,0);
+}
+
 .container {
     font-family: 'Work Sans', sans-serif;
     background-image: url(orologio.png);
