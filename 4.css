@@ -191,6 +191,7 @@ section h1 {
 
 .song-card svg {
     fill: white;
+    stroke: red;
     justify-content: flex-end;
 }
 
