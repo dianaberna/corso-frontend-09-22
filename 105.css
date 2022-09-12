@@ -52,13 +52,17 @@ p, legend {
     color: var(--seconary-color);
 }
 
+main {
+    margin: 6vw;
+}
 form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* TODO no idea why it doesnt space around */
+    gap: 4vw;
 }
 
 .motivation-option {
-    border:  1px solid var(--primary-color);
+    border: 0.18em solid var(--primary-color);
+    border-radius: 0.6rem;
 }
