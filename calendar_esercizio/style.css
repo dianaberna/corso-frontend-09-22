@@ -124,14 +124,12 @@ a {
 }
 .calendario-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .calendario {
   background-color: white;
   border-radius: 6px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
-  height: 375px;
+  height: 450px;
   width: 384px;
   margin: 20px;
 }
@@ -217,4 +215,103 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Applicazioni - calendario */
+
+/* area selezione del mese/anno */
+.data {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.selezioneMese {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.selezioneMese div {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+/* area selezione delle settimane */
+.settimane {
+  border-radius: 12px;
+  height: 400px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* selezione settimana o mese */
+.selezioneSettimanaMese {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin: 5px;
+}
+.selezioneSettimanaMese > div {
+  width: 10rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+}
+.selezioneSettimanaMese > div:hover {
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: #ff6370;
+  box-shadow: 0px 6px 20px rgba(255, 126, 134, 0.4);
+}
+
+/* calendario grid */
+
+.settimaneGrid {
+  /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
+  height: 400px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: black;
+  margin-top: 10px;
+}
+
+.giorniSetim,
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+/* Inizia da */
+.parent button:first-child {
+  grid-column: 3;
+}
+.parent button {
+  position: relative;
+  border: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.parent button:hover,
+.parent button:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: #ff6370;
+  color: white;
+  box-shadow: 0px 6px 20px rgba(255, 126, 134, 0.4);
 }
