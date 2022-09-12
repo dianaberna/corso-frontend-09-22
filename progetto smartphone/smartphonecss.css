@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+.esempio{
+    display: flex;
+}
+
+.trainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+button{
+    background: transparent;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    padding: 0px 0px;
+    margin-right: 20px;
+    border-color: transparent;
+
+}
+
+.card{
+    background-repeat: no-repeat;
+    background-size: 370px 220px;
+    padding: 20px;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image:url("immagini/Rectangle 305.png");
+}
+span{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+}
+
+span>svg{
+    fill:black ;
+    height: 12px;
+    width: 12px;
+}
+
+span+svg{
+    fill: red;
+    padding-right: 20px;
+    
+}
+.card>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

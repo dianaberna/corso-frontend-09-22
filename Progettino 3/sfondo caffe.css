@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(246, 235, 218);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+input{
+    color: rgb(231, 165, 36);
+    background-color: rgb(47, 33, 5);
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px 20px 10px 20px; 
+}
