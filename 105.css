@@ -44,3 +44,21 @@ header > h1 {
     font-size: 1.8rem;
 }
 
+button {
+    border: none;
+}
+
+p, legend {
+    color: var(--seconary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* TODO no idea why it doesnt space around */
+}
+
+.motivation-option {
+    border:  1px solid var(--primary-color);
+}
