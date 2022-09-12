@@ -61,51 +61,61 @@ body {
 }
 /* area selezione delle settimane */
 .settimane {
+  border-radius: 12px;
+  height: 400px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* calendario grid */
+
+.settimaneGrid {
   background-color: white;
   /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
   border-radius: 12px;
   height: 400px;
   padding: 5px;
-  /* width: 70%; */
   margin-top: 10px;
 }
-.tabgiorniSetnumeri-container {
-  width: 100%;
-}
-.giorniSet {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-#nomeGiorno {
-  color: lightgray;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: black;
+  margin-top: 10px;
 }
 
-#numeroGiorno:hover {
+/* .parent {
+  padding: 15px;
+} */
+
+.giorniSetim,
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+}
+
+/* Inizia da */
+.parent button:first-child {
+  grid-column: 3;
+}
+.parent button {
+  position: relative;
+  border: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.parent button:hover,
+.parent button:focus {
+  cursor: pointer;
+  outline: none;
   background-color: #525252;
   color: white;
-  border-radius: 50%;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-}
-
-.giorniSet > span {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.giorniSetNumeri {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.giorniSetNumeri > span {
-  width: 10%;
-  margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
 }
 
 /* Selezione orario */
@@ -169,6 +179,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* area prenotrazione */
 .prenotazioni-container {
   display: flex;
   flex-direction: column;
@@ -223,55 +235,6 @@ body {
 #dataprenotazione {
   font-size: 11px;
   font-weight: lighter;
-}
-
-/* calendario grid */
-
-.settimaneGrid {
-  background-color: white;
-  /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
-  border-radius: 12px;
-  height: 400px;
-  padding: 5px;
-  margin-top: 10px;
-}
-.parent {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  color: black;
-  margin-top: 10px;
-}
-
-/* .parent {
-  padding: 15px;
-} */
-
-.giorniSetim,
-.parent {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-}
-
-/* Inizia da */
-.parent button:first-child {
-  grid-column: 3;
-}
-.parent button {
-  position: relative;
-  border: 0;
-  width: 20 px;
-  height: 20 px;
-  border-radius: 50%;
-  background-color: transparent;
-}
-.parent button:hover,
-.parent button:focus {
-  outline: none;
-  background-color: #525252;
-  color: white;
 }
 
 @media only screen and (max-width: 600px) {

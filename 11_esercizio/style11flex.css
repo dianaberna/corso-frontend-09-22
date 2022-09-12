@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* CALENDARIO */
+
+.calendario-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.calendario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  height: 380px;
+  width: 350px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding-top: 20px;
+}
+/* area selezione del mese/anno */
+.data {
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.selezioneMese {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.selezioneMese div {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+/* area selezione delle settimane */
+.settimane {
+  /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
+  height: 400px;
+  padding: 5px;
+  /* width: 70%; */
+  margin-top: 10px;
+}
+.tabgiorniSetnumeri-container {
+  width: 100%;
+}
+
+.giorniSet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#nomeGiorno {
+  color: lightgray;
+}
+
+#numeroGiorno:hover {
+  cursor: pointer;
+  background-color: #525252;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.giorniSet > span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.giorniSetNumeri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.giorniSetNumeri > span {
+  width: 10px;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+/* Selezione orario */
+.orario {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selezioneOrario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* BOTTONE AM PM  */
+
+.orarioSet {
+  background-color: rgba(211, 211, 211, 0.6);
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.selezioneOrario button {
+  background: none;
+  color: black;
+
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+.amPM {
+  background-color: rgba(211, 211, 211, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.buttonAM,
+.buttonPM {
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.buttonAM:hover {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.buttonPM:hover {
+  background-color: white;
+  border-radius: 8px;
+}
+.filtroSchedule {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.prenotazioni-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.prenotazioneImpegno {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.fotoPrenotazione {
+  background-color: lightgray;
+  margin: 3px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.nomePrenotazione {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.dataPrenotazione {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* nomeCognome  contatto  dataprenotazione */
+#nomeCognome {
+  font-size: 12px;
+  font-weight: 800;
+}
+#contatto {
+  font-size: 12px;
+  font-weight: lighter;
+}
+#dataprenotazione {
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+/* calendario grid */
+
+.settimaneGrid {
+  background-color: white;
+  /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
+  height: 400px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: black;
+  margin-top: 10px;
+}
+
+/* .parent {
+  padding: 15px;
+} */
+
+.giorniSetim,
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+}
+
+/* Inizia da */
+.parent button:first-child {
+  grid-column: 3;
+}
+.parent button {
+  position: relative;
+  border: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.parent button:hover,
+.parent button:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: #525252;
+  color: white;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  /* CALENDARIO */
+  /* area selezione del mese/anno */
+
+  /* .data {
+    width: 65%;
+  }
+  .meseAnno {
+    position: relative;
+    right: 20%;
+  }
+
+  .selezioneMese {
+    position: relative;
+    left: 20%;
+  }
+} */
+  /* .settimane {
+  height: 350px;
+  width: 90%;*/
+}
