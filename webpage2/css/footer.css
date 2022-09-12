@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul.noArrows {
+    list-style: none;
+    padding: 0px;
+}
+
+footer ul.withArrows {
+    list-style-image: url(../assets/bulletArrow.svg);
+    padding: 0px;
+    margin-left: 10px;
+}
+
+footer li {
+    margin: 0 0 0.75rem 0;
+}
+
+footer #footerText span {
+    margin: 0 0 0 30px;
+    font-size: 0.6rem;
+}
+
+footer #footerText div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer #footerText p {
+    font-size: 1rem;
+    max-width: 18.75rem;
+    margin: 3rem 0 0 0;
+}
+
+footer div:not(:last-child) {
+    margin: 0 1.25rem 0 0;
+}

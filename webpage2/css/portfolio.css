@@ -1,0 +1,61 @@
+
+#portfolio{
+    display: flex;
+    gap: 2rem;
+}
+
+#portfolio .slider{
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .slider > button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio button svg{
+    fill: #fff;
+    height: 15px;
+}
+
+#portfolio button#left {
+    margin-right: -20px;
+    z-index: 1;
+}
+
+#portfolio button#right {
+    margin-left: -20px;
+}
+
+#portfolio hr{
+    width: 120px; 
+    height: 5px; 
+    margin-left: 0; 
+    color:#683CB8; 
+    border-radius: 100px;
+    border: 0 ;
+    background-color: #683CB8;
+}
+
+#portfolio .text button{
+    font-weight: bold;
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 4rem;
+    white-space: nowrap;
+    color: #DEECF9;
+    box-shadow: 0px 10px 15px rgba(240, 58, 118, 0.18);
+}
+
+#portfolio .text button:hover{
+    background-color: #fff;
+    color: #F03A76;
+}
