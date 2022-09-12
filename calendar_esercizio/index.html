@@ -9,53 +9,108 @@
     <title>Mondy | Plan your works</title>
   </head>
   <body>
-    <!-- SIDEBAR -->
-    <div class="sideBar-container">
-      <!-- logo -->
-      <div class="logo">
-        <div>
-          <img src="img/mondyLogo.png" alt="" />
+    <div class="global-container">
+      <!-- SIDEBAR -->
+      <!-- display none per js -->
+      <!-- <div class="sideBar-container--hide"> -->
+      <!-- sidebar  -->
+      <div class="sideBar-container">
+        <!-- logo -->
+        <div class="logo">
+          <div>
+            <img src="img/mondyLogo.png" alt="" />
+          </div>
+          <div>
+            <h1>Mondy</h1>
+          </div>
         </div>
-        <div>
-          <h1>Mondy</h1>
-        </div>
-      </div>
-      <!-- end logo -->
+        <!-- end logo -->
 
-      <!-- menu opzioni -->
-      <div class="menu">
-        <div class="opzione">
-          <img src="img/dashboard icon.png" alt="" />
-          Dashboard
+        <!-- menu opzioni -->
+        <div class="menu">
+          <div class="opzione">
+            <img src="img/dashboard icon.png" alt="" />
+            Dashboard
+          </div>
+          <div class="opzione">
+            <img src="img/viaggi.png" alt="" />
+            Viaggi
+          </div>
+          <div class="opzione">
+            <img src="img/message.png" alt="" />
+            Messaggi
+          </div>
+          <div class="opzione">
+            <img src="img/calendar.png" alt="" />
+            Calendario
+          </div>
         </div>
-        <div class="opzione">
-          <img src="img/viaggi.png" alt="" />
-          Viaggi
-        </div>
-        <div class="opzione">
-          <img src="img/message.png" alt="" />
-          Messaggi
-        </div>
-        <div class="opzione">
-          <img src="img/calendar.png" alt="" />
-          Calendario
-        </div>
-      </div>
-      <!-- fine menu opzioni -->
+        <!-- fine menu opzioni -->
 
-      <!-- loginLogout -->
-      <div class="settings-login-logout container">
-        <div class="opzione" id="setting-login-logout">
-          <img src="img/impostazioni.png" alt="" />
-          Impostazioni
+        <!-- loginLogout -->
+        <div class="settings-login-logout container">
+          <div class="opzione" id="setting-login-logout">
+            <img src="img/impostazioni.png" alt="" />
+            Impostazioni
+          </div>
+          <div class="opzione" id="setting-login-logout">
+            <img src="img/signout.png" alt="" />
+            Log out
+          </div>
         </div>
-        <div class="opzione" id="setting-login-logout">
-          <img src="img/signout.png" alt="" />
-          Log out
+        <!-- end loginLogout -->
+      </div>
+      <!-- FINE SIDEBAR -->
+      <!-- display none  -->
+      <!-- </div> -->
+      <!-- schermo applicazioni + navabar -->
+      <div class="applicazioni-container">
+        <!-- NAVBAR -->
+        <div class="navbar">
+          <div class="wrapper">
+            <input
+              type="text"
+              placeholder="Inserisci la parola chiave.. "
+              class="search"
+            />
+          </div>
+          <div class="area-profilo">
+            <a href="">
+              <div class="notifica">
+                <img src="img/notifica.png" alt="" />
+                <div></div></div></a
+            ><a href="">
+              <div><img src="img/fotoprofilo.png" alt="" /></div
+            ></a>
+          </div>
+        </div>
+        <!-- fine navabr -->
+        <!-- selettore interno -->
+        <div class="selettore-interno">
+          <div><h2>Calendario</h2></div>
+          <div class="selettori">
+            <div class="selettore">
+              <div>Persona</div>
+              <div><img src="img/vettoreSelettori.png" alt="" /></div>
+            </div>
+            <div class="selettore">
+              <div>Data</div>
+              <div><img src="img/vettoreSelettori.png" alt="" /></div>
+            </div>
+            <div class="selettore">
+              <div>Status</div>
+              <div><img src="img/vettoreSelettori.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="applicazioni">
+          <div class="calendario-container">
+            <div class="calendario"></div>
+            <div class="upcoming-events"></div>
+          </div>
+          <div class="pianifica"></div>
         </div>
       </div>
-      <!-- end loginLogout -->
     </div>
-    <!-- FINE SIDEBAR -->
   </body>
 </html>
