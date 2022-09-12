@@ -1,0 +1,25 @@
+
+html,body{
+    margin:0px;
+    padding:0;
+}
+    
+.AppBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    box-shadow: 0px 14px 10px -4px rgba(232,232,232,0.59);
+}
+.AppBar>.AppBarSinistra{
+    display: flex;
+    align-items: center;
+}
+.AppBarSinistra,.AppBarDestra{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    gap: 25px;
+}
+
+

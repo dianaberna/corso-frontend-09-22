@@ -94,9 +94,8 @@
         border-radius: 25px;
     }
     .adaptnav{
-        margin-top: 45px;
-        display: flex;
-        align-items: center;
+        bottom: 0;
+        position: fixed;
     }
     .navbar{
         background-color: #525252;
