@@ -1,13 +1,39 @@
+@font-face {
+    font-family: Lato-Bold;
+    src: url(Lato-Bold.ttf)
+  }
 
-body {
-    background-color:#181823;
-}
+  @font-face {
+    font-family: Lato-Regular;
+    src: url(Lato-Regular.ttf)
+  }
+
+
  h1, h3 {
     color:rgba(222, 236, 249, 1);
-    ;
- }
+}
 
-.accanto{
-    display: flex;
-    gap: 200px;
+h1 {
+    font-family: Lato-Bold;
+    src: url(Lato-Bold.ttf)
+}
+
+h3 { 
+    font-family: Lato-Regular;
+    src: url(Lato-Regular.ttf)
+  }
+
+.principale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}  
+
+.wrapper {
+  background-color:#181823;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
 }
