@@ -3,9 +3,67 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+/*********************************** utils ********************
+************************************************************ */
+.small_card{
+ background-color: bisque;
+ min-height:100px;
+ width: calc(100% /3);
+ 
+}
+.rectangular_card{
     
 }
+
+body{
+    width: 100wv;
+    
+}
+
+
+main{
+ width: 100%;
+}
+
+/*********************************** ********************
+************************************************************ */
+.all_classes_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin:5rem 20px 2rem 10px;
+}
+.arrow_icon{
+    margin:0 20px 0 19px;
+}
+
+/***********************************  ********************
+************************************************************ */
+.black_button_wrapper{
+    width: 100%;
+    display: flex;justify-content: center;
+}
+.black_button{
+    width: 95%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: 0;
+}
+
+/***********************************  ********************
+************************************************************ */
+
 .container{
-    padding: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.small_card_wrapper{
+    width: 100%;
+    display: flex;
+   
+    gap: 5px;
 }
