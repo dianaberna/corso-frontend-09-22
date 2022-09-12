@@ -22,3 +22,42 @@ Corsisti:
 
 **_Eren Tulumcu_**
 
+**_Kateryna Nepop_**
+
+**_Alberto Cangialosi_**
+
+**_Alessandro Cotone_**
+
+**_Francesca Sprovieri_**
+
+**_Alessandro Piras_**
+
+**_Alessandro Amodio_**
+
+**_Fatima Cangialosi_**
+
+**_Pantaleo Oscuri_**
+
+**_Valentina Bernacchia_**
+
+**_Teresa Godino_**
+
+**_Tarascio Christopher_**
+
+**_Michela Cerma_**
+
+**_Giovanni Brienza_**
+
+**_Francesca Chiari_**
+
+**_Alessandra Magri_**
+
+**_Lucia Vitale_**
+
+**_Catana Evelina_**
+
+**_Salvatore Nastro_**
+
+**_Gianmarco Bisol_**
+
+**_Massimiliano Marengo_**
