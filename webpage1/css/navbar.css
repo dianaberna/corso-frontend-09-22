@@ -1,0 +1,74 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div {
+    width: 20rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+nav ul li > a {
+    text-decoration: none;
+    color: #2f2105;
+}
+
+nav ul li > a:hover {
+    text-decoration: none;
+    color: #ff912b;
+}
+
+nav input {
+    border-radius: 35px;
+    border: 1px solid #929295;
+    color: #929295;
+    height: 40px;
+    width: 222px;
+    box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 30%);
+    background: url(../assets/vectorSearchBar.png) no-repeat scroll center left 10px;
+    background-size: 15px;
+    padding-left: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav input::placeholder{
+    color: #929295;
+}
+
+nav input:hover {
+    box-shadow: 0px 0px 30px -16px rgb(0 0 0 / 60%);
+    border-color: #ffffff;
+}
+
+nav button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-left: 1.25rem;
+}
+
+nav button > svg {
+    height: 22px;
+}
+
+nav button div.dot {
+    background-color: #ff912b;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    position: relative;
+    bottom: 28px;
+    left: 20px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+}

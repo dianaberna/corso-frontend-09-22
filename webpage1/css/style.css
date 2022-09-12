@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import "navbar.css";       /* Mazzi */
+
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 6rem;
+}
+
+p{
+    font-weight: 300;
+    color: #C7E0FA;
+    line-height: 2;
+}
