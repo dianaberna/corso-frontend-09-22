@@ -61,8 +61,8 @@ main {
   display: flex;
   flex-direction: column;
 }
-#right {
-  padding-top: 2.5rem;
+#left {
+  padding-top: 3.125rem;
 }
 .video {
   padding: 0.25rem 0.25rem 1rem 0.25rem;

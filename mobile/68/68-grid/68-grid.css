@@ -60,13 +60,12 @@ main {
 }
 main > *:nth-child(2n) {
   padding-right: 0.188rem;
-  position: relative;
-  top: 3.125rem;
 }
 main > *:nth-child(2n + 1) {
+  position: relative;
+  top: 3.125rem;
   padding-left: 0.188rem;
 }
-
 .video h1,
 .video p {
   font-size: 0.75rem;
