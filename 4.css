@@ -72,7 +72,7 @@ button:hover {
 }
 
 #songs {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem 2rem 2rem;
 }
 
 #song-album {
@@ -106,8 +106,8 @@ button:hover {
 }
 
 .album-frame {
-    width: 28vw;
-    height: 28vw;
+    width: 26vw;
+    height: 26vw;
     background-color: var(--primary-color);
     border: 1rem solid var(--secondary-color);
     border-radius: 0.4rem;
@@ -124,6 +124,7 @@ button:hover {
 }
 
 #song-singles {
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem
@@ -131,7 +132,7 @@ button:hover {
 
 .song-card {
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
     border-radius: 0.4rem;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -148,6 +149,11 @@ button:hover {
     border-radius: 0.2rem;
 }
 
-.song-card > svg {
+.song-card button {
+    align-self: flex-start;
+}
+
+.song-card svg {
     fill: white;
+    justify-content: flex-end;
 }
