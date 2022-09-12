@@ -1,7 +1,10 @@
+/* Generale */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
 
 :root {
   --content_margin: 1.3rem;
+  --accent_color: #3a595d;
 }
 
 body {
@@ -13,6 +16,9 @@ body {
 .material-symbols-rounded {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
+
+/*Header*/
+
 header {
   position: sticky;
   background-color: white;
@@ -31,9 +37,11 @@ header {
 .header-container h4{
     margin: 0;
 }
-main {
-  
-}
+
+/*Main*/
+
+/* -- Filters*/
+
 .filter-button {
   visibility: hidden;
   position: absolute;
@@ -67,10 +75,10 @@ main {
   font-size: 20px;
 }
 .filters-container input:checked + label.button-style {
-  background-color: #3a595d;
+  background-color: var(--accent_color);
   color: 
   white;
-  border: 1px solid #3a595d;
+  border: 1px solid var(--accent_color);
 }
 .filters-info{
     margin: var(--content_margin);
@@ -81,6 +89,9 @@ main {
     margin: 0;
     padding: 0;
 }
+
+/* -- Hotel Card*/
+
 .hotel-card{
   margin-bottom: 2rem;
   position: relative;
@@ -94,7 +105,7 @@ main {
 }
 .hotel-card i:first-child{
     margin-top: 0.3rem;
-    color: #3A595D;
+    color: var(--accent_color);
 }
 .hotel-card button:first-child{
     height: 3rem;
@@ -141,13 +152,16 @@ main {
 }
 .hotel-info button
 {
-    background-color: #3a595d;
+    background-color: var(--accent_color);
     color: white;
-    border: 1px solid #3a595d;
+    border: 1px solid var(--accent_color);
     margin: 0;
     font-family: inherit;
     font-size: inherit;
 }
+
+/*Footer*/
+
 .footer-button-style span {
   display: block;
   text-align: center;
@@ -184,6 +198,7 @@ main {
   color: #262626;
 }
 
+/*Display size min 768*/
 
 @media screen and (min-width: 768px) {
   .results-container{
