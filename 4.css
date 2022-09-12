@@ -15,10 +15,10 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    /*
+
     background-color: #000;
     color: #fff;
-*/
+
 }
 
 button {
@@ -69,6 +69,10 @@ button:hover {
     display: flex;
     flex-direction: row-reverse;
     margin: -2.7rem 1.2rem 0 0;
+}
+
+#songs {
+    padding: 2rem 1rem;
 }
 
 #song-album {
@@ -134,10 +138,16 @@ button:hover {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    grid-gap: 1rem;
 }
 
 .song-card-img {
     background-color: var(--secondary-color);
     width: 23vw;
     height: 23vw;
+    border-radius: 0.2rem;
+}
+
+.song-card > svg {
+    fill: white;
 }
