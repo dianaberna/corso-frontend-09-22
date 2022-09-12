@@ -225,3 +225,16 @@ h5 {
     left: 20%;
   }
 }
+
+@media screen and (min-width: 1500px){
+  .FirstClose{
+    margin-right: 20%;
+
+  }
+
+  .title{
+    margin-top: 3%;
+    width: 20%;
+    left: 20%;
+  }
+}
