@@ -71,10 +71,40 @@ button:hover {
     margin: -2.7rem 1.2rem 0 0;
 }
 
-.slim-text, .info-key {
+#dashboard {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 3rem; */
+    justify-content: center;
+}
+
+.info-key {
     font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.slim-text {
     font-size: 0.6rem;
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
+}
+
+.info-value {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+section h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #songs {
@@ -163,3 +193,7 @@ button:hover {
     fill: white;
     justify-content: flex-end;
 }
+
+/* .song-card .slim-text {
+    margin-top: 0.2rem;
+} */
