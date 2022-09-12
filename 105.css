@@ -26,7 +26,7 @@ header {
 #progress-bar {
     width: 100%;
     height: 2vw;
-    background-color: var(--seconary-color);
+    background-color: var(--secondary-color);
     border-radius: 1vw;
     display: flex;
     justify-content: flex-start;
@@ -49,7 +49,7 @@ button {
 }
 
 p, legend {
-    color: var(--seconary-color);
+    color: var(--secondary-color);
 }
 
 main {
@@ -65,17 +65,25 @@ form {
 .motivation-option {
     border: 0.18em solid var(--primary-color);
     border-radius: 0.6rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.motivation-option input:checked {
+    accent-color: var(--primary-color);
 }
 
 footer {
     width: 100%;
     /* height: 8vw; */
     border-top: 0.15rem solid var(--secondary-color);
-    position: relative;
-}
-
-footer > div {
     position: fixed;
+    bottom: 0;
 }
 
 footer button {
