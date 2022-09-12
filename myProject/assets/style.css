@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Signika:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=M+PLUS+Rounded+1c:wght@300&family=Signika:wght@300;500&display=swap');
 *{
     padding:0;
     margin: 0;
@@ -8,10 +8,11 @@
 /*********************************** utils ********************
 ************************************************************ */
 a{
+    font-size: 13px;
     color: black;
 }
 .small_card{
- background-color: bisque;
+ background-color: rgb(221, 140, 42);
  min-height:100px;
  width: calc(100% /3);
  
@@ -19,14 +20,15 @@ a{
 .card_large{
     width: 100%;
     min-height: 90px;
-    background-color: bisque;
+    
 }
 
 body{
     width: 100vw;
     /* height: 100vh; */
     font-family: 'El Messiri', sans-serif;
-font-family: 'Signika', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Signika', sans-serif;
 }
 
 
@@ -80,6 +82,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .small_card_wrapper{
@@ -105,7 +108,7 @@ main{
     margin: 0 0 1rem 0;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
     
 }
 
@@ -123,12 +126,18 @@ main{
 .card_large{
     width: 100%;
     position: relative;
+    background: linear-gradient(0deg, rgb(30, 30, 30) 8%, rgba(255,255,255,0) 100%);
+}
+.card_large:hover{
+    background: none;
 }
 .title_inside{
-    
+    color: white;
     position: absolute;
     bottom: 8px;
     left: 5px;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 
