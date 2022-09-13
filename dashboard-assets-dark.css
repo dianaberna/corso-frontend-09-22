@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    background-color: #242731;
+    color: #808191;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -6,11 +13,55 @@ body {
     grid-row-gap: 0px;
 }
 
-#sidebar { grid-area: 1 / 1 / 7 / 2; }
-#searchbar { grid-area: 1 / 2 / 2 / 7; }
-h1 { grid-area: 2 / 2 / 3 / 7; }
-#assets-values { grid-area: 3 / 2 / 7 / 4; }
-#activity-graph { grid-area: 3 / 4 / 4 / 7; }
-#noties { grid-area: 4 / 4 / 6 / 5; }
-#sensors { grid-area: 4 / 5 / 6 / 6; }
-#reminder { grid-area: 6 / 4 / 7 / 6; }
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #808191;
+}
+
+a:active {
+    color: #fff;
+}
+
+#sidebar {
+    grid-area: 1 / 1 / 7 / 2;
+    background-color: #1F2128;;
+}
+
+ /* TODO add #sidebar:first-child and #sidebar:last-child to display flex everything correctly */
+
+#logo-caption {
+    display: flex;
+    direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#logo-caption h1 {
+    color: #fff;
+}
+
+#searchbar {
+    grid-area: 1 / 2 / 2 / 7;
+}
+h1 {
+    grid-area: 2 / 2 / 3 / 7;
+}
+#assets-values {
+    grid-area: 3 / 2 / 7 / 4;
+}
+#activity-graph {
+    grid-area: 3 / 4 / 4 / 7;
+}
+#noties {
+    grid-area: 4 / 4 / 6 / 5;
+}
+#sensors {
+    grid-area: 4 / 5 / 6 / 6;
+}
+#reminder {
+    grid-area: 6 / 4 / 7 / 6;
+}
