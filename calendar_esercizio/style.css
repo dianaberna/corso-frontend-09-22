@@ -124,14 +124,16 @@ a {
 }
 .calendario-container {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .calendario {
   background-color: white;
   border-radius: 6px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
-  height: 450px;
   width: 384px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .upcoming-events {
@@ -140,7 +142,6 @@ a {
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
   height: 421px;
   width: 384px;
-  margin: 10px;
 }
 .pianifica {
   background-color: white;
@@ -158,9 +159,9 @@ a {
   border-radius: 6px;
   width: 22.375rem;
   height: 45px;
-  padding: 0 28px;
+  /* padding: 0 28px; */
   background-color: white;
-  background: white url(img/search.png) no-repeat 2px 13.5px;
+  /* background: white url(img/search.png) no-repeat 2px 13.5px; */
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
 }
 
@@ -274,9 +275,9 @@ a {
 
 .settimaneGrid {
   /* box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1); */
-  border-radius: 12px;
-  height: 400px;
-  padding: 5px;
+  /* border-radius: 12px; */
+  /* height: 400px; */
+  padding: 20px;
   margin-top: 10px;
 }
 .parent {
@@ -291,7 +292,7 @@ a {
 .parent {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 18px;
   grid-row-gap: 20px;
 }
 
@@ -314,4 +315,79 @@ a {
   background-color: #ff6370;
   color: white;
   box-shadow: 0px 6px 20px rgba(255, 126, 134, 0.4);
+}
+
+/* upcoming events */
+.titolo {
+  margin-left: 10px;
+}
+.eventi {
+  padding: 10px;
+}
+.containerEventi {
+  display: grid;
+  grid-template-columns: 3.125rem 18.75rem;
+  grid-template-rows: 20px 40px;
+  gap: 0px 1px;
+  grid-auto-flow: row;
+  align-items: center;
+}
+.impegnoGrid {
+  color: white;
+  border-bottom: solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.impegnoGrid > div {
+  height: 1px;
+  background-color: #72767c2e;
+}
+.orarioGrid {
+  color: #72767c;
+}
+.impegnoPreso {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1px;
+  float: right;
+  width: 17.5rem;
+  height: 3.125rem;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #a162f7;
+  padding: 10px;
+}
+.fotoPersone {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.numeroPersoneInvitate {
+  display: table;
+  background-color: rgba(182, 131, 255, 1);
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  text-align: center;
+  padding: 2px;
+}
+.numeroPersoneInvitate > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.fotoPersone > div {
+  margin-left: -5px;
+}
+.numeroPersoneInvitate {
+  margin-left: -5px;
 }
