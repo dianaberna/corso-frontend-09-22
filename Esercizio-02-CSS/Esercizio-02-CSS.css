@@ -89,6 +89,7 @@ p {
     width: 48px;
     max-height: 48px;
     box-sizing: border-box;
+    cursor: pointer;
     border: 1px solid #ccc;
     background-color: white;
     background-position: 10px 10px; 
