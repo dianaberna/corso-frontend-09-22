@@ -214,8 +214,8 @@ div.giorni > p:nth-child(1) {
   margin-right: 3%;
 }
 
-#dimensione{
-    width: 90%;
+#dimensione {
+  width: 90%;
 }
 footer {
   width: 100%;
@@ -229,25 +229,24 @@ footer > div {
   justify-content: space-around;
 }
 
-@media screen and (min-width:700px) {
-    .steps>svg{
-        width: 10%;
-    }
+@media screen and (min-width: 700px) {
+  .steps > svg {
+    width: 10%;
+  }
 
-    .heart>svg{
-        width: 10%;
-    }
+  .heart > svg {
+    width: 10%;
+  }
 
-    nav svg{
-        width: 4%;
-    }
+  nav svg {
+    width: 4%;
+  }
 
-    .heartSteps{
-        margin-top: 10%;
-        gap: 15rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10%;
-
-    }
+  .heartSteps {
+    margin-top: 10%;
+    gap: 15rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 }
