@@ -63,8 +63,8 @@ button {
 }
 
 .cerchio img {
-width: 24px;
-height: 16px;
+	width: 24px;
+	height: 16px;
 }
 
 /*Smartphone*/
@@ -74,7 +74,7 @@ h2 {
     font-size: 2rem;
 }
 
-p 	{
+p {
     font-size: 1.2rem;
 }
 
