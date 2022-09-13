@@ -2,8 +2,7 @@ main {
   margin-left: 3%;
   margin-right: 3%;
 }
-/* non capisco perchè non mi prenda nessun comando nella classe color ho provato anche con l'id
-sembra che non prenda nessun comando in quel div  */
+
 .colore{
 
   font-size: larger;
