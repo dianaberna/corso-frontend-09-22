@@ -37,7 +37,7 @@ div.annuncio>.columnUP{
 .columnUP>.titolo{
     width: 70%;
 }
-.columnUP>.immagine{
+.columnUP>.immagine,.columnUP>.immagine1,.columnUP>.immagine2{
     width: 75px;
     height: 75px;
     background-color: #C4C4C4   ;
@@ -71,4 +71,78 @@ div.annuncio>.ColumnDown{
     border-radius: 10px;
     height: 3px;
     background-color: #A8A8A8;
+}
+
+.columnUP>.immagine1,.columnUP>.immagine2{
+ display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.immagine1>.blok,.immagine2>.blok{
+    top: 5px;
+    right: 3px;
+    position: relative;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+}
+div.titolo{
+    font-size: 20px;
+    font-weight: bold;
+}
+#comments{
+    font-size: medium;
+    color: #C4C4C4;
+}
+
+.annuncioinlinea{
+    margin-top: 50px;
+    background-color: #F4F4F4;
+    height: 144px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blocchi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:16px
+}
+
+.blocchi>.bloks{
+    width: 55px;
+    border-radius: 8px;
+    height: 55px;
+    background-color: #525252;
+}
+.annuncioinlinea>.columnStart{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.columnStart>.rowEnd{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rowEnd>.box{
+    width: 4px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #525252;
+}
+
+.annuncioinlinea>piccololinea{
+    width:20px ;
+    height: 10px;
+    background-color: #525252;
+
 }
