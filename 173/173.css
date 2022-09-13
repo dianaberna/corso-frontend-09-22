@@ -43,8 +43,7 @@ header {
 /* -- Filters*/
 
 .filter-button {
-  visibility: hidden;
-  position: absolute;
+  display: none;
 }
 .filters-container{
     margin: 0;
@@ -100,7 +99,7 @@ header {
   margin-bottom: 6rem;
 }
 .hotel-card img{
-  width: 100vw;
+  width: 100%;
 
 }
 .hotel-card i:first-child{
@@ -172,6 +171,7 @@ header {
   text-align: center;
   font-size: 20px;
   color: gray;
+  margin-bottom: 0.3rem;
 }
 .footer-menu{
   position: fixed;
