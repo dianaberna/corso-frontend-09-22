@@ -1,132 +1,139 @@
-p {
-    margin-top: -1%;
-    color: rgb(0, 0, 0);
-    font-family: 'Work Sans', sans-serif;
-    
-}
-
-nav {
-    width: 100%;
+@media screen and (max-width: 4000px) and (min-width: 896px) {
+  #pulsanti {
+    scale: 1.9;
     position: absolute;
-    justify-content: space-around;
+    height: 50px;
     display: flex;
-    margin-top: 8%;
-    color: rgb(0, 0, 0);
-}
+    border-radius: 30px;
+    top: -1%;
+    padding-left: 28%;
+  }
 
-#pulsanti {
-    
-left: 40px;
-scale: 1.9;
-position: absolute;                   
- height: 50px;
-margin-top: 600px;
-margin-left: 70px;
-display: flex;
-border-radius: 30px;
-
-}
-
- button {
-
-display: flex;
-flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid #D0D0D0;
-    border-radius: 15px;
-    font-family: 'Work Sans', sans-serif;
-    margin-right: 5px;
-    background-color: #D0D0D0;
-    font-size: xx-small;
-    width: 56px;
-    height: 56px;
-    
-
-}
-
-#rettangolo {
-
+  #rettangolo {
     background-color: #ffffff;
     width: 414px;
     height: 180px;
     position: absolute;
     z-index: 1;
     bottom: 0px;
-    border: 1px solid #D0D0D0;
+    border: 1px solid #d0d0d0;
     border-radius: 25px 25px 0px 0px;
-    left: 0px;
-    right: 0px;
+    margin-left: 40%;
+    top: 80%;
+  }
+}
 
+p {
+  margin-top: -1%;
+  color: rgb(0, 0, 0);
+  font-family: "Work Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 8%;
+  color: rgb(0, 0, 0);
+}
+
+#pulsanti {
+  left: 40px;
+  scale: 1.9;
+  position: absolute;
+  height: 50px;
+  margin-top: 600px;
+  margin-left: 70px;
+  display: flex;
+  border-radius: 30px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #d0d0d0;
+  border-radius: 15px;
+  font-family: "Work Sans", sans-serif;
+  margin-right: 5px;
+  background-color: #d0d0d0;
+  font-size: xx-small;
+  width: 56px;
+  height: 56px;
+}
+
+#rettangolo {
+  background-color: #ffffff;
+  width: 414px;
+  height: 180px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  border: 1px solid #d0d0d0;
+  border-radius: 25px 25px 0px 0px;
+  left: 0px;
+  right: 0px;
 }
 
 #testo1 {
-
-    font-size:x-large;
-    margin: 15px 0px 7px 15px;
-    
+  font-size: x-large;
+  margin: 15px 0px 7px 15px;
 }
 
 #testo2 {
-    font-size: small;
-    margin: 0px 0px 0px 15px;
- 
-
+  font-size: small;
+  margin: 0px 0px 0px 15px;
 }
 
 .stella {
-
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 #testo3 {
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: -20px 30px;
-    font-size: small;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: -20px 30px;
+  font-size: small;
 }
 
 #ordine {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: large;
-    margin: 45px 0px 0px 15px;
-    height: 30px;
-    width: 125px;
-    background-color: rgb(255, 255, 255,0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  margin: 45px 0px 0px 15px;
+  height: 30px;
+  width: 125px;
+  background-color: rgb(255, 255, 255, 0);
 }
 
-#prezzo{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 20px 0px 0px 15px;
-    font-size: x-large;
+#prezzo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 0px 0px 15px;
+  font-size: x-large;
 }
 
-
-
-#carrello{
-     width: 160px;
-        height: 45px;
-        font-size: small;
-        margin-left: 135px;
-        margin-top: -10px;
+#carrello {
+  width: 160px;
+  height: 45px;
+  font-size: small;
+  margin-left: 135px;
+  margin-top: -10px;
 }
 .container {
-    font-family: 'Work Sans', sans-serif;
-    background-image: url(orologio.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    width: 105%;
-    background-size: cover;
-    background-position: center;
-    margin-left: -2%;
-    padding: 0%;
+  font-family: "Work Sans", sans-serif;
+  background-image: url(orologio.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 105%;
+  background-size: cover;
+  background-position: center;
+  margin-left: -2%;
+  padding: 0%;
 }
