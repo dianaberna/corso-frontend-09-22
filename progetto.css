@@ -4,12 +4,45 @@
   padding: 0px;
 }
 
-.container-bar {
-  width: 400px;
-  position: relative;
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
 }
 
-.order-button {
+.subscribe > div {
+  position: relative;
+  width: 55rem;
+}
+
+.subscribe > div img {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.text p {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.input-container {
+  width: 400px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-container button {
   padding: 11px 28px;
   border-radius: 20px;
   border: none;
@@ -24,57 +57,31 @@
   z-index: 2;
 }
 
-.email-bar {
+.input-container input {
   width: 100%;
   padding: 10px 100px 10px 20px;
   border-radius: 50px;
   box-sizing: border-box;
   outline: none;
   border-color: white;
-  
+  border-style: solid;
 }
 
-.email-bar::placeholder {
+.input-container input ::placeholder {
   font-weight: 600;
 }
 
-.text {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: white;
-  
-}
 
-.container {
-  position: relative;
-  width: 900px;
-}
 
-.container img {
-  width: 100%;
-}
 
-.position {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.container-text {
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, -50%);
-}
 
-.flex-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   margin: 50px;
-}
+
+
+
+
+
+
 
 
 
