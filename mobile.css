@@ -1,27 +1,4 @@
-@media screen and (max-width: 4000px) and (min-width: 896px) {
-  #pulsanti {
-    scale: 1.9;
-    position: absolute;
-    height: 50px;
-    display: flex;
-    border-radius: 30px;
-    top: -1%;
-    padding-left: 28%;
-  }
 
-  #rettangolo {
-    background-color: #ffffff;
-    width: 414px;
-    height: 180px;
-    position: absolute;
-    z-index: 1;
-    bottom: 0px;
-    border: 1px solid #d0d0d0;
-    border-radius: 25px 25px 0px 0px;
-    margin-left: 40%;
-    top: 80%;
-  }
-}
 
 p {
   margin-top: -1%;

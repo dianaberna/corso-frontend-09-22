@@ -1,0 +1,99 @@
+p {
+    margin-top: -1%;
+    color: rgb(0, 0, 0);
+    font-family: "Work Sans", sans-serif;
+  }
+  nav {
+   
+    justify-content: space-around;
+    display: flex;
+    color: rgb(0, 0, 0);
+  }  
+
+
+  .container {
+    font-family: "Work Sans", sans-serif;
+    background-image: url(orologio.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 105%;
+    background-size: cover;
+    background-position: center;
+    margin-left: -2%;
+    
+  }
+  button {
+    
+    border: 36px solid #d0d0d0;
+    border-radius: 25px;
+    font-family: "Work Sans", sans-serif;
+background-color: #d0d0d0;
+    font-size:xx-small;
+    width: 20%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:55em;
+  margin-left: 4em;
+
+  }
+
+  #rettangolo {
+    background-color: #ffffff;
+    width: 33em;
+    height: 22em;
+    border: 1px solid #d0d0d0;
+    border-radius: 25px 25px 0px 0px;
+    margin-left: -4em;
+    scale: 0.8;
+  }
+
+  #testo1 {
+    font-size: x-large;
+    margin: 2rem 7rem 1rem 3rem;
+  }
+  
+  #testo2 {
+    font-size: small;
+    margin: -1em 0em 1em 4em;
+  }
+  
+  .stella {
+    margin-left: 2em;
+  }
+  
+  #testo3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: -2em 10em;
+    font-size: small;
+  }
+  /* completare da qui */
+  #ordine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    margin: 3em 0em 0em 15em;
+    height: 1em;
+    width: 7em;
+    background-color: rgb(255 255 255);
+  }
+  
+  #prezzo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0px 0px 15px;
+    font-size: x-large;
+  }
+  
+  #carrello {
+    width: 160px;
+    height: 45px;
+    font-size: small;
+    margin-left: 135px;
+    margin-top: -10px;
+  }
