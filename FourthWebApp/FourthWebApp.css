@@ -1,0 +1,77 @@
+body{
+   background-color: #191919;
+   color:white;
+}
+
+#loading{
+    position: absolute;
+    transform: translate(0rem, -1rem);
+}
+
+#dimensione>img{
+    width: 100%;
+    height: 3px;
+}
+
+.text>p{
+    font-size: x-large;
+    font-weight: bolder;
+    margin-block-end: 0em;
+    word-spacing: 2px;
+}
+
+.text>p+p{
+    font-size: smaller;
+    font-weight: lighter;
+    margin-block-end: 4em;
+    word-spacing: 4px;
+}
+
+
+.Reason{
+    border: solid 2px gray;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+.Reason:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+button{
+    background-color: #3A595D;
+    border:none;
+    border-radius: 50px;
+    height: 2.5rem;
+    width: 80%;
+    color:white;
+    cursor: pointer;
+}
+
+button+button{
+    background: none;
+    border: none;
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20%;
+}
+
+@media screen and (min-width: 500px){
+   body{
+    width: 50%;
+    margin-left: 25%;
+    overflow-x: hidden;
+   }
+}
