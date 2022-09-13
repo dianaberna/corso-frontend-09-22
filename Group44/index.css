@@ -1,5 +1,5 @@
 *{
-    background-color: gray;
+background-color: rgb(245, 245, 245);
     font-family: 'Lato';
     font-style: normal;
 }
@@ -48,7 +48,7 @@
 #ButtonDiv>button:hover{
     background-color: #84ffff;
 }
-svg:hover{
+span>svg:hover{
     margin: 5px;
 }
 svg{
@@ -61,4 +61,28 @@ svg{
 
 .title,.commento,svg{
     margin-bottom: 10px;
+}
+
+.box>.vector{
+    background-color: transparent;
+    margin: auto;
+    position: relative;
+    margin-left: 88%;
+    padding-bottom: 60%;
+}
+.vec1,.vec2{
+    background-color: transparent;
+}
+.vector>.vec2{
+    background-color: transparent;
+    position: relative;
+    right: 25px;
+    bottom: 62px;
+}
+.vector>.vec1{
+    background-color: transparent;
+    position: relative;
+    left: 8px;
+    bottom: 25px;
+
 }

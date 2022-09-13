@@ -1,10 +1,10 @@
-@media ( min-width: 360px ) {
-    *{margin:5px;
-        
-    margin-top: 10px;} 
-    h2{
-        font-weight: bold;
-    }
+
+*{margin:5px;
+    
+margin-top: 10px;} 
+h2{
+    font-weight: bold;
+}
 .iconebottom{
     height: 45px;
     display: flex;
@@ -23,7 +23,7 @@
 }
 .boxs{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 .ultimaimage{
@@ -40,4 +40,3 @@
     height: 20px;
 }
 
-}

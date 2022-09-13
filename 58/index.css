@@ -1,15 +1,19 @@
 
-@media  (max-width: 480px) {
+
 
     .tutto{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-content: center;
     }
     header{padding: 25px;
         display: flex;
         align-items: center;
-        gap:55% ;
+        justify-content: space-between;
+    }
+    header>svg{
+        padding-right: 35px;
     }
     header>.column{
          /* dopo */}
@@ -51,4 +55,3 @@
     .imageButtons>img{
         width: 80%;
     }
-}

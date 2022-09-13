@@ -1,0 +1,74 @@
+
+html,body{
+    margin:0px;
+    padding:0;
+}
+    
+.AppBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    box-shadow: 0px 14px 10px -4px rgba(232,232,232,0.59);
+}
+.AppBar>.AppBarSinistra{
+    display: flex;
+    align-items: center;
+}
+.AppBarSinistra,.AppBarDestra{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    gap: 25px;
+}
+div.annuncio{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;padding-left: 25px;
+        padding-right: 25px;
+}
+div.annuncio>.columnUP{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.columnUP>.titolo{
+    width: 70%;
+}
+.columnUP>.immagine{
+    width: 75px;
+    height: 75px;
+    background-color: #C4C4C4   ;
+}
+
+div.annuncio>.ColumnDown{
+    display: flex;
+}
+.description>.autor{
+    font-size: 14px;
+    font-weight: 500;
+}
+.description>.data{
+    font-size: 12px;
+    color: #A8A8A8;
+}
+
+.ColumnDown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.ColumnDown>.icons{
+    display: flex;
+    gap: 40px;
+}
+.underlinea{
+    padding-left: 30%;
+    width: 70%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: #A8A8A8;
+}
