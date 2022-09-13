@@ -101,6 +101,24 @@ flex-direction: column;
     background-color: rgb(255, 255, 255,0);
 }
 
+#prezzo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0px 0px 15px;
+    font-size: x-large;
+}
+
+
+
+#carrello{
+     width: 160px;
+        height: 45px;
+        font-size: small;
+        margin-left: 135px;
+        margin-top: -10px;
+}
 .container {
     font-family: 'Work Sans', sans-serif;
     background-image: url(orologio.png);
