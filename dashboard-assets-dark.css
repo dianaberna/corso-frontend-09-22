@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 2px;
     grid-row-gap: 0px;
 }
 
@@ -50,16 +50,19 @@ a:active {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    align-items: center;
 }
 
 #sidebar li:hover {
-    background-color: #292E3D;
+    background-color: #292e3d95;
     border-radius: 0.2rem;
 }
 
-#sidebar a[active] {
+#sidebar a[active], #sidebar li[active] {
     color: #fff;
+    background-color: #292E3D;
 }
 
 #sidebar > ul:last-child {
@@ -78,7 +81,7 @@ a:active {
 
 #logo-caption h1 {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #logo-caption + ul {
@@ -87,6 +90,8 @@ a:active {
 }
 
 #searchbar {
+    background-color: var(--sidebar-color);
+    /* GRIDBOX */
     grid-area: 1 / 2 / 2 / 7;
 }
 h1 {
