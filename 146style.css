@@ -9,14 +9,14 @@ body{
     background-color: #191919;
 }
 
-#file{  width:358px;
+#file{  width:358px; margin-left: 16px;
 }
 
-h1 { font-size: 20px;
+h1 { font-size: 20px; margin-left: 16px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 16px; margin-left: 16px;
 }
 
 .list>div{ 
@@ -44,7 +44,7 @@ padding-top: 24px;
 .list{
     margin-left: 16px;
     margin-right: 16px;
-    margin-bottom: 24px;
+    padding-bottom: 80px;
 }
 
 .button {
@@ -60,6 +60,7 @@ padding-top: 24px;
         width: 358px;
         margin-left: 16px;
         margin-right: 16px;
+        
     }
 
     .secbutton {
@@ -71,8 +72,9 @@ padding-top: 24px;
         display: flex;
         align-items: center;
         padding-left: 146px;
-        position: absolute;
+       
         text-decoration:none;
+        padding-top: 24px;
     }
 
        
