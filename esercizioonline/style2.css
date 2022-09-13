@@ -31,3 +31,9 @@ h3 {
 body {
     font-family: 'Work Sans';
 }
+.bar{
+    position: absolute;
+    align-self: center;
+    margin-left: -5px;
+    margin-top: 30px;
+}
