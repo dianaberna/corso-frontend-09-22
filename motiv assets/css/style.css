@@ -46,7 +46,8 @@ main{
     margin-bottom: 0.75rem;
     display: flex;
     position: relative;
-    min-width: 100%
+    min-width: 100%;
+    cursor: pointer;
 }
 .menu_buttons:hover{
     background-color: #F3F5F8;
@@ -69,13 +70,14 @@ main{
     display: flex;
     background-color: #fff;
     margin-left: .0625rem;
-    padding: 1rem 0 1rem 1.875rem;
+    padding: 1rem 1.875rem 1rem 1.875rem;
     justify-content: space-between;
 }
 .content .nav div:first-child{
     display: flex;
     align-items: center;
     position: relative;
+    padding-right: 4rem;
 }
 .content .nav div:first-child svg{ 
     position: absolute;
@@ -96,8 +98,20 @@ main{
 .content .nav div:last-child{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.content .nav div:last-child img{
-    padding-right: 1.875rem;
-    padding-left: 2.4375rem;
+.content .nav div:last-child button{
+    background-image: url("../assets/avatar.png");
+    width: 3.125rem;
+    height: 3.125rem;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.content .nav div:last-child svg{
+    cursor: pointer;
+    padding-left: 0;
 }
