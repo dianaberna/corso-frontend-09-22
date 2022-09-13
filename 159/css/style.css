@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.intero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    gap: 0.9375rem;
+}
+
+.intero > div {
+    background-color: #F4F4F4;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 22.375rem;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+progress {
+    padding: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 0.5rem;
+    background: #D0D0D0;
+}
+
+progress::-webkit-progress-value {
+    background: #AAB6B3;
+}
