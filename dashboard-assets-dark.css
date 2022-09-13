@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+    --bg-color: #1F2128;
+    --sidebar-color: #242731;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #242731;
+    background-color: var(--bg-color);
     color: #808191;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    /* GRIDBOX */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -28,20 +38,52 @@ a:active {
 
 #sidebar {
     grid-area: 1 / 1 / 7 / 2;
-    background-color: #1F2128;;
+    height: 100vh;
+    padding: 1.4rem 2.4rem 1.4rem 1.2rem;
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
- /* TODO add #sidebar:first-child and #sidebar:last-child to display flex everything correctly */
+#sidebar li {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+#sidebar li:hover {
+    background-color: #292E3D;
+    border-radius: 0.2rem;
+}
+
+#sidebar a[active] {
+    color: #fff;
+}
+
+#sidebar > ul:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
 
 #logo-caption {
     display: flex;
     direction: row;
     justify-content: flex-start;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 #logo-caption h1 {
     color: #fff;
+    font-size: 1.2rem;
+}
+
+#logo-caption + ul {
+    display: flex;
+    flex-direction: column;
 }
 
 #searchbar {
