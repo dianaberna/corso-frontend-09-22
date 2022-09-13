@@ -9,13 +9,73 @@
 </head>
 
 <body>
+
+    <div class="sidebar">
+        <p>
+            <h1>
+                Siderbar
+            </h1>
+        
+        <!-- menu barra laterale -->
+        </p>
+        <div>
+            <img src="img\motiv_logo.png" alt="icona motiv">
+            Motiv
+        </div>
+        <div>
+            <img src="img\dashboard_icon.png" alt="icona dashboard">
+             Dashboard
+        </div>
+        <div>
+            <img src="img\wheel.png" alt="icona asset">
+            Assets
+        </div>
+        <div>
+            <img src="img\car.png" alt="icona booking">
+            Booking
+        </div>
+        <div>
+            <img src="img\shop-bag.png" alt="">
+            Sell cars
+        </div>
+        <div>
+            <img src="img\cart.png" alt="icona booking">
+            <img src="" alt="">
+            Buy cars
+        </div>
+        <div>
+            <img src="img\fencing.png" alt="icona service">
+            Services
+        </div>
+        <div>
+            <img src="img\calendar.png" alt="icona calendario">
+            Calendar
+        </div>
+        <div>
+            <img src="img\message.png" alt="icona messaggi">
+            Messages
+        </div>
+
+        <div id="side-bassa">
+            <div>
+                <img src="img\settings.png" alt="icona settings">
+                Settings
+            </div>
+            <div>
+                <img src="img\logout.png" alt="icona logout">
+                Log out
+            </div>
+        </div>
+        
+    </div>
+
     <div class="dashboard1">
-        <div class="item header">
+        <div class="header">
             <h1>
                 Header
             </h1>
             <!-- barra di navigazione -->
-            <div class="navmenu">
+            <div id="navmenu">
                     <span>
                         <img src="img\search.png" alt="icona ricerca">
                     <input type="text" placeholder="Search or type">
@@ -29,62 +89,9 @@
                     </span>
             </div>
         </div>
-        <div class="item sidebar">
-            <p>
-                <h1>
-                    Siderbar
-                </h1>
-            
-            <!-- menu barra laterale -->
-            </p>
-            <div>
-                <img src="img\motiv_logo.png" alt="icona motiv">
-                Motiv
-            </div>
-            <div>
-                <img src="img\dashboard_icon.png" alt="icona dashboard">
-                 Dashboard
-            </div>
-            <div>
-                <img src="img\wheel.png" alt="icona asset">
-                Assets
-            </div>
-            <div>
-                <img src="img\car.png" alt="icona booking">
-                Booking
-            </div>
-            <div>
-                <img src="img\shop-bag.png" alt="">
-                Sell cars
-            </div>
-            <div>
-                <img src="img\cart.png" alt="icona booking">
-                <img src="" alt="">
-                Buy cars
-            </div>
-            <div>
-                <img src="img\fencing.png" alt="icona service">
-                Services
-            </div>
-            <div>
-                <img src="img\calendar.png" alt="icona calendario">
-                Calendar
-            </div>
-            <div>
-                <img src="img\message.png" alt="icona messaggi">
-                Messages
-            </div>
-            <div>
-                <img src="img\settings.png" alt="icona settings">
-                Settings
-            </div>
-            <div>
-                <img src="img\logout.png" alt="icona logout">
-                Log out
-            </div>
-        </div>
+        
 
-        <div class="content"></div>
+        <div class="content">
         <!-- Prima riga della Grid -->
             <div id="content-1">
                 <img src="img\energy.png" alt="icona energy">
@@ -119,40 +126,42 @@
             <div id="content-5">Mile statistics</div>
             <div id="content-6">Car statistics</div>
             
-            <!-- Terza riga della Grid -->
-            <div id="content-7">
-                <img src="img\recommend.png" alt="icona conasigli">
-                <div><img src="img\mini-cooper.png" alt="mini cooper"></div>
-                Mini Cooper
-                <div>
-                    <img src="img\review.png" alt="icona review">
-                    <img src="img\132k.png" alt="icona review">
-                    <img src="img\add.png" alt="icona aggiungi">
-                    <img src="img\notify-me.png" alt="icona notificami">
+            <!-- Terza riga della Grid, da gestire con display flex -->
+            <div class="terza-riga">
+                <div id="content-7">
+                    <img src="img\recommend.png" alt="icona conasigli">
+                    <div><img src="img\mini-cooper.png" alt="mini cooper"></div>
+                    Mini Cooper
+                    <div>
+                        <img src="img\review.png" alt="icona review">
+                        <img src="img\132k.png" alt="icona review">
+                        <img src="img\add.png" alt="icona aggiungi">
+                        <img src="img\notify-me.png" alt="icona notificami">
+                    </div>
                 </div>
-            </div>
-            <div id="content-8">
-                <img src="img\recommend.png" alt="icona conasigli">
-                <div><img src="img\porscheA.png" alt="mini cooper"></div>
-                Porsche 911 Carrera A
-                <div>
-                    <img src="img\review.png" alt="icona review">
-                    <img src="img\130k.png" alt="icona review">
-                    <img src="img\add.png" alt="icona aggiungi">
-                    <img src="img\notify-me.png" alt="icona notificami">
+                <div id="content-8">
+                    <img src="img\recommend.png" alt="icona conasigli">
+                    <div><img src="img\porscheA.png" alt="mini cooper"></div>
+                    Porsche 911 Carrera A
+                    <div>
+                        <img src="img\review.png" alt="icona review">
+                        <img src="img\130k.png" alt="icona review">
+                        <img src="img\add.png" alt="icona aggiungi">
+                        <img src="img\notify-me.png" alt="icona notificami">
+                    </div>
                 </div>
-            </div>
-            <div id="content-9">
-                <img src="img\recommend.png" alt="icona conasigli">
-                <div><img src="img\porscheB.png" alt="mini cooper"></div>
-                Porsche 911 Carrera B
-                <div>
-                    <img src="img\review.png" alt="icona review">
-                    <img src="img\130k.png" alt="icona review">
-                    <img src="img\add.png" alt="icona aggiungi">
-                    <img src="img\notify-me.png" alt="icona notificami">
+                <div id="content-9">
+                    <img src="img\recommend.png" alt="icona conasigli">
+                    <div><img src="img\porscheB.png" alt="mini cooper"></div>
+                    Porsche 911 Carrera B
+                    <div>
+                        <img src="img\review.png" alt="icona review">
+                        <img src="img\130k.png" alt="icona review">
+                        <img src="img\add.png" alt="icona aggiungi">
+                        <img src="img\notify-me.png" alt="icona notificami">
+                    </div>
                 </div>
-            </div>
+            </div>   
         </div>
         
     </div><!-- fine div classe dashboard1 -->

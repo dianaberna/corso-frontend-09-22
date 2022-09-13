@@ -1,12 +1,20 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
 
 
+.sidebar{
+    height: 100%;
+    margin: 10px;
+}
 
 .dashboard1{    
     display: grid;
-    width:100%;
-    height: 100%;
-    grid-template-columns: 150px repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    /* width:100%;
+    height: 100%; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 20px;
 }
@@ -15,73 +23,82 @@
 /*PROVA CON GRID AREA*/
 
 .header{
-    grid-area: 1 / 2 / 2 / 13;
+    grid-area:  1 / 1 / 2 / 9;
+    height: 50px;
 }
 
-.sidebar{
-    grid-area: 1 / 1 / 2 / 13;
+.dashboard1 > .content > #content-1{
+    grid-area:  2 / 1 / 3 / 3;
 }
 
-#content-1{
-    grid-area: 2 / 2 / 3 / 4;
+.dashboard1 > .content > #content-2{
+    grid-area: 2 / 3 / 3 / 5;
 }
 
-#content-2{
+.dashboard1 > .content > #content-3{
     grid-area: 2 / 5 / 3 / 7;
 }
 
-#content-3{
-    grid-area: 2 / 8 / 3 / 10;
+.dashboard1 > .content > #content-4{
+    grid-area:  2 / 7 / 3 / 9;
 }
 
-#content-4{
-    grid-area: 2 / 11 / 3 / 13;
+.dashboard1 > .content > #content-5{
+    grid-area: 3 / 1 / 4 / 5;
 }
 
-#content-5{
-    grid-area: 3 / 2 / 4 / 7;
+.dashboard1 > .content > #content-6{
+    grid-area:  3 / 5 / 4 / 9;
 }
 
-#content-6{
-    grid-area: 3 / 8 / 4 / 13;
+.dashboard1 > .content > .terza-riga{
+    grid-area: 4 / 1 / 5 / 9;
 }
 
-#content-7{
-    grid-area: 4 / 2 / 5 / 5;
-}
-
-#content-8{
+/* #content-8{
     grid-area: 4 / 6 / 5 / 9;
 }
 
 #content-9{
     grid-area:  4 / 10 / 5 / 13;
 }
+ */
+
+
+
 
 
 /* Altri stili NON riguardanti la Grid*/
 
-body{
-    background-color: white;
+.dashboard1{
+    background-color: lightgrey;
 }
 
-.navmenu{
-    background-color: #0000002a;
+.header{
+    height: 100px;
+    background-color: white;
     box-shadow:  rgba(0,0,0,0.10)k;
     border-color:  #000000;
     border-radius: 14px;
-    
+    margin: 10px;
 }
 
-.navmenu span :nth-child(4){
+.header > #navmenu{
+    background-color: white;
+    border-width: 10px;
+    border-color: #000000;
+    border-radius: 14px;
+}
+
+#navmenu span :nth-child(4){
     float: right;
 }
 
-#side-bassa{
+/* #side-bassa{
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
-}
+} */
 
 #content-1{
     background-color: #A162F7;
@@ -92,21 +109,21 @@ body{
 }
 
 #content-2{
-    background-color: lightgray;
+    background-color: white;
     border-width: 5px;
     border-color: black;
     border-radius: 14px;
 }
 
 #content-3{
-    background-color: lightgray;
+    background-color: white;
     border-width: 5px;
     border-color: black;
     border-radius: 14px;
 }
 
 #content-4{
-    background-color: lightgrey;
+    background-color: white;
     border-width: 5px;
     border-color: black;
     border-radius: 14px;
