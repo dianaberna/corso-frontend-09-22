@@ -330,7 +330,7 @@ a {
   grid-template-rows: 20px 40px;
   gap: 0px 1px;
   grid-auto-flow: row;
-  align-items: center;
+  align-items: start;
 }
 .impegnoGrid {
   color: white;
@@ -341,12 +341,15 @@ a {
   align-items: stretch;
   align-content: flex-start;
 }
-.impegnoGrid > div {
+.divisoreEventi {
   height: 1px;
   background-color: #72767c2e;
 }
 .orarioGrid {
   color: #72767c;
+}
+#hideImpegno {
+  display: none;
 }
 .impegnoPreso {
   display: flex;
@@ -361,6 +364,9 @@ a {
   color: white;
   background-color: #a162f7;
   padding: 10px;
+}
+#urgenteImpegno {
+  background-color: #70cf97;
 }
 .fotoPersone {
   position: relative;
@@ -380,6 +386,9 @@ a {
   margin-bottom: 6px;
   text-align: center;
   padding: 2px;
+}
+#urgentenumeroPersone {
+  background-color: #87d1a6;
 }
 .numeroPersoneInvitate > span {
   display: table-cell;
