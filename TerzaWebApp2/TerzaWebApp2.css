@@ -1,0 +1,253 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  width: 6%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% 4% 4% 4%;
+}
+.cerchioEsterno {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  position: relative;
+}
+.cerchioRosso {
+  position: absolute;
+}
+
+.caricamentoRosso {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  transform: translate(86px, -185px);
+  justify-content: center;
+}
+.cerchioBlu {
+  position: absolute;
+}
+.caricamentoBlu {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-1px, -140px);
+}
+
+.centroCerchio {
+  text-align: center;
+  line-height: 2px;
+}
+
+.centroCerchio > p {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.8em;
+}
+.centroCerchio > p + p {
+  font-size: large;
+  font-weight: bolder;
+  color: #0089d9;
+}
+
+.heartSteps {
+  margin-top: 20%;
+  gap: 44px;
+  display: flex;
+}
+
+.heart {
+  display: flex;
+  gap: 13px;
+  justify-content: flex-end;
+}
+.heart > svg {
+  width: 15%;
+  fill: #0089d9;
+}
+
+.steps {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.steps > svg {
+  width: 15%;
+  fill: #f25700;
+}
+
+.calorie {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#calorie > p {
+  margin-block-start: -0.7em;
+}
+article {
+  box-shadow: 0px 0px 10px 2px rgba(103, 103, 103, 0.42);
+  border-radius: 20px;
+  height: 10rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 14%;
+  overflow: scroll;
+}
+
+article::-webkit-scrollbar {
+  display: none;
+}
+
+article > div.daily {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
+}
+
+article > div.vector {
+  width: 90%;
+  height: -21%;
+  height: -10px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  transform: translate(-1rem, -3rem);
+}
+
+article > div.achieved {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.daily > p {
+  margin-block-end: 0;
+  font-size: larger;
+  font-weight: bolder;
+  margin-block-start: 0.5rem;
+}
+
+.daily > p + p {
+  margin-block-start: 0;
+  font-size: smaller;
+  font-weight: lighter;
+  color: #9b9b9b;
+}
+
+.achieved > p {
+  margin-block-end: 0;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.achieved > p + p {
+  margin-block-start: 0;
+  font-size: small;
+  font-weight: lighter;
+  color: #9b9b9b;
+}
+
+.settimana {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 2%;
+  margin-top: 1rem;
+}
+
+div.giorni > p:nth-child(1) {
+  position: absolute;
+  transform: translate(0.2rem, 0.3rem);
+}
+
+.weekly {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+.weekly > p {
+  font-size: larger;
+  font-weight: 600;
+}
+.barra {
+  display: flex;
+  margin-left: 2%;
+  gap: 3rem;
+}
+
+.barraInterno {
+  display: flex;
+}
+.barraInterno > p {
+  transform: translate(0.1rem, 0);
+}
+
+.barra > p {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.barra > p + p + p {
+  position: sticky;
+  transform: translate(-15.1rem, 0);
+}
+
+.testo > p {
+  margin-block-start: 0;
+  text-align: justify;
+  display: flex;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+
+#dimensione{
+    width: 90%;
+}
+footer {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width:700px) {
+    .steps>svg{
+        width: 10%;
+    }
+
+    .heart>svg{
+        width: 10%;
+    }
+
+    nav svg{
+        width: 4%;
+    }
+
+    .heartSteps{
+        margin-top: 10%;
+        gap: 15rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+
+    }
+}
