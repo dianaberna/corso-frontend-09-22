@@ -36,11 +36,18 @@ a:active {
     color: #fff;
 }
 
+#sidebar, #searchbar, #assets-values, #activity-graph, #noties, #sensors, #reminder {
+    background-color: var(--sidebar-color);
+}
+
+#assets-values, #activity-graph, #noties, #sensors, #reminder {
+    border-radius: 0.8rem;
+}
+
 #sidebar {
     grid-area: 1 / 1 / 7 / 2;
     height: 100vh;
     padding: 1.4rem 2.4rem 1.4rem 1.2rem;
-    background-color: var(--sidebar-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
