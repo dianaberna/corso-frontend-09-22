@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+#days{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+   
+    
+}
+.day{
+    padding: 3px 11.2px;
+    font-size: 10px;
+    margin: 7.3px;
+    display: flex;
+    color: white;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="radio"]{
+    margin-top: 39px;
+    transform: scale(0.6);
+    margin-bottom: 7px;
+}
+
+.today{
+    margin-top: 18px;
+    margin-left: 22px;
+    font-size: 11px;
+}
+.desc{
+    font-size: 20px;
+    margin-top: 14px;
+    margin-left: 22px;
+
+}
+main button{
+    font-size: 14px;
+    margin-top: 23px;
+    margin-left: 22px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border-width: 0;
+    padding: 13px 129px;
+    font-weight: 600;
+}
+.caption p{
+    font-size: 14px;
+    margin: 28px 0 12px 22px;
+   
+}
+section img{
+    margin-left: 22px;
+    width: 346px;   
+}
+#title{
+    font-size: 14px;
+    margin: 20px 0 14px 22px;
+}
+section button{
+    font-size: 14px;
+    color: white;
+    margin-left: 22px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #004D7A;
+    border-width: 0;
+    padding: 13px 129px;
+}
+.icons{
+    bottom: 0;
+    height: 17px;
+    width: 100vw;
+    position: fixed;
+    padding: 18px 0px;
+    background-color: #111111;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav svg{
+    height: 16px;
+    fill: white; 
+}
+.day:hover{
+    border-bottom: 2px solid #0788FF;
+}
+.img{
+    margin-top: 36px;
+}
+.icons input[type="radio"]{
+    -webkit-appearance: none;
+    outline: 0;
+    display: none;
+}
+.icons svg:hover{
+    fill: #0788FF;
+
+}
+    
