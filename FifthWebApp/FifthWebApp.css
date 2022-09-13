@@ -1,0 +1,98 @@
+main {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/* non capisco perchè non mi prenda nessun comando nella classe color ho provato anche con l'id
+sembra che non prenda nessun comando in quel div  */
+.colore{
+
+  font-size: larger;
+    font-weight: bolder;
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  width: 50%;
+}
+.grafico {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.colonna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ultimaColonna {
+  height: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scelta>p{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+button > p {
+  margin-block-start: 0;
+}
+.footer > input {
+  border: none;
+  background-color: #d0d0d0;
+  border-radius: 65px;
+  width: 50%;
+  height: 3rem;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.footer > input + input {
+  background-color: #3a595d;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 50%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .scelta {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    margin-bottom: 5%;
+  }
+
+  .grafico {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
