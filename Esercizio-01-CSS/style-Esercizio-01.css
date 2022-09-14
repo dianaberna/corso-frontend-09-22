@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+body {
+    background-color: #181823;
+    font-family: "Lato";
+    color: #c7e0fa;
+    padding: 2rem 6rem;
+    font-size: 1rem;
+}
+
+#team {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team div {
+    width: 50%;
+}
+
+#team hr {
+    width: 120px;
+    height: 5px;
+    text-align: left;
+    margin-left: 0;
+    color: #f03a76;
+    border-radius: 20px;
+    border: 0;
+    background-color: #f03a76;
+}
+
+#team img {
+    height: 460px;
+}
