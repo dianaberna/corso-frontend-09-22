@@ -1,0 +1,159 @@
+body{
+    width: 40rem;
+    height: 52rem;
+    background: #1F2128;
+    font-family: 'DM Sans', sans-serif;
+    align-items: center;
+    margin: 74px 0px 30px 33rem;
+}
+.parteprincipale{
+    margin-left: 28px;
+    margin-bottom: 60px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+header p a{
+    color: #A162F7;
+}
+h1{
+    color: white;
+    font-weight: 700;
+    size:30px
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+    color:#7C7C8D;
+    margin: 0px 0px;
+}
+
+hr{
+    border: none;
+    border-top: 3px double rgb(63, 63, 63);
+    color: rgb(255, 255, 255);
+    overflow: visible;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif; 
+}
+hr:after {
+    background:#7c7c8d00;
+    content: 'or';
+    position: relative;
+    top: -14px;
+}
+
+
+
+.bottone{
+    width: 270px;
+    background-color: #1F2128;
+    padding: 20px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif; 
+}
+.bottone2{
+    width: 270px;
+    background-color: #4776D0;
+    padding: 20px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif; 
+}
+
+main{
+    border: 1px solid;
+    margin: 30px;
+    border-color:#242731 ;
+    border-radius: 20px;
+    background-color: #242731;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iscriviti{
+    margin-bottom: 3rem;
+}
+
+ 
+
+.testo,.testo2{
+    width: 32rem;
+    height: 58px;
+    border-radius: 6px;
+    background-color:#242731;
+    border-color:#777777;
+    font-family: 'DM Sans', sans-serif;
+}
+.paragrafo1,.paragrafo2{
+    color: #E0E4E7;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif; 
+    margin-top: 35px;
+}
+
+.testo2{
+    color: white;
+}
+
+::placeholder{
+    padding-left: 10px;
+    color: #E0E4E7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ricordami{
+   margin-left: 33px;
+
+}
+
+label{
+    color: #7C7C8D;
+    
+}
+.pass {
+    color: #A162F7;;
+    
+}
+.partefinale{
+    display: flex;
+    justify-content: space-between;
+}
+.partefinale > p {
+    margin-right: 30px;
+}
+
+.finish{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    margin-top:17px;
+    font-weight: 700;
+}
+.bottone4{
+    width: 570px;
+    background-color: #A162F7;
+    padding: 20px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif; 
+    margin-top: 27px;
+}
+
