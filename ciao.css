@@ -1,11 +1,12 @@
 body{
-    width: 40rem;
+   width: 40rem;
     height: 52rem;
     background: #1F2128;
     font-family: 'DM Sans', sans-serif;
     align-items: center;
-    margin: 74px 0px 30px 33rem;
+    margin: 92px 1px 32px 45rem;
 }
+
 .parteprincipale{
     margin-left: 28px;
     margin-bottom: 60px;
@@ -95,13 +96,19 @@ main{
     background-color:#242731;
     border-color:#777777;
     font-family: 'DM Sans', sans-serif;
-}
+    }
+
 .paragrafo1,.paragrafo2{
     color: #E0E4E7;
     font-size: 19px;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif; 
     margin-top: 35px;
+}
+.testo2{   background-image: url('Vector.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position:relative;
 }
 
 .testo2{
