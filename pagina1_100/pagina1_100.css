@@ -1,0 +1,124 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-container {
+  margin: 30px 10px;
+}
+
+.program-container {
+  display: flex;
+  align-items: center;
+}
+
+.program-container p {
+  font-size: 21px;
+  font-weight: 500;
+  margin-left: 19px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-title {
+  font-size: 23px;
+  margin-top: 32px;
+  font-weight: 300;
+}
+
+.top-lines {
+  border-bottom: 5px solid rgba(168, 168, 168, 1);
+  width: 110px;
+  border-radius: 60px;
+
+}
+
+.top-lines-container {
+  display: flex;
+ align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.workout-completed-text {
+  margin-top: 9px;
+  color:  #A8A8A8;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.first-workout {
+  font-size: 14px;
+  color: rgba(0, 178, 202, 1);
+  margin-bottom: 9px;
+  background-color: transparent;
+}
+
+.upper-body {
+  font-weight: 400;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.beginner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+.beginner-container p {
+  font-size: 14px;
+  background-color: transparent;
+  color: #A8A8A8;
+}
+
+.beginner-container img {
+  background-color: transparent;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  background-color: transparent;
+}
+
+.container-subcategory {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.container-subcategory img {
+  margin-right: 23px;
+}
+
+.time {
+  font-size: 13px;
+  color: #A8A8A8;
+}
+
+.upper {
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.big-image-container {
+  display: flex;
+  justify-content: center;
+}
+
