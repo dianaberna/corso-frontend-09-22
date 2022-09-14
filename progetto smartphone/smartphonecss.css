@@ -29,6 +29,16 @@ button{
 
 }
 
+#choose{
+    scrollbar-darkshadow-color: red;
+    color: rgb(58, 89, 93);
+    background: transparent;
+    border-color: transparent;
+}
+
+option{
+    background-color: transparent;
+}
 .card{
     background-repeat: no-repeat;
     background-size: 370px 220px;
