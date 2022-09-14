@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>console.log ("ciao mondo!")</script>
+
+<script>
+
+// variabili
+console.log("variabile a");
+var a =1;
+console.log(a);
+a=5;
+console.log(a);
+
+console.log("variabile b");
+let b=2;
+console.log(b);
+b=5;
+console.log(b);
+
+
+// costante
+console.log("costante");
+const costante =3;
+console.log(costante)
+
+// sapere che tipo  è la variabile
+console.log("la variabile costante è di tipo: "+typeof(costante));
+
+
+//somma
+function somma(a,b){
+    let risultato= a+b;
+    console.log(risultato)
+}
+
+console.log("il risultato della funzione somma è: ");
+somma (1,2);
+somma (7,23);
+
+
+//moltiplicazione
+function moltiplicazione(a,b){
+    let risultato=a*b;
+    console.log(risultato);
+}
+
+console.log("il risultato della funzione moltiplicazione è: ");
+moltiplicazione (3,2);
+moltiplicazione (-3,-6);
+moltiplicazione (7,3);
+
+
+//esercizio minore uguale a zero
+function lessThanOrEqualToZero(a){
+    if (a > 0){
+        console.log("False!");
+    }
+    else {
+        console.log("True!");
+    }
+}
+
+lessThanOrEqualToZero(4);
+lessThanOrEqualToZero(-5);
+
+//calcola età in giorni
+
+function calcAge(a){
+    let calcolo= a*365;
+    console.log(calcolo);
+}
+
+console.log("il risultato della funzione calcolo età è: ");
+calcAge (65);
+
+// calcolo zampe
+function animals(a,b,c){
+    let polli = a*2;
+    let mucche = b*4;
+    let maiali = c*4;
+    somma = polli+mucche+maiali;
+    console.log(somma);
+}
+
+console.log("il risultato della funzione animals è: ");
+animals (2, 3, 5);
+
+
+//somma iterativa
+function addUp(a){
+    let numero=0;
+    let somma=0;
+    while (numero < a){
+        somma= somma+numero;
+        numero ++;
+    }
+    console.log(somma);
+}
+console.log("il risultato della funzione addUp è: ");
+addUp(4);
+
+
+//calcola il numero dei fiammiferi
+function matchHouses (a){
+    if (a==1){
+        matches=a*6
+    }
+    else{
+        matches=(a*6)-(a-1)
+    }
+    console.log(matches);
+}
+console.log("il risultato della funzione matchHouses è: ");
+
+matchHouses(1);
+matchHouses(4);
+
+//alternativa con operatore tern
+/* function matchHouses2(step){
+    return (step==0) ? 0: (step*6)-(step-1)
+}  */
+//return a <= 0 ? true : false
+
+
+//conta valori True
+/* function countTrue () */
+
+</script>
+
+</body>
+</html>
