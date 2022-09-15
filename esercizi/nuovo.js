@@ -1,5 +1,5 @@
 
-console.log("ciao mondo");
+/*console.log("ciao mondo");
 
 //variabili
 console.log("variabile a");
@@ -68,3 +68,25 @@ function zampe(polli, mucca, maiali)
 }
    
     console.log (zampe(2,3,5))
+
+  
+
+let somma=0
+let array=[1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+for(let i=0;i<13;i++){
+    
+    somma=somma+array[i]
+}
+
+console.log(somma)
+
+
+
+
+
+
+
+
+
+
