@@ -20,6 +20,9 @@ function ControlloEmail(email) {
       return false; //console.log("secondo else")
     }
   }
+  else{
+    return false;
+  }
 }
 
 let email = prompt(" inserisci email");
