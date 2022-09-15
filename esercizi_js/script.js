@@ -1,6 +1,7 @@
 "use strict";
 
 //ESERCIZIO 1 - slide48
+console.log("--Esercizio 1--");
 // Crea una funzione che accetta due numeri
 // come argomenti e ne restituisce la moltiplicazione.
 
@@ -11,6 +12,7 @@ function moltiplicazione(a, b) {
 moltiplicazione(2, 10);
 
 //ESERCIZIO 2 - slide 49
+console.log("--Esercizio 2--");
 // Crea una funzione che accetta un numero come unico argomento
 // e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
 
@@ -24,6 +26,7 @@ function lessThanOrEqualToZero(a) {
 console.log(lessThanOrEqualToZero(5));
 
 //ESERCIZIO 3 - slide 50
+console.log("--Esercizio 3--");
 // Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
 
 function etaGiorni(e) {
@@ -33,6 +36,7 @@ function etaGiorni(e) {
 etaGiorni(22);
 
 //ESERCIZIO 4 - slide 51
+console.log("--Esercizio 4--");
 // polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
 // dà un subtotale per ogni specie
 
@@ -45,6 +49,7 @@ function animalsFeet(p, mu, ma) {
 animalsFeet(2, 3, 5);
 
 //ESERCIZIO 5 - slide 52
+console.log("--Esercizio 5--");
 function matchHouses(n) {
   const nFiammiferi = 6 * n - (n - 1);
 
@@ -53,6 +58,7 @@ function matchHouses(n) {
 matchHouses(87);
 
 //ESERCIZIO 6 - slide 53
+console.log("--Esercizio 6--");
 // 1 + 2 + 3 + 4 = 5
 
 function addUp(n) {
@@ -65,6 +71,7 @@ function addUp(n) {
 addUp(13);
 
 //ESERCIZIO 7 - slide 53
+console.log("--Esercizio 7--");
 // Dato un numero compreso tra 1 e 26
 
 function letterAtPosition(l) {
@@ -80,6 +87,7 @@ function letterAtPosition(l) {
 letterAtPosition(26);
 
 //ESERCIZIO 8 - Trova lo sconto - slide 57
+console.log("--Esercizio 8--");
 // Crea una funzione che accetta due argomenti:
 //il prezzo originale
 //la percentuale di sconto come numeri interi
@@ -96,6 +104,7 @@ dis(99, 20);
 // Crea una funzione che accetta due numeri
 //un operatore matematico   / *
 // eseguirà un calcolo con i numeri indicati.
+console.log("--Esercizio 9--");
 
 function calculator(num1, operator, num2) {
   if (operator === "+") {
@@ -117,6 +126,7 @@ function calculator(num1, operator, num2) {
 calculator(4, "/", 0);
 
 //ESERCIZIO 10 - Fare la somma di N numeri
+console.log("--Esercizio 10--");
 
 function sumArray(arr) {
   let somma = 0;
@@ -129,6 +139,7 @@ function sumArray(arr) {
 sumArray([1, 2, 4]);
 
 //Esercizio 11 - Quante volte è vero?
+console.log("--Esercizio 11--");
 function countTrue(arr) {
   let somma = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -138,7 +149,8 @@ function countTrue(arr) {
 }
 countTrue([true, false, false, true, false]);
 
-// ES. Validare un’e-mail
+// ES. 12 Validare un’e-mail
+console.log("--Esercizio 12--");
 
 function validateEmail(e) {
   if (e.includes("@") && e.includes(".")) {
@@ -158,10 +170,42 @@ function validateEmail(e) {
 }
 console.log(validateEmail("aaa.@gmailcom"));
 
-//Esercizio 11 - Clona un array
-// function flatte(arr){
-//     const arr2 = [];
-//     for (let i = 0; i < arr.length; i++){
-//         arr =[...arr2]
-//     }
+//Esercizio 13 - Clona un array
+console.log("--Esercizio 13--");
+const insieme = [
+  [2, 4],
+  [5, 6],
+];
+
+function flatte(arr) {
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(...arr[i]);
+  }
+  console.log(arr2);
+}
+flatte(insieme);
+
+// Esercizio 14 - Piegare un pezzo di carta
+console.log("--Esercizio 14 - Piegare un pezzo di carta--");
+//pieghe -> n numero di volte
+//carta inizia con uno spessore di 0,5 mm
+function numLayers(p) {
+  const spessoreInput = 0.5 / 100;
+  const spessoreTot = 2 ** p * spessoreInput;
+  console.log(spessoreTot);
+}
+numLayers(21);
+
+// Esercizio 15 -- Sasso, carta, forbici
+console.log("--Esercizio 15 - Sasso, carta, forbici--");
+// sasso batte le forbici
+// Le forbici battono la carta
+// La carta batte il sasso
+// let puntiP1 =0;
+// let puntiP2 =0;
+// const p1 = 'Sasso';
+// const p2 = 'carta';
+// for(let i = 0; i < 20, i++){
+//     if()
 // }
