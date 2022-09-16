@@ -231,7 +231,8 @@ function soloUnici(valore, indice, singolo) {
 }
 
 function rimuoviDuplicati(array) {
-    return array.filter(soloUnici);
+    let risultato = array.filter(soloUnici);
+    return risultato
 }
 console.log(rimuoviDuplicati([1, 0, 1, 0]));
 console.log(rimuoviDuplicati(["The", "big", "cat"]));
