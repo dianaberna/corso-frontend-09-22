@@ -237,3 +237,72 @@ for (let i = 0; i < puntate; i++) {
     );
   }
 }
+
+//Esercizio  16 - Quanti giorni tra due date
+console.log("--Esercizio 16 - Quanti giorni tra due date--");
+
+function getDays(d1, d2) {
+  const diffGiorni = Math.floor((d2 - d1) / (1000 * 60 * 60 * 24));
+  console.log(diffGiorni);
+}
+getDays(new Date("December 29, 2018"), new Date("January 1, 2019"));
+
+//Esercizio  17 - Rimuovere i duplicati da un array
+function removeDups(arr) {
+  const setArr = new Set(arr);
+  let arrSet = Array.from(setArr);
+  console.log(arrSet);
+}
+removeDups([1, 0, 1, 0]);
+
+//Esercizio  17 - Ottieni la somma del budget delle persone
+console.log("--Esercizio 17 - Ottieni la somma del budget delle persone --");
+function getBudget(arr) {
+  let somma = 0;
+  for (let i = 0; i < arr.length; i++) {
+    somma = somma + arr[i].budget;
+  }
+  console.log(somma);
+}
+
+getBudget([
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steven", age: 32, budget: 40000 },
+  { name: "Martin", age: 16, budget: 2700 },
+]);
+
+//Esercizio  18 - Calcola il prezzo totale dei generi alimentari
+console.log(
+  "--Esercizio 18 - Calcola il prezzo totale dei generi alimentari --"
+);
+function getTotalPrice(arr) {
+  let somma = 0;
+  let prodottiComprati = [];
+  for (let i = 0; i < arr.length; i++) {
+    somma = somma + arr[i].price;
+    prodottiComprati.push(arr[i].product);
+  }
+  console.log(`Hai comprato ${prodottiComprati} | Il totale è ${somma} €`);
+}
+getTotalPrice([
+  {
+    product: "Milk",
+    quantity: 1,
+    price: 1.5,
+  },
+  {
+    product: "Sale",
+    quantity: 1,
+    price: 2.5,
+  },
+  {
+    product: "Pepe",
+    quantity: 1,
+    price: 2.5,
+  },
+  {
+    product: "Rosmarino",
+    quantity: 1,
+    price: 10.5,
+  },
+]);
