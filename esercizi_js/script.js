@@ -202,10 +202,38 @@ console.log("--Esercizio 15 - Sasso, carta, forbici--");
 // sasso batte le forbici
 // Le forbici battono la carta
 // La carta batte il sasso
-// let puntiP1 =0;
-// let puntiP2 =0;
-// const p1 = 'Sasso';
-// const p2 = 'carta';
-// for(let i = 0; i < 20, i++){
-//     if()
-// }
+let puntiP1 = 0;
+let puntiP2 = 0;
+const puntate = 3;
+let p1, p2;
+for (let i = 0; i < puntate; i++) {
+  console.log(`Round ${i + 1}° `);
+
+  p1 = Math.floor(Math.random() * puntate);
+  if (p1 == 0) {
+    p1 = "sasso";
+  } else if (p1 == 0) {
+    p1 = "carta";
+  } else if ((p1 = "forbici")) {
+    p1 = "forbici";
+  }
+  //Se sei coraggios* accendi il prompt e cancella p2 = 'forbici' ;)
+  //   p2 = prompt("Scegli tra sasso, carta, forbici");
+  p2 = "forbici";
+
+  if (p1 === p2) {
+    console.log("Pari");
+  } else if (
+    (p2 === "carta" && p1 === "sasso") ||
+    (p2 === "sasso" && p1 === "forbici") ||
+    (p2 === "forbici" && p1 == "carta")
+  ) {
+    puntiP2++;
+    console.log(`Hai battuto Terminator 🤖, se a ${puntiP2} punti`);
+  } else {
+    puntiP1++;
+    console.log(
+      `Terminator 🤖 vince, se a ${puntiP2} punti mentre terminator ha ${puntiP1}`
+    );
+  }
+}
