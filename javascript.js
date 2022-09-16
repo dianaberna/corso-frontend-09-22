@@ -95,7 +95,8 @@ switch (EXPR) {
 }
 
 
-/* Esercizio 1 */
+/* Esercizio 1
+Moltiplicazione di due numeri*/
 // crea un funzione di moltiplicazione tra due numeri come argomenti e rilasci il risultato
 function moltiplicazione(a, b) {
     (typeof (a) == "number" && typeof (b) == "number") ? result = (a * b) : result = "invalid numbers as input";
@@ -111,7 +112,8 @@ console.log("caio" * 3);  // diverso da ```"caio".repeat(3)```
 console.log(moltiplicazione("1", 2));
 
 
-/* Esercizio 2 */
+/* Esercizio 2
+Minore o uguale a zero */
 // Crea una funzione che accetta un numero come unico argomento e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
 
 function lessThanOrEqualToZero(num) {
@@ -130,7 +132,8 @@ console.log("-2");
 console.log(lessThanOrEqualToZero("-2"));
 
 
-/* Esercizio 3 */
+/* Esercizio 3
+Convertire anni in giorni */
 // Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
 
 function calcAge(years) {
@@ -159,7 +162,8 @@ console.log(calcAge(65));
 console.log(calcAge(0));
 console.log(calcAge(20));
 
-/* Esercizio 4 */
+/* Esercizio 4
+Il problema della fattoria */
 /*
 In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
 L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali.
@@ -182,7 +186,8 @@ console.log(animals(-1, -2, 4));
 
 
 
-/* Esercizio 5 */
+/* Esercizio 5
+Case di fiammiferi */
 /*
 Crea una funzione che prenda un numero (passaggio) come argomento e restituisca il numero di fiammiferi in quel passaggio. Vedere i passaggi 1, 2 e 3 nell'immagine.
 */
@@ -203,7 +208,8 @@ console.log(matchHouses(-1));
 
 
 
-/* Esercizio 6 */
+/* Esercizio 6
+Somma i numeri da un unico numero */
 /*
 Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
 */
@@ -239,7 +245,8 @@ console.log(addUp(600));
 console.log(addUp(-600));
 
 
-/* Esercizio 7 */
+/* Esercizio 7
+Posizione nell’alfabeto */
 /*
 Dato un numero compreso tra 1 e 26 (vedere codice ASCII), restituisci quale lettera si trova in quella posizione dell'alfabeto. Restituisce "non valido" se il numero fornito non rientra in tale intervallo o non è un numero intero.
 */
@@ -273,7 +280,9 @@ console.log(letterAtPosition(0));
 console.log(letterAtPosition(4.5));
 
 
-/* Esercizio 8 */
+/* Esercizio 8
+Trova lo sconto
+ */
 /*
 Crea una funzione che accetta due argomenti: il prezzo originale e la percentuale di sconto come numeri interi e restituisce il prezzo finale dopo lo sconto.
 */
@@ -308,7 +317,8 @@ console.log(dis(3.1415962, 0.1));
 
 
 
-/* Esercizio 9 */
+/* Esercizio 9
+Calcolatrice di base */
 /*
 Crea una funzione che accetta due numeri e un operatore matematico + - / * ed eseguirà un calcolo con i numeri indicati.
 */
@@ -339,7 +349,8 @@ console.log(calculator(4, "/", 2));
 
 
 
-/* Esercizio 10 */
+/* Esercizio 10
+Fare la somma di tutti gli elementi di un array */
 /*
 Crea una funzione che restituisce la somma di tutti i valori di un array.
 */
@@ -359,7 +370,8 @@ console.log(sumArray([4, 2, 10, 2]));
 console.log(sumArray([1]));
 
 
-/* Esercizio 11 */
+/* Esercizio 11
+Quante volte è vero? */
 /*
 Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
 */
@@ -384,7 +396,8 @@ console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]));
 
 
-/* Esercizio 12 */
+/* Esercizio 12
+Piegare un pezzo di carta */
 /*
 Creare una funzione che restituisca lo spessore (in metri) di un foglio di carta dopo averlo piegato n numero di volte. La carta inizia con uno spessore di 0,5 mm.
 */
@@ -401,7 +414,8 @@ console.log(numLayers(4));
 console.log(numLayers(21));
 
 
-/* Esercizio 13 */
+/* Esercizio 13
+Validare un’e-mail */
 /*
 Crea una funzione che accetta una stringa, controlla se è un indirizzo email valido e restituisce true o false, a seconda della valutazione.
 La stringa deve contenere un carattere @.
@@ -457,7 +471,8 @@ console.log(validateEmail("mario.rossi@email.com"));
 console.log(validateEmail("rossi@email@email.com"));
 
 
-/* Esercizio 14 */
+/* Esercizio 14
+Sasso, carta, forbici */
 /*
 Crea una funzione che accetta due stringhe (p1 e p2 ⁠— che rappresentano i giocatori 1 e 2) come argomenti e restituisce una stringa che indica il vincitore in una partita a Sasso, Carta, Forbici.
 Ogni argomento conterrà una singola stringa: "Sasso", "Carta" o "Forbici". Restituisci il vincitore secondo le seguenti regole:
@@ -517,7 +532,8 @@ for (let item of CASES) {
 };
 
 
-/* Esercizio 14 */
+/* Esercizio 15
+Quanti giorni tra due date */
 /*
 Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data.
 */
@@ -532,7 +548,7 @@ function getDays(startDate, endDate) {
     return startDate.toString();
 };
 
-console.log("\nesercizio 14");
+console.log("\nesercizio 15");
 
 for (let item of DATES) {
     console.log(getDays(item));
