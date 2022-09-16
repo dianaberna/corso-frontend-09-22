@@ -3,8 +3,7 @@ window.addEventListener("load", () => {
 
   document.getElementById("ciao").innerHTML = div;
 
-  let dom = document.querySelectorAll(".ciao1");
-  dom.forEach((document) => {
-    document.style.backgroundColor = "blue";
+  document.querySelectorAll(".ciao1").forEach((element) => {
+    element.style.color = "red";
   });
 });
