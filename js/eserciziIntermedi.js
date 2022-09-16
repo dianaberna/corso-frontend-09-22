@@ -32,11 +32,8 @@ function calculator(a, b, c){
 			return a - c;
 		case "*":
 			return a * c;
-		case "/":
-			if (c === 0) {
-				return "Impossibile dividere per 0!";
-			}
-			return a / c;
+		case "/": 
+			return c == 0? "Impossibile dividere per 0!" : a / c;
 	}
 }
 console.log(calculator(2, "+", 2));
