@@ -4,6 +4,15 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
     document.getElementById("firstID").style.backgroundColor = "blue";  // ce ne stà ovviamente solo uno
     document.getElementById("firstID").style.padding = "0.5rem";  // ce ne stà ovviamente solo uno
 
+    alert(document.getElementById("firstID").style.cssText);
+
+    /* MEMENTO */
+    // per farlo in un'unica riga con una stringa e in sintassi CSS 😎
+    document.getElementById("firstID").style.cssText = "background-color: blue; padding: 0.5rem;"
+
+    // Utile per aver l'elenco completo delle proprietà di un elemento
+    alert(document.getElementById("firstID").style.cssText);
+
     let allParagraphs = document.getElementsByTagName("p");
     for (let i = 0 ; i < allParagraphs.length; i++) {
         allParagraphs[i].style.backgroundColor = "white";  // stessa cosa per qualsiasi elemento
@@ -30,22 +39,24 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
 
 
 
-    /*  */ /* RICORDA forEach CON querySelector */ /*  */
+    // MEMENTO
+    /*  */ /* RICORDA for-loop CON getElementByClassName */ /*  */
     // let acronymSpan = document.getElementsByClassName("acronym");
     // for (let i=0 ; i < acronymSpan.length ; i++) {
-    //     acronymSpan[i].style.textDecoration = "underline";
+        //     acronymSpan[i].style.textDecoration = "underline";
     // };
 
+    /*  */ /* RICORDA forEach CON querySelector */ /*  */
     let acronymSpan = document.querySelectorAll(".acronym");
     acronymSpan.forEach(elem => {
-        elem.style.textDecoration = "underline";
+        elem.style.textDecoration = "underline dotted";
     });
 
     let classanyLastChild = document.querySelector(".classany > p:last-child");
     classanyLastChild.style.backgroundColor = "purple" ;
 
 
-/*     What a confusion... */
+    /*     What a confusion... */
     // 1. first we Create Text Node,
     // 2. then Create the Element
     // 3. we append Text Node to the Element as a Child
