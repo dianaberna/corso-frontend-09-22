@@ -80,5 +80,23 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
     createButton.appendChild(textButton);
     kingUK.appendChild(createButton);
 
-    // TODO : aggiungere una funzione con addElementListener per il bottone appena creato "#hail-king"
+    let hailButton = document.getElementById("hail-king");
+    // let textHailButton = document.createTextNode("LONG LIVE THE KING!");
+    hailButton.addEventListener("click", function(){
+        hailButton.innerHTML= "LONG LIVE THE KING!";
+    });
+
+    let hrElementsAll = document.getElementsByTagName("hr");
+    // meglio salvarsi la lunghezza in una varibile fissa
+    let hrElementsAll_length = hrElementsAll.length
+    for (let i = 0 ; i < hrElementsAll_length ; i++) {  // rimpiazzo . con _ per aver length fissa
+        // // DEBUG : se non fosse una varibile fissa, length e i variano, incontrandosi a metà strada
+        // console.log(hrElementsAll.length);
+        hrElementsAll[0].remove();
+        alert(`Removed horizontal line #${i + 1}`);
+    };
+
+    let createNewElem = function(){
+
+    };
 });
