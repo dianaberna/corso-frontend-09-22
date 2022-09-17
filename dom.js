@@ -96,7 +96,14 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
         alert(`Removed horizontal line #${i + 1}`);
     };
 
-    let createNewElem = function(){
+    function createNewElem(parent, element, text){
+        let textCreated = document.createTextNode(text);
+        let elementCreated = document.createElement(element);
+        let parentNode = document.getElementById(parent);
 
+        elementCreated.appendChild(textCreated);
+        parentNode.appendChild(elementCreated);
     };
+
+    createNewElem("firstID", "p", "New paragraph");
 });
