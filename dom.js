@@ -62,21 +62,29 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
     // 3. we append Text Node to the Element as a Child
     // 4. finally append Element to the Id
     let kingUK = document.getElementById("king-of-UK");
+    kingUK.style.margin = "10px"
     let newTitle = document.createTextNode("Nuovo Titolo & Nome Per Carlo Windsor");
     let newH2 = document.createElement("h2");
-    newH2.appendChild(newTitle);
-    kingUK.appendChild(newH2);
+    // contenuto del tag appeso come figlio
+    newH2.appendChild(newTitle);    // padre.appendChild(figlio)
+    // kingUK.appendChild(newH2);
+
+    // titolo h2 appeso come e dove vogliamo, diverso da appeso come ultimo fratello dentro il padre
+    kingUK.insertAdjacentElement("beforebegin", newH2);    // elemnto.insertAdjacentElement(posizione, adiacenteElemento)
+    /* tutti i valori per l'argomento `position` */
+    // position: "beforebegin" | "afterbegin" | "beforeend" | "afterend"
 
     // TODO : vorrei questo titolo sopra a tutto nel terzo div
 
 
-    // initialized a button
+    // bottone inizializzato
     let textButton = document.createTextNode("Click Me!");
     let createButton = document.createElement("button");
 
     createButton.id="hail-king"
     createButton.title="What are you waiting for? Click Here!"
 
+    // bottone appeso come figlio
     createButton.appendChild(textButton);
     kingUK.appendChild(createButton);
 
