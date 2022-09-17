@@ -74,8 +74,6 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
     /* tutti i valori per l'argomento `position` */
     // position: "beforebegin" | "afterbegin" | "beforeend" | "afterend"
 
-    // TODO : vorrei questo titolo sopra a tutto nel terzo div
-
 
     // bottone inizializzato
     let textButton = document.createTextNode("Click Me!");
@@ -104,6 +102,8 @@ window.addEventListener("load", function () { // `function(){}` si comporta come
         alert(`Removed horizontal line #${i + 1}`);
     };
 
+    // TODO : vorrei assicurarmi che questo possa essere usato per qualsiasi caso:
+    // ById ByTagName ByClassName querySelector & querySelectorAll
     function createNewElem(parent, element, text){
         let textCreated = document.createTextNode(text);
         let elementCreated = document.createElement(element);
