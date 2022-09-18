@@ -52,14 +52,14 @@
 
 // // Lettera alfabeto
 
-// console.log("--- Trova lettera alfabeto ---");
-// function trovaLettera(x) {
-//   if (x > 26 || x < 1 || !Number.isInteger(x)) {
-//     return false;
-//   }
-//   return String.fromCharCode(x + 96);
-// }
-// console.log(trovaLettera(27));
+console.log("--- Trova lettera alfabeto ---");
+function trovaLettera(x) {
+  if (x > 26 || x < 1 || !Number.isInteger(x)) {
+    return false;
+  }
+  return String.fromCharCode(x + 96);
+}
+console.log(trovaLettera(27));
 
 // //Controllo stringa email
 
