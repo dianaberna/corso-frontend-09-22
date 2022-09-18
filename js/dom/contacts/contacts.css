@@ -1,0 +1,84 @@
+/* #region generali */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+body {
+	background-color: #000000;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, p, ul{
+	margin: 0;
+	padding: 0;
+}
+/* #endregion generali */
+
+/* #region wrap */
+#wrap,
+#wrap-left,
+.wrap-text,
+#sub-wrap {
+	display: flex;
+	flex-direction: row;
+	gap: 9.375rem;
+}
+#wrap {
+	box-sizing: border-box;
+	align-content: center;
+	border: 5px solid red;
+	justify-content: space-between;
+	padding: 6.25rem 11.25rem;
+}
+#wrap-left {
+	border: 1px solid yellow;
+}
+.wrap-text {
+	align-content: space-between;
+	border: 1px solid orange;
+	flex-direction: column;
+	gap: 1.25rem;
+	padding: 1.25rem;
+	width: max-content;
+}
+/* #wrap-text4 {
+	width: 500px;
+} */
+#sub-wrap {
+	align-items: baseline;
+	gap: 1.875rem;
+}
+/* #endregion wrap */
+
+/* #region regole testo */
+.wrap-text p,
+.wrap-text > ul {
+	color: #C7E0FA;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+}
+.wrap-text > ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	list-style-image: url(./assets/chevrons-right.png);
+	list-style-position: inside;
+}
+.wrap-text > h2,
+#sub-wrap > h1 {
+	color: #DEECF9;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.8125rem;
+	padding-bottom: 1.875rem;
+}
+#sub-wrap > h1 {
+	font-size: 1.875rem;
+	font-weight: 900;
+}
+#wrap-text4 > p {
+	line-height: 2rem;
+	text-align: justify;
+}
+/* #endregion regole testo */
