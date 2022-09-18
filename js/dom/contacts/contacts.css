@@ -29,16 +29,11 @@ ul {
 #wrap {
   box-sizing: border-box;
   align-content: center;
-  border: 5px solid red;
   justify-content: space-between;
   padding: 6.25rem 11.25rem;
 }
-#wrap-left {
-  border: 1px solid yellow;
-}
 .wrap-text {
   align-content: space-between;
-  border: 1px solid orange;
   flex-direction: column;
   gap: 1.25rem;
   padding: 1.25rem;
