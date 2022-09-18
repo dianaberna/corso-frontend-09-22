@@ -107,6 +107,7 @@ function calcolatrice(a, operazione, b) {
         case "-":
             return a - b;
         case "*":
+        case "x":
             return a * b;
         case "/": {
             return b == 0 ? "Impossibile dividere per 0!" : a / b;
@@ -117,6 +118,7 @@ function calcolatrice(a, operazione, b) {
 console.log(calcolatrice(2, "/", 0));
 console.log(calcolatrice(2, "+", 2));
 console.log(calcolatrice(2, "*", 2));
+console.log(calcolatrice(2, "x", 2));
 console.log(calcolatrice(4, "/", 2));
 
 // somma di n numeri
@@ -175,6 +177,7 @@ function validareEmail2(email) {
 
 console.log(validareEmail("@gmail.com"));
 console.log(validareEmail("hello.gmail@com"));
+console.log(validareEmail("mario.rossi@gmail.com"));
 console.log(validareEmail("gmail"));
 console.log(validareEmail("hello@gmail"));
 console.log(validareEmail("hello@edabit.com"));
@@ -204,25 +207,28 @@ function sassoCartaForbici2(p1, p2) {
         Paper: "Rock",
     };
     if (p1 === p2) return "It's a draw";
+    console.log("-------" + w[p1]);
     return `The winner is ${w[p1] === p2 ? "p1" : "p2"}`;
 }
 
-console.log(sassoCartaForbici("Rock", "Paper"))
-console.log(sassoCartaForbici("Scissors", "Paper"))
-console.log(sassoCartaForbici("Paper", "Paper"))
-
+console.log(sassoCartaForbici("Rock", "Paper"));
+console.log(sassoCartaForbici("Scissors", "Paper"));
+console.log(sassoCartaForbici("Paper", "Paper"));
 
 // quanti giorni tra due date
-console.log("quanti giorni tra due date")
-function quantiGiorni(primaData, secondaData){
+console.log("quanti giorni tra due date");
+function quantiGiorni(primaData, secondaData) {
     const unGiorno = 24 * 60 * 60 * 1000;
-    return diffDays = Math.round(Math.abs((primaData - secondaData) / unGiorno));
+    return (diffDays = Math.round(
+        Math.abs((primaData - secondaData) / unGiorno)
+    ));
 }
 
-console.log(quantiGiorni(new Date("June 14, 2019"), new Date("June 20, 2019")))
-console.log(quantiGiorni(new Date("December 29, 2018"), new Date("January 1, 2019")))
-console.log(quantiGiorni(new Date("July 20, 2019"), new Date("July 30, 2019")))
-
+console.log(quantiGiorni(new Date("June 14, 2019"), new Date("June 20, 2019")));
+console.log(
+    quantiGiorni(new Date("December 29, 2018"), new Date("January 1, 2019"))
+);
+console.log(quantiGiorni(new Date("July 20, 2019"), new Date("July 30, 2019")));
 
 // rimuovere i duplicati di un array
 console.log("rimuovere i duplicati di un array");
@@ -232,7 +238,7 @@ function soloUnici(valore, indice, singolo) {
 
 function rimuoviDuplicati(array) {
     let risultato = array.filter(soloUnici);
-    return risultato
+    return risultato;
 }
 console.log(rimuoviDuplicati([1, 0, 1, 0]));
 console.log(rimuoviDuplicati(["The", "big", "cat"]));
@@ -270,7 +276,7 @@ console.log("prezzo totale alimenti");
 function prezzoTotaleAlimenti(alimenti) {
     let totale = 0;
     for (let i = 0; i < alimenti.length; i++) {
-        totale = totale + (alimenti[i].price * alimenti[i].quantity);
+        totale = totale + alimenti[i].price * alimenti[i].quantity;
     }
 
     return totale.toFixed(2);
@@ -290,14 +296,14 @@ console.log(
 console.log(
     prezzoTotaleAlimenti([
         { product: "milk", quantity: 1, price: 1.5 },
-        { product: "eggs", quantity: 12, price: 0.10 },
+        { product: "eggs", quantity: 12, price: 0.1 },
         { product: "bread", quantity: 2, price: 1.6 },
         { product: "cheese", quantity: 1, price: 4.5 },
     ])
 );
 console.log(
     prezzoTotaleAlimenti([
-        { product: "chocolate", quantity: 1, price: 0.10 },
-        { product: "lollipop", quantity: 1, price: 0.20 },
+        { product: "chocolate", quantity: 1, price: 0.1 },
+        { product: "lollipop", quantity: 1, price: 0.2 },
     ])
 );
