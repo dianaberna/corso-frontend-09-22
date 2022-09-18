@@ -10,8 +10,6 @@ console.log(isPalindrome("ciao"));
 console.log(isPalindrome("otto"));
  */
 
-
-
 /* console.log("Esercizio 1: Validare un'e-mail");
 function validateEmail(s){
 	return /([A-Za-z0-9])+\.?([A-Za-z0-9])+\@([A-Za-z])+\.([A-Za-z0-9]){3}/.test(s);
@@ -24,8 +22,6 @@ console.log(validateEmail("hello@edabit.com"));
  */
 /* /([0-9]|[a-z]|[A-Z])+\.?([0-9]|[a-z]|[A-Z])+\@(|[a-z]|[A-Z])+\.([0-9]|[a-z]|[A-Z]){3}/
 range [A-Za-z0-9] */
-
-
 
 /* console.log("Esercizio 2: Sasso, carta, forbici");
 function rps(p1, p2){
@@ -47,8 +43,6 @@ console.log(rps("Rock", "Paper"));
 console.log(rps("Scissor", "Paper"));
 console.log(rps("Paper", "Paper")); */
 
-
-
 /* console.log("Esercizio 4: Quanti giorni tra due date");
 function getDays(a, b) {
 	//24 * 60 * 60 * 1000 un giorno in ms
@@ -58,8 +52,6 @@ function getDays(a, b) {
 console.log(getDays(new Date("June 14, 2019"), new Date("June 20, 2019")));
 console.log(getDays(new Date("December 29, 2018"), new Date("January 1, 2019")));
 console.log(getDays(new Date("July 20, 2019"), new Date("July 30, 2019")));  */
-
-
 
 //--implementazione orribile
 /* console.log("Esercizio 5.1: rimuovere i duplicati da un array")
@@ -116,9 +108,6 @@ console.log(`${removeDups([1, 0, 1, 0])}`);
 console.log(`${removeDups(["The", "big", "cat", "cat", "dog"])}`);
 console.log(`${removeDups(["John", "Taylor", "John"])}`); */
 
-
-
-
 /* console.log("Esercizio 6: Ottieni la somma del budget delle persone") 
 function getBudgets(obj) {
 	let sum = 0;
@@ -139,8 +128,6 @@ console.log(
         { name: "Martin", age: 16, budget: 1600 },
     ])
 ); */
-
-
 
 /* console.log("Esercizio 7: Calcola il prezzo totale dei generi alimentari") 
 function getTotalPrice(obj){

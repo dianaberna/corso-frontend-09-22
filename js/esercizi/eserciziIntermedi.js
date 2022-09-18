@@ -10,8 +10,6 @@ console.log(letterAtPosition(26.0));
 console.log(letterAtPosition(0));
 console.log(letterAtPosition(4.5)); */
 
-
-
 /* aggiungere formattazione con due decimali, parseFloat().toFixed(2) */
 /* console.log("Esercizio 2: Trova lo sconto");
 function dis(a, b) {
@@ -20,8 +18,6 @@ function dis(a, b) {
 console.log(dis(parseFloat(1500), parseFloat(50)));
 console.log(dis(parseFloat(89), parseFloat(20)));
 console.log(dis(parseFloat(100), parseFloat(75))); */
-
-
 
 /* console.log("Esercizio 3: Calcolatrice di base");
 function calculator(a, b, c){
@@ -41,8 +37,6 @@ console.log(calculator(2, "*", 2));
 console.log(calculator(4, "/", 2));
 console.log(calculator(4, "/", 0)); */
 
-
-
 /* console.log("Esercizio 4: Fare la somma di N numeri");
 function sumArray(a){
 	let sum = 0;
@@ -58,9 +52,6 @@ for (let i = 0, n = a.length; i < n; i++) {
 }
 return sum; */
 
-
-
-
 /* console.log("Esercizio 4.1: Somma degli indici pari");
 function sumEven(a){
 	let sum = 0;
@@ -72,8 +63,6 @@ function sumEven(a){
 	return sum;
 }
 console.log(sumEven([0, 2, 1, 4, 1])); */
-
-
 
 /* console.log("Esercizio 5: Quante volte è vero?");
 function countTrue(a){
@@ -89,8 +78,6 @@ function countTrue(a){
 console.log(countTrue([true, false, false, true, false]));
 console.log(countTrue([false, false, false, false]));
 console.log(countTrue([])); */
-
-
 
 /* console.log("Esercizio 6: Clona un array"); */
 /* 
