@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+.box {
+    background-color: #F1F1F1;
+    width: 452px;
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.box > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.box > div > div > p {
+    font-weight: bold;
+    margin-bottom: 2px;
+
+}
+.img-recensore {
+    width: 59px;
+    height: 60px;
+    border-radius: 29.5px;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: 28px;
+}
+
+
+
+.testo-recensione {
+    color: rgba(29, 29, 29, 0.7);
+    width: 412px;
+    height: 69px;
+    align-items: center;
+    margin-bottom: 29px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.star {
+margin-right: 5px;
+}
