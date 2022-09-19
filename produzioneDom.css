@@ -1,0 +1,82 @@
+.container {
+    font-family: "Work Sans", sans-serif;
+    background-image: url(orologio.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 105%;
+    background-size: cover;
+    background-position: center;
+    margin-left: -2%;
+    padding: 0%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  #pulsanti {
+    
+    
+    margin-top: 58vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ababab;
+    border-radius: 2em;
+    font-family: "Work Sans", sans-serif;
+    background-color: #d0d0d0;
+    font-size: xx-small;
+    width: 10em;
+    height: 10em;
+  }
+
+  #rettangolo {
+    background-color: #ffffff;
+    height: 20em;
+    border-radius: 4em 5em 0em 0em;
+   margin-top: 2em;
+   margin-left: -1em;
+    margin-right: -1em;
+  }
+
+  #testo1 {
+    font-size: large;
+    margin: 2em 0em 1em 2em;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+  }
+
+
+  #testo2 {
+    font-size: small;
+    margin: -4em 0em 0em 5em;
+  }
+  
+   .stella {
+    margin-left: 27em;
+  }
+  
+  #testo3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: -2em 7em;
+    font-size: small;
+  } 
