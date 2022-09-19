@@ -113,14 +113,14 @@ ul {
   margin-left: -10%;
 
 }
-.container {
+#container {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
 }
 
-.container > image {
+#container > image {
   margin-top:-160px;
 }
 
