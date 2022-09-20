@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.containerForm {
+  width: 35rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 5px #6463639d;
+}
+
+.title > h2 {
+  text-align: center;
+}
+.title > div {
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  border-top: solid 1px lightgray;
+}
+.mail {
+  margin: 30px;
+}
+.inputMail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.inputMail > input {
+  border: none;
+  width: 70%;
+}
+.inputMail {
+  height: 25px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+.inputMail > div {
+  border-right: solid 1px lightgray;
+  height: 100%;
+}
+.inputMail > div:hover {
+  border-right: solid 1px lightgray;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.477);
+  border-radius: 4px 0px 0px 4px;
+}
+.btn {
+  margin-top: 20px;
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #e2e6ea;
+  padding: 10px 20px;
+  box-shadow: 0 0 0 0.2rem rgb(216 217 219 / 50%);
+}
+.btn:hover {
+  background-color: rgba(128, 128, 128, 0.477);
+}
+#avviso {
+  color: red;
+  margin-left: 0.8rem;
+}
