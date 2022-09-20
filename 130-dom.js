@@ -272,7 +272,7 @@ window.addEventListener("load", function () {
         {
             "elem": "button",
             "attributs": [["disabled", ""]],
-            "content": `<svg visibility="hidden" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_0_1248)"> <path d="M27.5 19.5H20V27C20 27.825 19.325 28.5 18.5 28.5C17.675 28.5 17 27.825 17 27V19.5H9.5C8.675 19.5 8 18.825 8 18C8 17.175 8.675 16.5 9.5 16.5H17V9C17 8.175 17.675 7.5 18.5 7.5C19.325 7.5 20 8.175 20 9V16.5H27.5C28.325 16.5 29 17.175 29 18C29 18.825 28.325 19.5 27.5 19.5Z" fill="white"/> </g> <defs> <clipPath id="clip0_0_1248"> <rect width="36" height="36" fill="white" transform="translate(0.5)"/> </clipPath> </defs> </svg>`,
+            "content": `<svg class="hidden" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_0_1248)"> <path d="M27.5 19.5H20V27C20 27.825 19.325 28.5 18.5 28.5C17.675 28.5 17 27.825 17 27V19.5H9.5C8.675 19.5 8 18.825 8 18C8 17.175 8.675 16.5 9.5 16.5H17V9C17 8.175 17.675 7.5 18.5 7.5C19.325 7.5 20 8.175 20 9V16.5H27.5C28.325 16.5 29 17.175 29 18C29 18.825 28.325 19.5 27.5 19.5Z" fill="white"/> </g> <defs> <clipPath id="clip0_0_1248"> <rect width="36" height="36" fill="white" transform="translate(0.5)"/> </clipPath> </defs> </svg>`,
         },
     ];
     // let newDivFunction = append2parent("div", newSection2);
@@ -295,14 +295,14 @@ window.addEventListener("load", function () {
 
 
     // TODO : to repeat or not to repeat this complex thing? This is the question
-    function nestingFromJson(parent, childsContent) {
+    function nestingFromJson(parent, childrenContent) {
 
 
         // it might be counter intuitive with these names, but here is the nesting
-        // WARNING: ho refattorizzato lo script e modificato questa funzione solo per innestare tutto il childsContent dentro un parent
+        // WARNING: ho refattorizzato lo script e modificato questa funzione solo per innestare tutto il childrenContent dentro un parent
         // parent ~~> elem~~ > newElem > innerElem > child
         // parent ~~> tag >~~ item["elem"] > item["content"]      // item["content"] then holds innerElem[0] and innerElem[1] (last one is the value of innerHTML )
-        for (let item of childsContent) {
+        for (let item of childrenContent) {
             let newElem = append2parent(item["elem"], parent)
             for (let attr of item["attributs"]) {
                 newElem.setAttribute(...attr);
@@ -317,7 +317,7 @@ window.addEventListener("load", function () {
                 newElem.innerHTML = item["content"]
             };
         };
-        // NOTE : I don't think I still need to return nothing, anyway I just have a variable for the newElem which will be the last of the childsContent
+        // NOTE : I don't think I still need to return nothing, anyway I just have a variable for the newElem which will be the last of the childrenContent
         // return elem
     };
 
@@ -328,6 +328,15 @@ window.addEventListener("load", function () {
     // STAVO OTTENENDO: section.function > [div.circle, div.caption, button]
     let newDivFunction1 = append2parent("div", newSection2, "1_function")
     nestingFromJson(newDivFunction1, divContent2);
+
+    // // questo non funziona perchè ho gia eliminato questo elemento con svg.hidden
+    // let hiddenSvg = document.querySelector(".function button svg.hidden");
+    // // NON SO PERCHÈ QUESTO NON FUNZIONA
+    // let hiddenSvg = document.querySelector(".function:nth-child(1) button svg");
+    // hiddenSvg.className = "hidden";
+    // FEELS LIKE A FAIL... I put it inside the svg in divContent2
+
+
 
     // TODO : maybe recreate a simpler function to create and append one item at a time with all its settings on one JSON Object, without any creating the new first node of this branch of content
     // NOTE : I don't think I need another function as `crFromJson`... because I either need to create, append2body or append2parent and nestingFromJson
@@ -346,9 +355,8 @@ window.addEventListener("load", function () {
             this.content = content;
         };
 
+        // NOTE :
         // metodi se mai volessi aggiungere delle funzioni proprie ad ogni istanza della classe
-
-
     };
 
 
@@ -411,14 +419,15 @@ window.addEventListener("load", function () {
         "attributs": [],
         "content": `<svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_0_1248)"> <path d="M27.5 19.5H20V27C20 27.825 19.325 28.5 18.5 28.5C17.675 28.5 17 27.825 17 27V19.5H9.5C8.675 19.5 8 18.825 8 18C8 17.175 8.675 16.5 9.5 16.5H17V9C17 8.175 17.675 7.5 18.5 7.5C19.325 7.5 20 8.175 20 9V16.5H27.5C28.325 16.5 29 17.175 29 18C29 18.825 28.325 19.5 27.5 19.5Z" fill="white"/> </g> <defs> <clipPath id="clip0_0_1248"> <rect width="36" height="36" fill="white" transform="translate(0.5)"/> </clipPath> </defs> </svg>`,
     }),
-];
+    ];
 
-/* creo una nuovo div function */
-let newDivFunction3 = append2parent("div", newSection2, "1_function");
-nestingFromJson(newDivFunction3, divContent4);
+    /* creo una nuovo div function */
+    let newDivFunction3 = append2parent("div", newSection2, "1_function");
+    nestingFromJson(newDivFunction3, divContent4);
 
 
-    let divContent5 = [new HtmlElem({
+    let divContent5 = [
+    new HtmlElem({
         "elem": "div",
         "attributs": [["class", "circle"],],
         "content": `<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" > <g clip-path="url(#clip0_0_1276)"> <path d="M29.5221 0.5H21.6171C21.3258 0.5 21.0898 0.736109 21.0898 1.02734C21.0898 1.31858 21.3258 1.55469 21.6171 1.55469H29.5221C29.6592 1.55469 29.7708 1.66627 29.7708 1.80338V5.06659C29.7708 13.9499 28.9922 22.8906 27.4565 31.6401L26.9225 34.6824C26.8449 35.1244 26.4628 35.4453 26.0139 35.4453H10.9858C10.5369 35.4453 10.1548 35.1244 10.0773 34.6824L9.54332 31.6401C8.00755 22.8903 7.22891 13.9498 7.22891 5.06659V1.80338C7.22891 1.66627 7.3405 1.55469 7.47761 1.55469H19.5077C19.799 1.55469 20.0351 1.31858 20.0351 1.02734C20.0351 0.736109 19.799 0.5 19.5077 0.5H7.47761C6.75887 0.5 6.17422 1.08472 6.17422 1.80338V5.06659C6.17422 14.0107 6.95821 23.0127 8.50445 31.8223L9.0384 34.8647C9.20476 35.8123 10.0237 36.5 10.9858 36.5H26.0139C26.976 36.5 27.795 35.8122 27.9612 34.8647L28.4952 31.8223C30.0415 23.0128 30.8255 14.0109 30.8255 5.06659V1.80338C30.8255 1.08472 30.2409 0.5 29.5221 0.5V0.5Z" fill="white" /> <path d="M11.8129 12.0868C11.8129 11.7956 11.5768 11.5594 11.2855 11.5594H10.2426C9.95844 11.5594 9.68317 11.6776 9.48728 11.8835C9.29167 12.0891 9.18767 12.3695 9.20188 12.6527C9.51568 18.91 10.2211 25.1946 11.2983 31.332L11.5776 32.9231C11.6529 33.352 12.0236 33.6632 12.459 33.6632H24.5403C24.9759 33.6632 25.3466 33.3519 25.4218 32.923L25.7011 31.3319C26.7783 25.194 27.4837 18.9094 27.7974 12.6526C27.8116 12.3694 27.7076 12.089 27.512 11.8834C27.3161 11.6776 27.0409 11.5594 26.7567 11.5594H13.3949C13.1037 11.5594 12.8676 11.7956 12.8676 12.0868C12.8676 12.378 13.1037 12.6141 13.3949 12.6141H26.7433C26.4313 18.8227 25.7311 25.0592 24.6622 31.1496L24.406 32.6086H12.5931L12.337 31.1497C11.2682 25.0598 10.5679 18.8233 10.2559 12.6142H11.2855C11.5768 12.6141 11.8129 12.378 11.8129 12.0868Z" fill="white" /> </g> <defs> <clipPath id="clip0_0_1276"> <rect width="36" height="36" fill="white" transform="translate(0.5 0.5)" /> </clipPath> </defs> </svg>`,
@@ -437,9 +446,149 @@ nestingFromJson(newDivFunction3, divContent4);
         "attributs": [],
         "content": `<svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_0_1248)"> <path d="M27.5 19.5H20V27C20 27.825 19.325 28.5 18.5 28.5C17.675 28.5 17 27.825 17 27V19.5H9.5C8.675 19.5 8 18.825 8 18C8 17.175 8.675 16.5 9.5 16.5H17V9C17 8.175 17.675 7.5 18.5 7.5C19.325 7.5 20 8.175 20 9V16.5H27.5C28.325 16.5 29 17.175 29 18C29 18.825 28.325 19.5 27.5 19.5Z" fill="white"/> </g> <defs> <clipPath id="clip0_0_1248"> <rect width="36" height="36" fill="white" transform="translate(0.5)"/> </clipPath> </defs> </svg>`,
     }),
-];
+    ];
 
-/* creo una nuovo div function */
-let newDivFunction4 = append2parent("div", newSection2, "1_function");
-nestingFromJson(newDivFunction4, divContent5);
+    /* creo una nuovo div function */
+    let newDivFunction4 = append2parent("div", newSection2, "1_function");
+    nestingFromJson(newDivFunction4, divContent5);
+
+
+
+    /* creo il footer con tutti i suoi figli */
+    let newNavTabBar = append2body("nav", "0_tab-bar");
+    let newUl = append2parent("ul", newNavTabBar);
+
+    let liContent = [
+        // nestingFromJson qui avrebbe una limitazione, io posso usarlo solo uno alla volta per mettere dentro il solo una colsa alla volta, poi passo ad un altro li e poi lo riempio con un altra chiamata nesting solo per un contenuto
+        // questo perchè per ogni singola chiamata childrenContent deve essere iterabile , quindi un'array
+        [
+            new HtmlElem({
+                "elem": "button",
+                "attributs": [],
+                "content": `
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_1308)">
+                            <path
+                                d="M20 3H19V2C19 1.45 18.55 1 18 1C17.45 1 17 1.45 17 2V3H7V2C7 1.45 6.55 1 6 1C5.45 1 5 1.45 5 2V3H4C2.9 3 2 3.9 2 5V21C2 22.1 2.9 23 4 23H20C21.1 23 22 22.1 22 21V5C22 3.9 21.1 3 20 3ZM19 21H5C4.45 21 4 20.55 4 20V8H20V20C20 20.55 19.55 21 19 21Z"
+                                fill="white"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_0_1308">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                `,
+            })
+        ],
+        [
+            new HtmlElem({
+                "elem": "button",
+                "attributs": [],
+                "content": `
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_1306)">
+                        <path
+                            d="M12 2C8.14 2 5 5.14 5 9C5 13.17 9.42 18.92 11.23 21.11C11.63 21.59 12.36 21.59 12.76 21.11C14.58 18.92 19 13.17 19 9C19 5.14 15.86 2 12 2ZM16.31 8.16L11.18 13.29C10.79 13.68 10.16 13.68 9.77 13.29L7.7 11.22C7.31 10.83 7.31 10.19 7.7 9.8C8.09 9.41 8.73 9.41 9.12 9.8L10.48 11.16L14.9 6.74C15.29 6.35 15.93 6.35 16.32 6.74C16.7 7.14 16.7 7.77 16.31 8.16Z"
+                            fill="white"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_0_1306">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                `,
+            })
+        ],
+        [
+            new HtmlElem({
+                "elem": "button",
+                "attributs": [],
+                "content": `
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_1309)">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.67 13.13C18.04 14.06 19 15.32 19 17V20H22C22.55 20 23 19.55 23 19V17C23 14.82 19.43 13.53 16.67 13.13Z"
+                            fill="white"
+                        />
+                        <path
+                            d="M9 12C11.2091 12 13 10.2091 13 8C13 5.79086 11.2091 4 9 4C6.79086 4 5 5.79086 5 8C5 10.2091 6.79086 12 9 12Z"
+                            fill="white"
+                        />
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15 12C17.21 12 19 10.21 19 8C19 5.79 17.21 4 15 4C14.53 4 14.09 4.1 13.67 4.24C14.5 5.27 15 6.58 15 8C15 9.42 14.5 10.73 13.67 11.76C14.09 11.9 14.53 12 15 12Z"
+                            fill="white"
+                        />
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9 13C6.33 13 1 14.34 1 17V19C1 19.55 1.45 20 2 20H16C16.55 20 17 19.55 17 19V17C17 14.34 11.67 13 9 13Z"
+                            fill="white"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_0_1309">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                `,
+            })
+        ],
+        [
+            new HtmlElem({
+                "elem": "button",
+                "attributs": [],
+                "content": `
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_1307)">
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM15.22 17.39L12 15.45L8.78 17.39C8.4 17.62 7.93 17.28 8.03 16.85L8.88 13.19L6.05 10.74C5.72 10.45 5.9 9.9 6.34 9.86L10.08 9.54L11.54 6.09C11.71 5.68 12.29 5.68 12.46 6.09L13.92 9.53L17.66 9.85C18.1 9.89 18.28 10.44 17.94 10.73L15.11 13.18L15.96 16.85C16.06 17.28 15.6 17.62 15.22 17.39Z"
+                            fill="white"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_0_1307">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                `,
+            })
+        ],
+    ];
+
+    for (let i = 0 ; i < liContent.length ; i++ ) {
+        let newLi = append2parent("li", newUl)
+        let _cont = liContent[i]
+        console.log(_cont);
+        nestingFromJson(newLi, _cont);
+    };
 });

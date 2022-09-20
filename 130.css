@@ -83,8 +83,9 @@ section {
     gap: 0.9rem;
 }
 
-section button svg {
-    fill: red;
+.function button svg.hidden {
+    /* scompare del tutto anche il suo spazio, con visibility: hidden; invece resterebbe il vuoto */
+    display: none;
 }
 
 
