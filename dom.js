@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-    console.log("ciao dom" );
+   /*  console.log("ciao dom" ); */
 /* document.getElementById("rosa") .style.backgroundColor= "red";
  */
 
@@ -26,7 +26,7 @@ indice++ */
 
 /* } */
 
-
+/* 
 let pulsante= document.createElement("button")
 let testoPulsante= document.createTextNode("perchè non cliccarlo")
 pulsante.id= "pulsante";
@@ -43,9 +43,33 @@ let testoParagrafo= document.createTextNode("oggi non piove")
 paragrafo.id="meteo";
 paragrafo.appendChild(testoParagrafo);
 let primopar=document.getElementById("primopar")
-primopar.insertAdjacentElement("afterend",paragrafo);
+primopar.insertAdjacentElement("afterend",paragrafo); */
 
 
 
 
+/* esercizi DOM */
+
+
+let pulsanteEs=document.createElement("button");
+let testoPulsanteEs=document.createTextNode("cliccami per cambiare colore");
+pulsanteEs.id="colore";
+pulsanteEs.appendChild(testoPulsanteEs);
+document.body.appendChild(pulsanteEs);
+
+
+
+  let setBg = () => {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
+    color.innerHTML = "#" + randomColor;
+  }
+  
+  colore.addEventListener("click", setBg);
+  setBg();
+
+  
 })
+
+
+

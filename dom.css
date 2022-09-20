@@ -1,4 +1,4 @@
-#primopar {
+/* #primopar {
     background-color: rgb(53, 188, 143);
 }
 
@@ -6,4 +6,20 @@
     display: flex;
     margin-top: 3em;
 
+} */
+
+#colore {
+
+    display: flex;
+    align-items: center;
+    border: 0.3em solid #ac0f0f;
+    border-radius: 9em;
+    font-family: "Work Sans", sans-serif;
+    margin-right: 5em;
+    background-color: #ffffff;
+    font-size: large;
+    width: 9em;
+    height: 9em;
+    margin-left: 25em;
+    margin-top: 25em;
 }
