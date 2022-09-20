@@ -1,0 +1,118 @@
+/* #region generali */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/* main {
+  border: 1px solid black;
+} */
+/* #endregion generali */
+
+/* #region Search */
+#search {
+  background: url("./needle.png") no-repeat bottom center;
+  background-size: cover;
+  height: 30em;
+}
+#search-bar {
+  align-items: flex-start;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem 0 0 0;
+}
+#search-bar input {
+  background: #f4f4f4 url("./magnifying.png") no-repeat center left 0.75rem;
+  border: none;
+  border-radius: 1.56rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  inset-inline-start: 2rem;
+  padding-left: 2.5rem;
+  height: 3rem;
+  width: 19rem;
+}
+#search-bar input[type="search"]::placeholder {
+  color: #525252;
+}
+#search-bar input[type="search"]:focus-visible {
+  outline: 1px solid #9b9b9b;
+}
+/* #endregion Search */
+
+/* #region description text */
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description {
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+/* seattle, us */
+.description p:first-child,
+.description p:nth-child(3),
+.description h1:nth-child(2) {
+  color: #262626;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+.description p:first-child {
+  background: url("./pin.png") no-repeat right bottom 0.563rem;
+  background-size: auto 65%;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 0.563rem;
+}
+/* discover title */
+.description h1:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  margin: 2.7rem 0 0.313rem 0;
+}
+/* paragrafo */
+.description p:nth-child(3) {
+  color: #000000;
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
+  padding-right: 2.5rem;
+}
+/* #endregion text */
+
+/* #region thumbnails */
+.thumbnails {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.images {
+  display: flex;
+  gap: 1.125rem;
+}
+.thumbnails button {
+  background-color: transparent;
+  border: 1px solid #262626;
+  border-radius: 0.25rem;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.938rem;
+}
+/* #endregion thumbs */

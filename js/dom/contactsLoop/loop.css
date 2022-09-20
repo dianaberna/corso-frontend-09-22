@@ -14,6 +14,7 @@ p,
 ul{
 	margin: 0;
 	padding: 0;
+
 }
 /* #endregion generali */
 
@@ -21,7 +22,7 @@ ul{
 #wrap,
 #wrap-left,
 .wrap-text,
-#sub-wrap {
+#sub-wrap-right {
 	display: flex;
 	flex-direction: row;
 	gap: 9.375rem;
@@ -39,10 +40,10 @@ ul{
 	padding: 1.25rem;
 	width: max-content;
 }
-/* #wrap-text4 {
+/* #wrap-right {
 	width: 500px;
 } */
-#sub-wrap {
+#sub-wrap-right {
 	align-items: baseline;
 	gap: 1.875rem;
 }
@@ -60,22 +61,25 @@ ul{
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
-	list-style-image: url(./assets/chevrons-right.png);
+	list-style: none;
 	list-style-position: inside;
 }
+.wrap-text:first-child > ul {
+	list-style-image: url(./assets/chevrons-right.png);
+}
 .wrap-text > h2,
-#sub-wrap > h1 {
+#sub-wrap-right > h1 {
 	color: #DEECF9;
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1.8125rem;
 	padding-bottom: 1.875rem;
 }
-#sub-wrap > h1 {
+#sub-wrap-right > h1 {
 	font-size: 1.875rem;
 	font-weight: 900;
 }
-#wrap-text4 > p {
+#wrap-right > p {
 	line-height: 2rem;
 	text-align: justify;
 }
