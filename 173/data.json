@@ -1,0 +1,37 @@
+[
+    {
+        "HotelName":"Hotel Plaza",
+        "HotelPrice":"400$",
+        "HotelStars": 6,
+        "HotelReviewCount": 200,
+        "HotelImage":"https://www.hotelierindia.com/public/images/2020/02/20/Image_Radisson-Hotel-Group-Starts-2020-On-A-High-With-17-New-Hotels-In-India.jpg"
+    },
+    {
+        "HotelName":"Hotel Red",
+        "HotelPrice":"200$",
+        "HotelStars": 5,
+        "HotelReviewCount": 300,
+        "HotelImage":"https://www.canadianaffair.com/images/canada/british-columbia/victoria/VIC017/inn-at-laurel-point/gall-e/max/yyjlp-exterior-001.jpg"
+    },
+    {
+        "HotelName":"Hotel Blue",
+        "HotelPrice":"100$",
+        "HotelStars": 4,
+        "HotelReviewCount": 400,
+        "HotelImage":"https://www.sarajohn.org/wp-content/uploads/2017/01/sharaton.jpg"
+    },
+    {
+        "HotelName":"Hotel Yellow",
+        "HotelPrice":"50$",
+        "HotelStars": 3,
+        "HotelReviewCount": 500,
+        "HotelImage":"https://www.laufen.com/news-stories/wp-content/uploads/2020/10/W_IBIZA_POOL-VIEW-scaled.jpg"
+    },
+    {
+        "HotelName":"Hotel Black",
+        "HotelPrice":"25$",
+        "HotelStars": 2,
+        "HotelReviewCount": 600,
+        "HotelImage":"https://www.regent-holidays.co.uk/upload-files/product-hotels-gallery/hotel-panorama-ukraine_3_exterior-of-hotel-panorama-lviv.jpg"
+    }
+]
