@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop</title>
+    </head>
+
+    <body>
+        <div style="width: 200px">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 357.08 379.82"
+                version="1.1"
+            >
+                <g transform="translate(-189.9 -222.14)">
+                    <path
+                        id="colorami"
+                        style="fill: #000000"
+                        d="m345.79 601.06c-10.725-0.4181-26.925-1.4782-36-2.3556-36.648-3.5435-34.346-3.0691-39-8.0383-2.317-2.474-2.5266-3.524-2.8627-14.342-0.1995-6.4198 0.16063-16.622 0.80029-22.672 1.2282-11.617 3.2325-93.777 3.4396-141 0.12597-28.718-0.84859-40.024-4.0946-47.5l-1.5197-3.5-10.779 11.314c-8.651 9.0806-11.342 11.329-13.631 11.392-2.7841 0.0763-12.81-4.3264-22.853-10.036-2.75-1.5633-7.25-4.1199-10-5.6812s-7.1802-3.9712-9.845-5.3553c-10.356-5.3791-12.211-12.254-5.9078-21.899 2.0609-3.154 3.9734-5.9596 4.25-6.2346 0.27655-0.275 1.7633-2.8572 3.3039-5.7382 3.9894-7.4605 16.324-26.328 19.449-29.75 0.6875-0.75286 1.25-1.6299 1.25-1.9489 0-0.92598 5.3864-8.1413 15.812-21.18 8.1974-10.253 10.843-12.824 17.188-16.71 4.125-2.5261 10.65-5.7559 14.5-7.1774s9.475-3.7378 12.5-5.1473 8.7521-3.8555 12.727-5.4356c7.2337-2.8756 25.935-12.331 27.723-14.016 0.5225-0.49255 1.9675-0.89554 3.211-0.89554 1.2436 0 3.1216-0.92367 4.1734-2.0526 3.239-3.4767 6.9346-3.8269 14.254-1.3507 10.086 3.4123 31.272 5.1042 43.657 3.4864 5.3652-0.70083 12.26-2.1312 15.321-3.1787 6.9889-2.391 11.003-2.412 14.049-0.0733 1.3117 1.0071 8.0099 4.561 14.885 7.8976 13.095 6.355 35.078 16.773 38.5 18.245 24.772 10.658 28.188 13.639 41.208 35.96 3.0688 5.2612 6.4117 10.781 7.4286 12.265 1.0169 1.4847 4.0469 7.1097 6.7334 12.5s8.6 17.001 13.141 25.801c5.0261 9.7397 8.2291 17.127 8.1862 18.879-0.0663 2.7077-4.4587 8.6207-6.4039 8.6207-0.45803 0-2.7363 1.2097-5.0629 2.6882-4.5225 2.874-12.71 7.3733-24.585 13.511-10.176 5.2593-14.99 5.2579-20.013-0.006-1.9978-2.0939-4.7519-5.3564-6.1202-7.25-2.9538-4.0876-9.9078-10.943-11.101-10.943-1.5445 0-2.8754 3.7483-5.0303 14.167-3.1668 15.311-3.7738 26.78-2.77 52.333 0.49696 12.65 1.3267 41.9 1.8438 65s1.4181 53.283 2.0022 67.073c0.75847 17.906 0.75354 25.958-0.0173 28.169-1.6058 4.6063-6.4522 6.4404-20.94 7.9248-48.703 4.9902-52.257 5.256-68.5 5.1236-8.25-0.067-23.775-0.4644-34.5-0.8826z"
+                    />
+                </g>
+            </svg>
+        </div>
+        <div id="colors-container">
+            <!-- 
+            Inserisci i bottoni qui
+        --></div>
+        <button
+            type="button"
+            onclick="deleteCookie('colore', '/')"
+            style="margin-top: 40px"
+        >
+            Elimina cookie
+        </button>
+        <script type="text/javascript">
+            //Aspetto che carica il DOM
+            window.addEventListener("load", (event) => {
+                //Eseguo il controllo se esiste il cookie "colore", se esiste aggiorno la maglietta
+                let previousColor = getCookie("colore");
+
+                if (previousColor) {
+                    //Se esiste un colore precedente, lo assegno
+                    changeColor(previousColor);
+                }
+
+                //Colori sempli o esadecimali
+                let colors = ["red", "yellow", "blue", "green"];
+                let colorsContainer =
+                    document.getElementById("colors-container");
+
+                // Per ogni colore -> Secondo parametro del forEach è l'indice dell'iterazione
+                colors.forEach((color, index) => {
+                    // Se l'indice è pari, mi diverto creando un NODO, altrimenti provo a convertire una stringa
+
+                    if (isEven(index)) {
+                        /**
+                         * 1) Creo un nodo html
+                         * 2) Aggiungo il bottone in lista
+                         * 3) Catturo quello che succede (la funzione onclick è attiva
+                         */
+
+                        let button = document.createElement("button");
+
+                        let buttonLabel = document.createTextNode(
+                            color.charAt(0).toUpperCase() + color.slice(1)
+                        );
+
+                        //Aggiungo etichetta
+                        button.appendChild(buttonLabel);
+
+                        //Aggiungo stile css
+                        button.style.cssText = `border-radius:100%; background-color: ${color}; width: 50px; height: 50px; display: inline;`;
+
+                        //Aggiungo funzione on click
+                        button.onclick = function () {
+                            return changeColor(color);
+                        };
+
+                    
+                        colorsContainer.appendChild(button);
+                    } else {
+                        /**
+                         * 1) Genero un bottone HTML -> Cambiamo approccio, usiamo una stringa
+                         * 2) Aggiungo il bottone in lista -> Convertiamo la stringa tramite DOMParser
+                         * 3) Catturo quello che succede (la funzione onclick è attiva dopo la conversione)
+                         * NB. Metodo per pigri, più facile da scrivere ma più lento in esecuzione!!
+                         */
+                        let button = `
+                        <button type="button" onclick="changeColor('${color}')" style="border-radius:100%; background-color: ${color}; width: 50px; height: 50px; display: inline;">
+                            ${color.charAt(0).toUpperCase() + color.slice(1)}
+                        </button>
+                    `;
+
+                        /*
+                         *
+                         * Complichiamo un po' la faccenda -> data una stringa (button) cerchiamo di convertirla in un documento html
+                         * all'interno del body sarà possibile trovare il nodo <button> da aggiungere al nostro contenitore di colori
+                         *
+                         */
+
+                        colorsContainer.appendChild(
+                            new DOMParser()
+                                .parseFromString(button, "text/html")
+                                .documentElement.querySelector("button")
+                        );
+                    }
+                });
+            });
+
+            // prendo un colore e dipingo la maglietta!
+            function changeColor(colore) {
+                //aggiungo uno step in più, scrivo il colore nel cookie
+                setCookie("colore", colore);
+
+                return (document.getElementById("colorami").style.fill =
+                    colore);
+            }
+
+            // è pari? -> il modulo dev'esser 0
+            function isEven(n) {
+                return n % 2 == 0;
+            }
+
+            // è dispari? -> il modulo dev'esser 1
+            // --> non mi serve ma sono brava, quindi l'ho scritta
+            function isOdd(n) {
+                return Math.abs(n % 2) == 1;
+            }
+
+            /*
+             * I cookie sono dei file conservati all'interno del browser per quel determinato sito web
+             * questi file consentono di "conservare dati" per un determinato tempo.
+             *
+             * Dobbiamo quindi preoccuparci eventualmente di gestire due / tre aspetti fondamentali:
+             * 1) Lettura / Ricerca di un cookie
+             * 2) Scrittura / Modifica di un cookie
+             * 3) Rimozione forzata (ora preoccupiamoci di poterlo distruggere per provare)
+             *
+             */
+
+            const setCookie = (name, value, days = 7, path = "/") => {
+                /*
+                 * - Nome del cookie
+                 * - Contenuto del cookie
+                 * - Durata (in giorni)
+                 * - Percorso (i cookies possono dividersi in sottocartelle)
+                 */
+
+                // La data di scadenza è generata per oggi
+
+                // 864e5 -> 1000*60*60*24 or 86400000 or 864e5 ovvero il calcolo di 24 ore
+                // UTC -> Standard tempo universale senza fuso orario applicato (ora globale)
+                const expires = new Date(
+                    Date.now() + days * 864e5
+                ).toUTCString();
+
+                // document.cookie -> vado ad impostare il cookie, codifico il valore, imposto la scadenza ed il percorso
+                document.cookie =
+                    name +
+                    "=" +
+                    encodeURIComponent(value) +
+                    "; expires=" +
+                    expires +
+                    "; path=" +
+                    path;
+            };
+
+            const getCookie = (name) => {
+                // document.cookie -> prendo il cookie e lo riduco in piccole parti
+                // 1) split divide una stringa in un array
+                // 2) reduce accetta una funzione da eseguire per ogni elemento dell'array
+                // 3) ritorno se la parte === name (del cookie di cui voglio conoscere il valore)
+                // il suo contenuto
+                return document.cookie.split("; ").reduce((r, v) => {
+                    const parts = v.split("=");
+                    return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+                }, "");
+            };
+
+            const deleteCookie = (name, path) => {
+                // Trovo un cookie dato un nome ed un path, lo imposto "vuoto" e lo faccio scadere, quindi lo distruggo
+                setCookie(name, "", -1, path);
+                alert("eliminato!");
+            };
+        </script>
+    </body>
+</html>
