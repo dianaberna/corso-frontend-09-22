@@ -83,6 +83,10 @@ section {
     gap: 0.9rem;
 }
 
+section button svg {
+    fill: red;
+}
+
 
 /* TENTATIVO di customizzare la progress bar */
 
