@@ -8,10 +8,10 @@ window.addEventListener("load",function(){
     let sfondo= document.createElement("div");
     sfondo.className="container";
     document.body.appendChild(sfondo);
-
+/* 
     let font= document.createElement("link");
     font.setAttribute("href","https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans:wght@400;600&display=swap");
-    document.body.appendChild(font);
+    document.body.appendChild(font); */
 
 
 /* nav che contiene le icone del menù */
@@ -131,5 +131,36 @@ scrittina3.id="testo3";
 scrittina2.appendChild(scrittina3);
    scrittina2.insertAdjacentElement("afterend",scrittina3);
 
+
+    let pulsante4=document.createElement("button");
+   let scrittaPul4=document.createTextNode("1");
+   pulsante4.id="ordine";
+   const img9=new Image(10,10);
+   img9.src="linea-.svg";
+   pulsante4.appendChild(img9);
+   pulsante4.appendChild(scrittaPul4);
+   const img10=new Image(10,10);
+   img10.src="linea+.svg";
+   pulsante4.appendChild(img10); 
+  scrittina3.appendChild(pulsante4);
+   scrittina3.insertAdjacentElement("afterend",pulsante4);
+
+ 
+   let scrittina4=document.createElement("p");
+   let dentro4=document.createTextNode("$29.99");
+   scrittina4.appendChild(dentro4);
+   scrittina4.id="prezzo";
+   pulsante4.appendChild(scrittina4);
+      pulsante4.insertAdjacentElement("afterend",scrittina4);
+
+
+
+     
+   let pulsante5=document.createElement("button");
+   let scrittaPul5=document.createTextNode("add to cart");
+   pulsante5.appendChild(scrittaPul5);
+   pulsante5.id="carrello";
+   scrittina4.appendChild(pulsante5);  
+ 
 
 })

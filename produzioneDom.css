@@ -13,6 +13,7 @@
   }
 
   nav {
+    font-family: "Work Sans", sans-serif;
     width: 100%;
     justify-content: space-around;
     display: flex;
@@ -47,6 +48,7 @@
   }
 
   #rettangolo {
+    font-family: "Work Sans", sans-serif;
     background-color: #ffffff;
     height: 20em;
     border-radius: 4em 5em 0em 0em;
@@ -57,7 +59,7 @@
 
   #testo1 {
     font-size: large;
-    margin: 2em 0em 1em 2em;
+    margin: 2em 0em 1em 1em;
     flex-direction: row;
     align-items: center;
     padding: 2em;
@@ -66,7 +68,7 @@
 
   #testo2 {
     font-size: small;
-    margin: -4em 0em 0em 5em;
+    margin: -4em 0em 0em 4em;
   }
   
    .stella {
@@ -77,6 +79,39 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: -2em 7em;
+    margin: -2em 3.3em;
     font-size: small;
   } 
+
+
+  #ordine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    margin: 4em 0em 0em 3em;
+    height: 2em;
+    width: 7em;
+    background-color: rgb(255, 255, 255, 0);
+  }
+
+
+  #prezzo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2em 0em 0em 2.3em;
+    font-size: x-large;
+  }
+
+
+  #carrello {
+    width: 15em;
+    height: 4em;
+    font-size: small;
+    margin-left: 33em;
+    margin-top: -2em;
+    border: 1px solid #ababab;
+    border-radius: 1em;
+  }
