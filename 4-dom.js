@@ -1,3 +1,4 @@
+// FIXME : import doesn't work with my js / node.js version
 import { crElem, append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.js" ;
 /*
  * imported functions and their args
