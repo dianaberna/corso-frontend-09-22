@@ -15,13 +15,12 @@
             align-items: flex-start;
         }
 
-        .img {
-            width: 30rem;
+        img {
+
             height: 20rem;
             margin: 1rem;
-            background-position: 50% 50%;
-            background-size: cover;
-            border-radius: 2px;
+/*             background-position: 50% 50%;
+            background-size: cover; */
         }
     </style>
 </head>
@@ -30,13 +29,12 @@
     <div class="grid"></div>
     <script>
         window.addEventListener('load', function () {
-            console.log("ciao1")
+            console.log("prima")
             loadImg();
-            console.log('ciao2')
+            console.log("dopo")
         })
 
         function loadImg() {
-            const grid = document.getElementsByClassName('grid')[0]
             let ricerca = 'cat'
             let id_diana = 'hZRa4OdzodVlybtiMsr_HYdkAK3jMQ26SKTKiUM44QE'
             const url = `https://api.unsplash.com/search/photos/?query=${ricerca}&per_page=10&client_id=${id_diana}`
@@ -53,9 +51,10 @@
                     console.log(data)
                     for (let i = 0; i < data.results.length; i++) {
                         /* console.log(data.results[i]) */
-                        imageNodes[i] = document.createElement('div');
-                        imageNodes[i].className = 'img';
-                        imageNodes[i].style.backgroundImage = `url(${data.results[i].urls.raw})`
+                        imageNodes[i] = document.createElement('img');
+                        imageNodes[i].className = 'immmagine';
+                        imageNodes[i].src = data.results[i].urls.raw
+                        const grid = document.getElementsByClassName('grid')[0]
                         grid.appendChild(imageNodes[i])
                     }
                 })

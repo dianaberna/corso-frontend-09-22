@@ -23,7 +23,7 @@
             });
         }
 
-        provaPromise(0)
+        provaPromise(10)
             .then((response) => {
                 //qui è stata risolta
                 console.log(response);
@@ -34,18 +34,22 @@
             })
             .finally(() => {
                 //alla fine della promessa
-                console.log("Ho finito");
+                console.log("Ho finito tutto");
             });
  
+        /* console.log("stampa= " +error); */
+        setTimeout(() => console.log("prova con ritardo"), 2000)
+        console.log("prova normale") 
+
         /* esempio pari e dispari con Promise */
- 
+  
         const evenOddFunc = () => {
             let randInt = Math.round(Math.random() * 10 + 1);
             return new Promise((resolve, reject) => {
                 if (randInt % 2 === 0) {
                     resolve("Resolved with: " + randInt);
                 } else {
-                    reject("Rejected with: " + randInt);
+                    reject("--- Rejected with: " + randInt);
                 }
             });
         };
@@ -54,14 +58,14 @@
             try {
                 let result = await evenOddFunc();
                 console.log("Promise resolved! " + result);
-            } catch (err) {
-                console.log("Promise rejected! " + err);
+            } catch (errore) {
+                console.log("Promise rejected! " + errore);
             }
         };
 
         for (let i = 0; i < 10; i++) {
             testFuncAsync();
-        } 
+        }  
     </script>
 </body>
 
