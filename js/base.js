@@ -2,9 +2,8 @@ console.log("ciao mondo!");
 /* let input = prompt("Inserisci un numero");
 console.log(input); */
 
-
-// variabili 
-console.log("-------- variabili --------")
+// variabili
+console.log("-------- variabili --------");
 console.log("variabile a");
 var a = 1;
 console.log(a);
@@ -27,7 +26,7 @@ console.log(a);
 console.log(typeof a);
 
 // scope
-console.log("-------- scope --------")
+console.log("-------- scope --------");
 console.log("INIZIO");
 let c = "io sono c"; // global scope
 console.log("prima del blocco: " + c);
@@ -41,7 +40,7 @@ console.log(c);
 console.log("FINE");
 
 // costante
-console.log("-------- costante --------")
+console.log("-------- costante --------");
 console.log("costante");
 const costante = 3;
 console.log(costante);
@@ -53,7 +52,7 @@ console.log(costante);
 /* console.log(nuovaCostante) */
 
 // operatori
-console.log("-------- operatori --------")
+console.log("-------- operatori --------");
 let variabile = "ciao" + 3; // ciao3
 console.log(variabile);
 let variabile2 = "1" + "5";
@@ -73,7 +72,7 @@ let incremento = 4;
     console.log(incremento);
     console.log(incremento++);
     console.log(incremento);
-    console.log(++incremento); // incremento + 1 = incremento 
+    console.log(++incremento); // incremento + 1 = incremento
     console.log(incremento);
 }
 console.log(incremento);
@@ -87,7 +86,7 @@ console.log(10 % 2);
 console.log(11 % 2);
 
 console.log("---- ");
-e = 3; 
+e = 3;
 f = 3;
 if (e == f) {
     console.log("sono uguali 1");
@@ -97,7 +96,8 @@ if (e == f) {
 
 e = 4;
 f = "4";
-if (e == f) { // con == verifico il contenuto
+if (e == f) {
+    // con == verifico il contenuto
     console.log("sono uguali 2");
     console.log(e + f);
     f++;
@@ -108,13 +108,13 @@ if (e == f) { // con == verifico il contenuto
 
 e = 4;
 f = "4";
-if (e === f) { // con === verifico il contenuto e il tipo di dato
+if (e === f) {
+    // con === verifico il contenuto e il tipo di dato
     console.log("sono uguali 3");
 } else {
     console.log("sono diversi 3");
 }
 e === f ? console.log("sono uguali 3") : console.log("sono diversi 3");
-
 
 const sconto = 50;
 let settembre = 9;
@@ -134,7 +134,7 @@ if (
 }
 
 // funzioni
-console.log("-------- funzioni --------")
+console.log("-------- funzioni --------");
 /* 
     function nome(parametro1, parametro2){
         corpo della funzione
@@ -162,8 +162,8 @@ console.log("---");
 console.log(somma(1, 6));
 somma(2, 3);
 
-// condizionali 
-console.log("-------- condizionali --------")
+// condizionali
+console.log("-------- condizionali --------");
 /* 
 if (condizione) {
     // se la condizione risulta vera / verificata
@@ -215,33 +215,33 @@ switch (expr) {
         console.log("Mangoes and papayas are $2.79 a pound.");
         // expected output: "Mangoes and papayas are $2.79 a pound."
         break;
-    case "Apple": 
-        console.log("bla bla bla")
+    case "Apple":
+        console.log("bla bla bla");
     default:
-        console.log('non è un frutto');
+        console.log("non è un frutto");
 }
 
-// loop / cicli 
-console.log("-------- loop --------")
+// loop / cicli
+console.log("-------- loop --------");
 let valore = 0;
-while ( valore <= 4){
-    console.log("ciao")
+while (valore <= 4) {
+    console.log("ciao");
     valore++;
 }
 
-for( valore=0; valore<= 4; valore++){
-    console.log("ciao")
+for (valore = 0; valore <= 4; valore++) {
+    console.log("ciao");
 }
 
 valore = 0;
-do{
+do {
     console.log("ciao");
-    valore++
-}while(valore<=4)
+    valore++;
+} while (valore <= 4);
 
-// array 
-console.log("-------- array --------")
-let array = [ 1, 2, 5 ];
+// array
+console.log("-------- array --------");
+let array = [1, 2, 5];
 /*
  in posizione 0 ho 1
  in posizione 1 ho 2
@@ -249,28 +249,35 @@ let array = [ 1, 2, 5 ];
 
  attenzione! si inizia a contare sempre da zero
 */
-console.log("tipo dell'array: "+typeof array)
-console.log(array)
-console.log("lunghezza ="+array.length);
-console.log("primo elemento="+array[0]+" secondo elemento="+array[1]+" terzo elemento="+array[2]);
+console.log("tipo dell'array: " + typeof array);
+console.log(array);
+console.log("lunghezza =" + array.length);
+console.log(
+    "primo elemento=" +
+        array[0] +
+        " secondo elemento=" +
+        array[1] +
+        " terzo elemento=" +
+        array[2]
+);
 
-console.log("--- stampo array con while ---")
+console.log("--- stampo array con while ---");
 let indice = 0;
-while(indice < array.length){
-    console.log("elemento = "+array[indice])
+while (indice < array.length) {
+    console.log("elemento = " + array[indice]);
     indice++;
 }
-console.log("--- stampo array con for ---")
-for(let nuovoIndice = 0; nuovoIndice < array.length; nuovoIndice++){
-    console.log("elemento = "+array[nuovoIndice])
+console.log("--- stampo array con for ---");
+for (let nuovoIndice = 0; nuovoIndice < array.length; nuovoIndice++) {
+    console.log("elemento = " + array[nuovoIndice]);
 }
 
-// somma di tutti gli elementi di array 
+// somma di tutti gli elementi di array
 //somma = array[0]+array[1]+array[2]+
 
-function sommaArray(array){
+function sommaArray(array) {
     let somma2 = 0;
-    for(let indice = 0; indice < array.length; indice++){
+    for (let indice = 0; indice < array.length; indice++) {
         somma2 = somma2 + array[indice];
     }
     return somma2;
@@ -278,11 +285,11 @@ function sommaArray(array){
 
 console.log(sommaArray(array));
 
-// con la push inserisco un valore e con la pop estraggo l'ultimo inserito 
+// con la push inserisco un valore e con la pop estraggo l'ultimo inserito
 
 // push -> 2
 // push -> 2, 6
-// push -> 2, 6, 19 
+// push -> 2, 6, 19
 // pop -> 2, 6 (toglie l'ultimo)
 
 let arrayNuovo = [];
@@ -297,12 +304,12 @@ console.log(arrayNuovo);
 arrayNuovo.pop();
 console.log(arrayNuovo);
 
-// array con dati di diverso tipo 
-let arrayStrano = ["ciao", 3, false, [2, 3]]
+// array con dati di diverso tipo
+let arrayStrano = ["ciao", 3, false, [2, 3]];
 
 let indiceStrano = 0;
-while(indiceStrano < arrayStrano.length){
-    console.log("elemento = "+arrayStrano[indiceStrano])
+while (indiceStrano < arrayStrano.length) {
+    console.log("elemento = " + arrayStrano[indiceStrano]);
     indiceStrano++;
 }
 
@@ -315,37 +322,31 @@ console.log(typeof nuovoArray);
 let arrayNuovo2 = [1, 2, 3, 4];
 
 // indexOf -> ritorna l'indice di un elemento
-let posizione = arrayNuovo2.indexOf(3)
-console.log(posizione)
+let posizione = arrayNuovo2.indexOf(3);
+console.log(posizione);
 
 // funzioni sulle stringhe
-console.log("-------- funcioni sulle stringhe --------")
+console.log("-------- funcioni sulle stringhe --------");
 let persone = ["Mario", "Gigi", "Pietro", "Luigi", "Giuseppe", "Gigi"];
 // splice() ->
-persone.splice(2, 1)
-console.log("stampo persone " + persone)
+persone.splice(2, 1);
+console.log("stampo persone " + persone);
 // includes() -> verifica se l'elemento tra parentesi è contenuto nell'array
 console.log(persone.includes("Luisa")); // falso
-console.log(persone.includes("Gigi"));  // vero
+console.log(persone.includes("Gigi")); // vero
 // find() -> ricerca un valore e si ferma la prima volta che lo trova (anche se ce ne sono altre)
-let arrayNumeri = [1, 4, -9, 20, 3, -2, 0]
-let trovato = arrayNumeri.find(element => element >= 3);
-console.log("trovato = "+trovato)
+let arrayNumeri = [1, 4, -9, 20, 3, -2, 0];
+let trovato = arrayNumeri.find((element) => element >= 3);
+console.log("trovato = " + trovato);
 // filter() crea un nuovo array con tutti gli elementi che superano il test implementato dalla funzione fornita.
-const parole = [
-    "salice",
-    "abete",
-    "ippocastano",
-    "pino",
-    "olmo",
-  ];
+const parole = ["salice", "abete", "ippocastano", "pino", "olmo"];
 const risultato = parole.filter((parola) => parola.length > 4);
-console.log("risultato della find= "+risultato);
+console.log("risultato della find= " + risultato);
 
 // template literal
 let numero = 5;
-console.log("numero = "+numero);
-console.log("-------- template literal --------")
+console.log("numero = " + numero);
+console.log("-------- template literal --------");
 console.log(`numero = ${numero}`);
 
 // spread operator
@@ -353,9 +354,9 @@ console.log(`numero = ${numero}`);
 Quello che si dovrebbe fare è controllare a mano per ogni elemento
 se esiste già nel nuovo array sostituirlo o aggiungerlo come nuovo
 Con lo spread operator lo fai con una parola*/
-console.log("-------- spread operator --------")
-console.log(arrayNuovo2)
-console.log(...arrayNuovo2)
+console.log("-------- spread operator --------");
+console.log(arrayNuovo2);
+console.log(...arrayNuovo2);
 
 let x = [2, 4, 8];
 let y = [4, 5, 6];
@@ -378,50 +379,47 @@ const array1 = [1, 4, 9, 16];
 const map1 = array1.map((x) => x * 2);
 console.log(map1);
 
-
-// oggetti 
-console.log("-------- oggetti --------")
-let utente = {nome: "Mario", cognome: "Rossi"};
-console.log(utente.cognome)
-console.log(utente["cognome"])
+// oggetti
+console.log("-------- oggetti --------");
+let utente = { nome: "Mario", cognome: "Rossi" };
+console.log(utente.cognome);
+console.log(utente["cognome"]);
 
 const persona = {
     nome: {
-      primo: "Bob",
-      ultimo: "Smith",
+        primo: "Bob",
+        ultimo: "Smith",
     },
-  };
+};
 console.log(persona.nome.primo);
 console.log(persona["nome"]["primo"]);
 
-console.log("-------- json --------")
+console.log("-------- json --------");
 let provaJson = {
     id: "0001",
     type: "donut",
     name: "Cake",
     ppu: 0.55,
     batters: {
-      batter: [
-        { id: "1001", type: "Regular" },
-        { id: "1002", type: "Chocolate" },
-        { id: "1003", type: "Blueberry" },
-        { id: "1004", type: "Devil's Food" },
-      ],
+        batter: [
+            { id: "1001", type: "Regular" },
+            { id: "1002", type: "Chocolate" },
+            { id: "1003", type: "Blueberry" },
+            { id: "1004", type: "Devil's Food" },
+        ],
     },
     topping: [
-      { id: "5001", type: "None" },
-      { id: "5002", type: "Glazed" },
-      { id: "5005", type: "Sugar" },
-      { id: "5007", type: "Powdered Sugar" },
-      { id: "5006", type: "Chocolate with Sprinkles" },
-      { id: "5003", type: "Chocolate" },
-      { id: "5004", type: "Maple" },
+        { id: "5001", type: "None" },
+        { id: "5002", type: "Glazed" },
+        { id: "5005", type: "Sugar" },
+        { id: "5007", type: "Powdered Sugar" },
+        { id: "5006", type: "Chocolate with Sprinkles" },
+        { id: "5003", type: "Chocolate" },
+        { id: "5004", type: "Maple" },
     ],
 };
 
-
-console.log(provaJson["name"])
+console.log(provaJson["name"]);
 for (e of provaJson.topping) {
     console.log(e);
 }
-

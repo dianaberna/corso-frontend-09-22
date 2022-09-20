@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classi</title>
+</head>
+<body>
+    <p>Apri la console per vedere tutti i risultati :)</p>
+    <script>
+        /* 
+            classe -> è una struttura che serve in informatica per descrivere un modello reale o astratto
+            oggetto -> instanza di una classe che possiede le sue proprietà e metodi 
+        */
+        class Persona {
+            // proprietà
+            name = "";
+            surname = "";
+
+            constructor({ name, surname }) {
+                // this -> mi serve per accedere alle proprietà della classe
+                // name e surname sono fuori da questa funzione ma ci accedere tramite this
+                this.name = name;
+                this.surname = surname;
+            }
+
+            // metodi
+            getName() {
+                return this.name;
+            }
+
+            getSurname() {
+                return this.surname;
+            }
+
+            getFullName() {
+                return this.name + " " + this.surname;
+            }
+        }
+
+        let persona1 = new Persona({
+            name: "Diana",
+            surname: "Bernabei",
+        });
+
+        let persona2 = new Persona({
+            name: "Mario",
+            surname: "Rossi",
+        });
+
+        console.log(persona1.getName());
+
+    </script>
+</body>
+</html>

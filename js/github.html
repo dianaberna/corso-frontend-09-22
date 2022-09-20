@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Github API</title>
+    <style>
+        #github img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="github"></div>
+    <script>
+        async function showAvatar() {
+            let username = 'dianaberna';
+            let githubResponse = await fetch(`https://api.github.com/users/${username}`);
+            let githubUser = await githubResponse.json();
+
+            let img = document.createElement('img');
+            img.src = githubUser.avatar_url;
+            document.getElementById("github").appendChild(img);
+
+            await new Promise((resolve, reject) => setTimeout(resolve, 5000));
+            img.remove();
+            console.log("pippo");
+            return githubUser;
+        }
+
+        showAvatar();
+        console.log("ciao");
+    </script>
+</body>
+
+</html>
