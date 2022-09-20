@@ -1,0 +1,53 @@
+
+
+#SearchBar{
+    margin-left: 3px;
+    height:80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#SearchBar> .motorediRicerca{
+    margin-left:30px ;
+    background-color: #F5F4F6   ;
+    width: 360px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+#SearchBar> .motorediRicerca > img{
+    height: 22px;
+    width: 22px;
+}
+#SearchBar> .motorediRicerca > #linea{
+    margin-left: 25px;
+    width: 3px;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #EF9011;
+
+}
+
+#SearchBar> .motorediRicerca > #cerca{
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: large;
+    font-weight: bold;
+}
+
+.ProfiloeNotizie{
+    width: 100%;
+    display: flex;
+    margin-right: 25px;
+    justify-content: end;
+    align-items: center;
+    gap:30px
+}
+.ProfiloeNotizie > img{
+    width: 50px;
+    height: 50px;
+}

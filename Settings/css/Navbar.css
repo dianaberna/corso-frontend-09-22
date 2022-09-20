@@ -1,0 +1,101 @@
+@import url('http://fonts.cdnfonts.com/css/dm-sans');
+
+html,body{
+    font-family: 'DM Sans', sans-serif;
+    padding: 0;
+    margin:0;
+    background-color: #F5F5F5;
+}
+body{display: flex;
+    
+}
+
+/* NAVBAR  */
+#NavBar{
+    padding-left: 24px;
+    padding-top: 10px;
+    background-color: white;
+    width: 224px;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+}
+#NavBar>#LogoContainer{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+#NavBar #LogoContainer > .Logo{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
+#NavBar #LogoContainer > #title{
+    background-color: transparent;
+    
+}
+
+#NavBar > .contenitoreTitoli{
+    display: flex;
+    flex-direction: column;
+    gap:15px
+}
+.contenitoreTitoli>#titoli{
+    padding-left: 33px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    gap:7px
+}
+
+.contenitoreTitoli>#titoli:hover{
+    background-color: aliceblue;
+    margin-right: 25px;
+    height: 35px;
+    border-radius:  10px;
+}
+
+
+.contenitoreTitoli #titoli >img{
+    height: 22px;
+    width: 22px;
+}
+
+
+#NavBar > .columnEndHeader{
+    padding-left: 25 px;
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+.columnEndHeader > #Settings{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 8px;
+    gap:10px;
+    height: 40px;
+    width: 160px;
+    background-color: #F3F5F8;
+    border-radius:  6px;
+}
+#Settings > img,#Logout > img{
+    width: 22px;
+    height: 22px;
+
+}
+#Logout{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:10px;
+    padding-left: 8px;
+}
+
+/* NAVBAR  */
