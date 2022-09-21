@@ -15,6 +15,7 @@ async function esprimiPoetiFetch() {
     poesia = `${stringPoesia}  `;
   } else {
     poesia = "Non ho ancora caricato la poesia su misura per te, genera anora";
+    poeta = "";
   }
   const poeta = resultPArray[0].author;
   return [poesia, poeta];
