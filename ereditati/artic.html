@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Art Institute of Chicago</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: space-around;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        .grid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        img {
+            width: 70%;
+            background-position: 50% 50%;
+         }
+         button{
+            border-style: none;
+            background-color: transparent;
+            text-align: left;
+            padding: .9375rem 0 .9375rem .3125rem;
+            transition: .3s ease-in-out;
+         }
+         button:hover{
+            background-color: rgb(206, 206, 206);
+            cursor: pointer;
+         }
+         .pancia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons"></div>
+        <div class="pancia">
+            <div class="intestazione"><h3>Clicca su un artista per vederne le opere ospitate!</h3></div>
+            <div class="grid">- Art Institute of Chicago -</div>
+        </div>
+    </div>
+    <script>
+
+        async function loadImgSet(autore) {
+
+            //estraggo il json dall'api
+            let campo_ricerca = "artist_title";
+            console.log(autore);
+
+            const url = `https://api.artic.edu/api/v1/artworks`;
+            let res = await fetch(url);
+            let resJson = await res.json();
+            console.log(resJson);
+
+            //seleziono solo i "ricerca"
+            let paintings = [];
+            const grid = document.getElementsByClassName('grid')[0];
+            grid.innerHTML="";
+            for (i=0;i<resJson.data.length;i++){
+                
+                if(resJson.data[i].artist_title==autore){
+                    let id_foto = resJson.data[i].image_id;
+                    paintings[i] = document.createElement('img');
+                    paintings[i].src = `https://www.artic.edu/iiif/2/${id_foto}/full/843,/0/default.jpg`;
+                    grid.appendChild(paintings[i]);
+                }
+            }
+        }
+
+        async function loadAutori() {
+
+            let autori = [];
+
+            //estraggo il json dall'api
+            const url = `https://api.artic.edu/api/v1/artworks`;
+            let res = await fetch(url);
+            let resJson = await res.json();
+
+            for (i=0;i<resJson.data.length;i++){
+                
+                autori[i] = resJson.data[i].artist_title;
+                /* if(resJson.data[i].artist_title==null){
+                    autori[i] = "Autore Sconosciuto"
+                }else{autori[i] = resJson.data[i].artist_title;} */
+            }
+            //console.log(autori);
+            return autori;
+        }
+
+        window.addEventListener('load', async function () {
+            console.clear;
+            let autori = await loadAutori();
+            autori.sort();
+            console.log(autori);
+            let contadoppi = 1;
+            for(let i=0; i<autori.length; i++){
+                console.log("i fuori dal for: "+i);
+                //confronto il predecessore del vettore ordinato
+                if(i==0 || autori[i]!==autori[i-1]){
+                    
+                    let testoBtn = document.createTextNode(autori[i]);
+                    let unBtn = document.createElement("button");
+                    unBtn.setAttribute("value",`${autori[i]}`);
+                    unBtn.setAttribute("onclick",`loadImgSet("${autori[i]}")`);
+                    unBtn.appendChild(testoBtn);
+                    document.querySelector(".buttons").appendChild(unBtn);
+                    contadoppi=1;
+                }else{
+                    //aggiunge vicino al testo del bottone il numero di opere (contadoppi)
+                    console.log(document.querySelectorAll(".buttons")[i-1]);//.innerHTML=autori[i]+"("+contadoppi+")";
+                    contadoppi++;
+                }
+                console.log(`in ${autori[i]} contadoppi è ${contadoppi}`);
+            }
+        });
+    </script>
+</body>
+
+</html>
