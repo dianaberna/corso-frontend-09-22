@@ -1,6 +1,9 @@
 // CAUTION: functions and classes must be in top-level in original file
-import { append2body, append2parent, nestingFromJson, HtmlElem } from "./130-dom.js";
+// import { append2body, append2parent, nestingFromJson, HtmlElem } from "./130-dom.js";
 // import * as asd from "./130-dom.js" ;
+
+
+import { append2body, append2parent, nestingFromJson, HtmlElem } from "./myDomModule.js";
 
 /*
  * imported functions and their args
