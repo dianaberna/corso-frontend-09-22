@@ -61,12 +61,10 @@
 
             //estraggo il json dall'api
             let campo_ricerca = "artist_title";
-            console.log(autore);
 
             const url = `https://api.artic.edu/api/v1/artworks`;
             let res = await fetch(url);
             let resJson = await res.json();
-            console.log(resJson);
 
             //seleziono solo i "ricerca"
             let paintings = [];
@@ -92,42 +90,45 @@
             let res = await fetch(url);
             let resJson = await res.json();
 
-            for (i=0;i<resJson.data.length;i++){
-                
-                autori[i] = resJson.data[i].artist_title;
-                /* if(resJson.data[i].artist_title==null){
-                    autori[i] = "Autore Sconosciuto"
-                }else{autori[i] = resJson.data[i].artist_title;} */
+            for (i=0;i<resJson.data.length;i++)
+            {    
+                //autori[i] = resJson.data[i].artist_title;
+                if(resJson.data[i].artist_title==null){
+                    autori[i] = "Misti Sconosciuti"
+                }else{autori[i] = resJson.data[i].artist_title;}
             }
-            //console.log(autori);
             return autori;
+        }
+
+        function eliminaContaDuplicati(autori)
+        {
+            autori.sort();
+            console.log(autori);
+            const counts = {};
+            autori.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+            return Object.entries(counts);
+        }
+
+        function creaFiltroAutori(arrayAutori)
+        {
+            for(let i=0; i<arrayAutori.length; i++)
+            {       
+                    let stringaBtn = arrayAutori[i][0];
+                    if(arrayAutori[i][1]!==1){stringaBtn+=" ("+arrayAutori[i][1]+")";}
+                    let testoBtn = document.createTextNode(stringaBtn);
+                    let unBtn = document.createElement("button");
+                    unBtn.setAttribute("value",`${arrayAutori[i][0]}`);
+                    unBtn.setAttribute("onclick",`loadImgSet("${arrayAutori[i][0]}")`);
+                    unBtn.appendChild(testoBtn);
+                    document.querySelector(".buttons").appendChild(unBtn);
+            }
         }
 
         window.addEventListener('load', async function () {
             console.clear;
             let autori = await loadAutori();
-            autori.sort();
-            console.log(autori);
-            let contadoppi = 1;
-            for(let i=0; i<autori.length; i++){
-                console.log("i fuori dal for: "+i);
-                //confronto il predecessore del vettore ordinato
-                if(i==0 || autori[i]!==autori[i-1]){
-                    
-                    let testoBtn = document.createTextNode(autori[i]);
-                    let unBtn = document.createElement("button");
-                    unBtn.setAttribute("value",`${autori[i]}`);
-                    unBtn.setAttribute("onclick",`loadImgSet("${autori[i]}")`);
-                    unBtn.appendChild(testoBtn);
-                    document.querySelector(".buttons").appendChild(unBtn);
-                    contadoppi=1;
-                }else{
-                    //aggiunge vicino al testo del bottone il numero di opere (contadoppi)
-                    console.log(document.querySelectorAll(".buttons")[i-1]);//.innerHTML=autori[i]+"("+contadoppi+")";
-                    contadoppi++;
-                }
-                console.log(`in ${autori[i]} contadoppi è ${contadoppi}`);
-            }
+            let arrayAutori=eliminaContaDuplicati(autori);
+            creaFiltroAutori(arrayAutori);
         });
     </script>
 </body>
