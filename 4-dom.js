@@ -1,5 +1,5 @@
-// FIXME : import doesn't work with my js / node.js version
-import { crElem, append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.js" ;
+// CAUTION: functions and classes must be in top-level in original file
+import { append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.js" ;
 // import * as asd from "./130-dom.js" ;
 
 /*
@@ -23,7 +23,7 @@ window.addEventListener("load", function (){
     let headerNavContent = [
         new HtmlElem({
             "elem": "button",
-            "attributes": [],
+            "attributes": [[]],
             "content": `
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_10347)">
@@ -39,7 +39,7 @@ window.addEventListener("load", function (){
         }),
         new HtmlElem({
             "elem": "button",
-            "attributes": [],
+            "attributes": [[]],
             "content": `
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_10350)">
