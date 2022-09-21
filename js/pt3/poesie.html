@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poesie</title>
+</head>
+<body>
+    
+
+    <script>
+        window.addEventListener('load',async function () {
+            let risultato = await carica();
+            console.log(risultato[0])
+            console.log(risultato[1])
+        })
+
+        async function carica() {
+            const url = `https://poetrydb.org/title/Ozymandias/lines.json`
+          
+            let response = await fetch(`https://poetrydb.org/random`);
+            let data = await response.json()
+            console.log(data[0])
+            let titolo = data[0].title
+            let autore = data[0].author
+            return [titolo, autore];
+        }
+    </script>
+</body>
+</html>

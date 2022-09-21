@@ -7,6 +7,6 @@ import dato from './dati.json' assert { type: 'json' };
 
 console.log(dato)
 
-for (let i = 0; i < dato.data.reviewer.length; i++) {
+for (var i = 0; i < dato.data.reviewer.length; i++) {
     console.log(dato.data.reviewer[i].name)    
 }
