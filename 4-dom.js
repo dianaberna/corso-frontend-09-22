@@ -1,5 +1,5 @@
 // CAUTION: functions and classes must be in top-level in original file
-import { append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.js" ;
+import { append2body, append2parent, nestingFromJson, HtmlElem } from "./130-dom.js";
 // import * as asd from "./130-dom.js" ;
 
 /*
@@ -15,7 +15,7 @@ import { append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.
 
 
 
-window.addEventListener("load", function (){
+window.addEventListener("load", function () {
     document.body.innerHTML = "";
 
     /* create header with nav and buttons */
@@ -69,7 +69,7 @@ window.addEventListener("load", function (){
             "content": ``
         }),
     ];
-    nestingFromJson( mainHeader, artistPicCont);
+    nestingFromJson(mainHeader, artistPicCont);
     let mainHeaderPlayButton = append2parent("div", mainHeader, "1_play-button");
     let mainHeaderPlayButtonCont = [
         new HtmlElem({
@@ -124,11 +124,63 @@ window.addEventListener("load", function (){
                 "content": `390`
             }),
         ],
-    ]
-    ;
-    for (let i = 0 ; i < mainHeaderDashConts.length ; i++){
+    ];
+    for (let i = 0; i < mainHeaderDashConts.length; i++) {
         // create a div.info each time to nest the Conts for each
         let _divInfo = append2parent("div", mainHeaderDashboard, "1_info");
         nestingFromJson(_divInfo, mainHeaderDashConts[i]);
     };
+
+
+    /* create div#songs */
+    const mainSongs = append2parent("div", main, "0_songs");
+    const mainSongAlbum = append2parent("section", mainSongs, "0_song-album");
+    const popular = append2parent("h1", mainSongAlbum);
+    popular.innerHTML = "Popular";
+    // created the div which will hold 3 div.album-card
+    const mainSongAlbumDiv = append2parent("div", mainSongAlbum);
+    // more than one content, i cannot nest all of them on the same level of indentation
+    let mainSongAlbumDivCardConts = [
+        [
+            [
+                new HtmlElem({
+                    "elem": "div",
+                    "attributes": [["class", "album-frame"]],
+                    "content": `<img src="" alt="Album Image">`,
+                }),
+                new HtmlElem({
+                    "elem": "p",
+                    "attributes": [["class", "slim-text"]],
+                    "content": `<img src="" alt="Album Image">`,
+                }),
+            ],
+        ],
+        [
+        // NOTE :
+        // THIS multi level nesting can be confusing, better avoid to put diff level of indentation in diff cont Json
+            new HtmlElem({
+                "elem": "button",
+                "attributes": [[]],
+                "content": `
+                <svg class="smaller-play" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.2 37.1003L36.0966 28.9337C36.7266 28.467 36.7266 27.5337 36.0966 27.067L25.2 18.9003C24.43 18.317 23.3333 18.877 23.3333 19.8337V36.167C23.3333 37.1237 24.43 37.6837 25.2 37.1003ZM28 4.66699C15.12 4.66699 4.66663 15.1203 4.66663 28.0003C4.66663 40.8803 15.12 51.3337 28 51.3337C40.88 51.3337 51.3333 40.8803 51.3333 28.0003C51.3333 15.1203 40.88 4.66699 28 4.66699ZM28 46.667C17.71 46.667 9.33329 38.2903 9.33329 28.0003C9.33329 17.7103 17.71 9.33366 28 9.33366C38.29 9.33366 46.6666 17.7103 46.6666 28.0003C46.6666 38.2903 38.29 46.667 28 46.667Z" fill="#00FFE0"/>
+                </svg>
+            `,
+            }),
+
+        ],
+    ];
+    for (let i = 0; i < 3; i++) {
+        let _divAlbumDivCard = append2parent("div", mainSongAlbumDiv, "1_album-card");
+        // first two content in conts
+        for (let _cont of mainSongAlbumDivCardConts[0]) {
+            nestingFromJson(_divAlbumDivCard, _cont);
+        };
+        // DEBUG :
+        console.log("before div.play-button");
+        // creata the div.play-button of div.album-card
+        let _divAlbumDivCardPlayButton = append2parent("div", _divAlbumDivCard, "1_play-button");
+        nestingFromJson(_divAlbumDivCardPlayButton, mainSongAlbumDivCardConts[1]);
+    };
+
 });
