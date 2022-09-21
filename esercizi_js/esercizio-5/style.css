@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: royalblue;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.countContainer {
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px 5px #6463639d;
+  height: 19rem;
+  width: 19rem;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+}
+.containerContator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contatoreNumero {
+  font-size: 7.5rem;
+  text-align: center;
+}
+.btn {
+  margin: 2px;
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #e2e6ea;
+  padding: 5px 10px;
+  box-shadow: 0 0 0 0.2rem rgb(216 217 219 / 50%);
+}
+.btn:hover {
+  color: white;
+  background-color: #929495;
+  box-shadow: 0 0 0 0.2rem #929495;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.containerCarosello {
+  height: 35rem;
+  width: 60rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #6463639d;
+}
+
+#img1 {
+  background-image: url("img/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerCarosello {
+    height: 16rem;
+    width: 25rem;
+  }
+}
