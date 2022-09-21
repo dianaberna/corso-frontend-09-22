@@ -49,13 +49,13 @@ function nestingFromJson(parent, childrenContent) {
     // parent ~~> tag >~~ item["elem"] > item["content"]      // item["content"] then holds innerElem[0] and innerElem[1] (last one is the value of innerHTML )
     for (let item of childrenContent) {
         let newElem = append2parent(item["elem"], parent)
-        // DEBUG :
-        console.log(`working for ${item.elem}.${item.attributes[0][1]} `);
+        // // DEBUG :
+        // console.log(`working for ${item.elem}.${item.attributes[0][1]} `);
         for (let attr of item["attributes"]) {
             // controllo che la prima array-coppia (attr-value) dentro l'array non sia una array-coppia VUOTA
             if (attr.length !== 0){
-                // DEBUG :
-                console.log(item["attributes"]);
+                // // DEBUG :
+                // console.log(item["attributes"]);
                 newElem.setAttribute(...attr);
             };
         };

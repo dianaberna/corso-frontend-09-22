@@ -18,6 +18,7 @@ alert("heyy.. I finally started");
 window.addEventListener("load", function (){
     document.body.innerHTML = "";
 
+    /* create header with nav and buttons */
     let header = append2body("header", "0_ui-nav");
     let headerNav = append2parent("nav", header);
     let headerNavContent = [
@@ -55,4 +56,18 @@ window.addEventListener("load", function (){
         }),
     ];
     nestingFromJson(headerNav, headerNavContent);
+
+
+    /* create main */
+    let main = append2body("main");
+    let mainHeader = append2parent("header", main);
+    // innesto immagine e altre cose
+    let artistPicCont = [
+        new HtmlElem({
+            "elem": "img",
+            "attributes": [["id", "artist"], ["src", "./assets/female-singer.png"]],
+            "content": ``
+        }),
+    ];
+    nestingFromJson( mainHeader, artistPicCont);
 });
