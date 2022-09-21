@@ -14,7 +14,7 @@ import { append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.
 */
 
 
-alert("heyy.. I finally started");
+
 window.addEventListener("load", function (){
     document.body.innerHTML = "";
 
@@ -61,7 +61,7 @@ window.addEventListener("load", function (){
     /* create main */
     let main = append2body("main");
     let mainHeader = append2parent("header", main);
-    // innesto immagine e altre cose
+    /* nesting artist img + create div to nest a button svg */
     let artistPicCont = [
         new HtmlElem({
             "elem": "img",
@@ -70,4 +70,65 @@ window.addEventListener("load", function (){
         }),
     ];
     nestingFromJson( mainHeader, artistPicCont);
+    let mainHeaderPlayButton = append2parent("div", mainHeader, "1_play-button");
+    let mainHeaderPlayButtonCont = [
+        new HtmlElem({
+            "elem": "button",
+            "attributes": [[]],
+            "content": `
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.2 37.1003L36.0966 28.9337C36.7266 28.467 36.7266 27.5337 36.0966 27.067L25.2 18.9003C24.43 18.317 23.3333 18.877 23.3333 19.8337V36.167C23.3333 37.1237 24.43 37.6837 25.2 37.1003ZM28 4.66699C15.12 4.66699 4.66663 15.1203 4.66663 28.0003C4.66663 40.8803 15.12 51.3337 28 51.3337C40.88 51.3337 51.3333 40.8803 51.3333 28.0003C51.3333 15.1203 40.88 4.66699 28 4.66699ZM28 46.667C17.71 46.667 9.33329 38.2903 9.33329 28.0003C9.33329 17.7103 17.71 9.33366 28 9.33366C38.29 9.33366 46.6666 17.7103 46.6666 28.0003C46.6666 38.2903 38.29 46.667 28 46.667Z" fill="#00FFE0"/>
+                </svg>
+            `
+        }),
+    ];
+    nestingFromJson(mainHeaderPlayButton, mainHeaderPlayButtonCont);
+
+
+    /* create a div#dashboard with 3 div.info, each div.info with 1 div.info-key & 1 div.info-value */
+    let mainHeaderDashboard = append2parent("div", mainHeader, "0_dashboard");
+    let mainHeaderDashConts = [
+        [
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-key"]],
+                "content": `Songs`
+            }),
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-value"]],
+                "content": `56`
+            }),
+        ],
+        [
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-key"]],
+                "content": `Followers`
+            }),
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-value"]],
+                "content": `7556`
+            }),
+        ],
+        [
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-key"]],
+                "content": `Following`
+            }),
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [["class", "info-value"]],
+                "content": `390`
+            }),
+        ],
+    ]
+    ;
+    for (let i = 0 ; i < mainHeaderDashConts.length ; i++){
+        // create a div.info each time to nest the Conts for each
+        let _divInfo = append2parent("div", mainHeaderDashboard, "1_info");
+        nestingFromJson(_divInfo, mainHeaderDashConts[i]);
+    };
 });
