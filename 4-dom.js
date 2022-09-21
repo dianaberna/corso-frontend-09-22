@@ -1,5 +1,7 @@
 // FIXME : import doesn't work with my js / node.js version
 import { crElem, append2body, append2parent, nestingFromJson, HtmlElem} from "./130-dom.js" ;
+// import * as asd from "./130-dom.js" ;
+
 /*
  * imported functions and their args
  * crElem(tag, idOrClass="")
@@ -9,10 +11,13 @@ import { crElem, append2body, append2parent, nestingFromJson, HtmlElem} from "./
  *
  * imported class(es) and own args
  * HtmlElem(elem, attributes, content)
- */
+*/
 
 
+alert("heyy.. I finally started");
 window.addEventListener("load", function (){
+    document.body.innerHTML = "";
+
     let header = append2body("header", "0_ui-nav");
     let headerNav = append2parent("nav", header);
     let headerNavContent = [
