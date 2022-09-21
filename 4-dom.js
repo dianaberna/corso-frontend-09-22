@@ -134,7 +134,8 @@ window.addEventListener("load", function () {
 
     /* create div#songs */
     const mainSongs = append2parent("div", main, "0_songs");
-    /* created section#song-album */
+
+    /* created section#song-album inside div#song */
     const mainSongAlbum = append2parent("section", mainSongs, "0_song-album");
     const popular = append2parent("h1", mainSongAlbum);
     popular.innerHTML = "Popular";
@@ -177,11 +178,59 @@ window.addEventListener("load", function () {
         for (let _cont of mainSongAlbumDivCardConts[0]) {
             nestingFromJson(_divAlbumDivCard, _cont);
         };
-        // DEBUG :
-        console.log("before div.play-button");
         // creata the div.play-button of div.album-card
         let _divAlbumDivCardPlayButton = append2parent("div", _divAlbumDivCard, "1_play-button");
         nestingFromJson(_divAlbumDivCardPlayButton, mainSongAlbumDivCardConts[1]);
     };
 
+
+    /* create section#song-singles inside div#song */
+    const mainSongSingles = append2parent("section", mainSongs, "0_song-singles");
+    const singles = append2parent("h1", mainSongSingles);
+    singles.innerHTML = "Singles";
+
+    /* create div.song-card inside section#song-singles */
+    const mainSongDivCard = append2parent("div", mainSongSingles, "1_song-card");
+    /* song card img with attr alt & src */
+    let mainSongDivCardImg = append2parent("img", mainSongDivCard, "1_song-card-img");
+    mainSongDivCardImg.src = "";
+    mainSongDivCardImg.alt = "Singles Image";
+    /* create song-caption with nested content */
+    const songCaptionCont = [
+
+            new HtmlElem({
+                "elem": "p",
+                "attributes": [[]],
+                "content": `Song title here`
+            }),
+            new HtmlElem({
+                "elem": "span",
+                "attributes": [["class", "slim-text"]],
+                "content": `2020`
+            }),
+
+    ];
+    let mainSongDivCardCaption = append2parent("div", mainSongDivCard, "1_song-caption");
+    nestingFromJson(mainSongDivCardCaption, songCaptionCont );
+
+    /* create song menu button with nested content */
+    const songMenuButtonCont = [
+        new HtmlElem({
+            "elem": "button",
+            "attributes": [[]],
+            "content": `
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_10350)">
+                        <path d="M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" fill="#161616"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2_10350">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            `
+        }),
+    ];
+    nestingFromJson(mainSongDivCard , songMenuButtonCont);
 });
