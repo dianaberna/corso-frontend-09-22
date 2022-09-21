@@ -134,6 +134,7 @@ window.addEventListener("load", function () {
 
     /* create div#songs */
     const mainSongs = append2parent("div", main, "0_songs");
+    /* created section#song-album */
     const mainSongAlbum = append2parent("section", mainSongs, "0_song-album");
     const popular = append2parent("h1", mainSongAlbum);
     popular.innerHTML = "Popular";
