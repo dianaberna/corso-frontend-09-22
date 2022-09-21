@@ -1,0 +1,50 @@
+/* #region generali */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+html {
+  font-size: 16px;
+}
+body {
+  background: radial-gradient(#06bdc1, #68469f);
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* #endregion generali */
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100vh;
+  justify-content: center;
+}
+#container-text {
+  background-color: #f4edea;
+  box-sizing: border-box;
+  border: 10px solid #06bdc1;
+  border-radius: 10px;
+  height: 350px;
+  padding: 0 5em;
+  text-align: center;
+  width: 45%;
+}
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+#quoteBtn {
+  background-color: #06bdc1;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: inherit;
+  padding: .625rem;  
+}
+

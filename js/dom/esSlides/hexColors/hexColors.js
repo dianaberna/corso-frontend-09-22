@@ -26,36 +26,17 @@ window.addEventListener("load", () => {
 
   /* h2 con stringa e hex */
   let randomColor = ["ffffff", "ffffff"];
-  let s =
-    "linear-gradient(to right, #" +
-    randomColor[0] +
-    ", " +
-    "#" +
-    randomColor[1] +
-    ")";
-  elementCreator(1, "h2", "background: " + s, " ", " ", ".container");
+  let s = `linear-gradient(to right, #${randomColor[0]}, #${randomColor[1]})`;
+  elementCreator(1, "h2", "background: " +s, " ", " ", ".container");
   /* bottone */
-  let myButton = elementCreator(
-    1,
-    "button",
-    "Click Me",
-    " ",
-    "myButton",
-    ".container"
-  );
+  let myButton = elementCreator(1, "button", "Click Me", " ", "myButton", ".container");
   myButton.addEventListener("click", () => {
     randomColor = [
       Math.floor(Math.random() * 16777215).toString(16),
       Math.floor(Math.random() * 16777215).toString(16),
     ];
-    s =
-      "linear-gradient(to right, #" +
-      randomColor[0] +
-      ", " +
-      "#" +
-      randomColor[1] +
-      ")";
+    s = `linear-gradient(to right, #${randomColor[0]}, #${randomColor[1]})`;
     document.body.style.background = s;
-    document.getElementsByTagName("h2")[0].innerHTML = "background: " + s;
+    document.getElementsByTagName("h2")[0].innerHTML = "background: " +s;
   });
 });
