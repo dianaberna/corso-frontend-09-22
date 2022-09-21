@@ -1,9 +1,3 @@
-/**
- * I moduli JavaScript ti consentono di suddividere il codice in file separati.
- * Ciò semplifica la manutenzione della base di codice.
- * I moduli JavaScript si basano sulle istruzioni di importazione ed esportazione.
- */
-
 import dato from './dati.json' assert { type: 'json' };
 
 /* 
