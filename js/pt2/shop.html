@@ -27,7 +27,8 @@
         <div id="colors-container">
             <!-- 
             Inserisci i bottoni qui
-        --></div>
+            -->
+        </div>
         <button
             type="button"
             onclick="deleteCookie('colore', '/')"
@@ -48,8 +49,7 @@
 
                 //Colori sempli o esadecimali
                 let colors = ["red", "yellow", "blue", "green"];
-                let colorsContainer =
-                    document.getElementById("colors-container");
+                let colorsContainer = document.getElementById("colors-container");
 
                 // Per ogni colore -> Secondo parametro del forEach è l'indice dell'iterazione
                 colors.forEach((color, index) => {
@@ -92,7 +92,7 @@
                         <button type="button" onclick="changeColor('${color}')" style="border-radius:100%; background-color: ${color}; width: 50px; height: 50px; display: inline;">
                             ${color.charAt(0).toUpperCase() + color.slice(1)}
                         </button>
-                    `;
+                        `;
 
                         /*
                          *
