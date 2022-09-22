@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener("load", function(){
+            console.log("prova funzionamento");
+
+            /* fetch: prende una chiamata api e ne restituisce il risultato*/
+            async function meteo(){
+               let risultato = await fetch ("https://api.open-meteo.com/v1/forecast?latitude=41.8955&longitude=12.4823&daily=temperature_2m_max,sunset,rain_sum&current_weather=true&timezone=Europe%2FBerlin");
+               /* console.log(risultato.json()); non la uso perchè se la richiamo due volte da errore. Era solo un controllo*/
+
+               /*salvo il siultato della chiamata all'API in una variabile*/
+               let risultatoJson= await risultato.json();
+
+               /*stampo il risultato della chiamata per verifica*/
+               console.log(risultatoJson.latitude);
+               console.log(risultatoJson.longitude);
+               console.log(risultatoJson.current_weather.temperature);
+               console.log(risultatoJson.daily_units.time);
+               
+               console.log(risultatoJson);
+
+               document.body.innerHTML=risultatoJson.latitude;
+            }
+            meteo();
+
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    font-family: "Lato";
+    background-color: #181823;
+    font-size: 1rem;
+    color: #DEECF9;
+}
+
+#portfolio{
+    display: flex;
+    gap: 2rem;
+}
+
+
+#portfolio .slider{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    background-color: #FFF4F8;
+    border-radius: 14px;
+    width: 750px;
+    height: 460px;
+}
+
+#imgSfondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+    top: 50px;
+    
+    /* left: 740px; */
+
+}
+
+
+/* TODO: contenitore immagini da scorrere; */
+
+
+/* attributi generali dei bottoni */
+button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18;
+    position: absolute;
+
+    color: #DEECF9;
+}
+
+/* bottone sinistro */
+#left{
+    width: 35px;
+    height: 35px;
+    margin-right: -20px;
+    z-index: 1;
+
+    left: 10px;
+    top: 250px;
+}
+#left:hover{
+    color:#683CB8;
+}
+
+/* bottone destro */
+#right {
+    width: 35px;
+    height: 35px;
+    margin-left: -20px;
+    left: 740px;
+    top: 250px;  
+}
+#right:hover{
+    color:#683CB8;
+}
+
+
+
+
+/* parte destra: sezione testuale */
+#portfolio .textSection{
+    font-weight: 500;
+    color: #C7E0FA;
+} 
+
+/* linea di separazione tra titolo e testo */
+hr{
+    width: 120px; 
+    height: 5px; 
+    margin-left: 0; 
+    color:#683CB8; 
+    border-radius: 100px;
+    border: 0 ;
+    background-color: #683CB8;
+}
+
+/* impostazioni specifiche del bottone del portfolio */
+#view{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 4rem;
+    white-space: nowrap;
+    color: #DEECF9;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#view:hover{
+    color:#683CB8;
+}
+
+/* aggiungo css per i div creati in js */
+/* #div2livello{
+    display: flex;
+    gap: 2rem;
+    color: #DEECF9;
+}
+
+#div1_2livello{
+    background-color: #FFF4F8;
+    display: flex;
+    gap: 2rem;
+    border-radius: 14px;
+    width: 846px;
+    height: 843px;
+    
+}
+
+
+#portfolio{
+    display: flex;
+    gap: 2rem;
+    background-color: #FFF4F8;
+    border-radius: 14px;
+    width: 846px;
+    height: 843px;
+}
+
+#portfolio .slider{
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .slider > button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #DEECF9;
+}
+
+#portfolio button#left {
+    margin-right: -20px;
+    z-index: 1;
+}
+
+#portfolio button#right {
+    margin-left: -20px;
+}
+
+#portfolio .text{
+    font-weight: 500;
+    color: #C7E0FA;
+} 
+
+#portfolio hr{
+    width: 120px; 
+    height: 5px; 
+    margin-left: 0; 
+    color:#683CB8; 
+    border-radius: 100px;
+    border: 0 ;
+    background-color: #683CB8;
+}
+
+#portfolio .text button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 4rem;
+    white-space: nowrap;
+    color: #DEECF9;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#portfolio .text button:hover{
+    color:#683CB8; */

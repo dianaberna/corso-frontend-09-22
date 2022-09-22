@@ -355,16 +355,38 @@ console.log(quanteVolteTrue(arrayTrue));
 
 //piegare pezzo di carta
 
-const spessoreFoglio=0.5;
+const spessoreFoglio=0.005;
 let numeroDiPiegature=0;
 
 function numLayers(numeroDiPiegature){
-    let spessoreCarta=numeroDiPiegature*spessoreFoglio;
+    let spessoreCarta=spessoreFoglio**numeroDiPiegature;/* (numeroDiPiegature*spessoreFoglio)**2; */
     console.log(spessoreCarta);
     spessoreInMetri=spessoreCarta*1000;
     console.log(spessoreInMetri);
 }
-console.log(numLayers(4));
+console.log(numLayers(21));
+
+
+
+
+//sasso carta forbice
+/* let p1="player1";
+let p2="player2"; */
+const giocatori=["p1","p2"]
+/* const segno1="sasso";
+const segno2="carta";
+const segno3="forbice"; */
+const segno=["sasso","carta","forbice"]
+
+function giocoScf(giocatori,segno){
+    if (giocatori[0] && segno[0] && giocatori[0] && segno[1]){
+
+    }
+
+}
+
+
+
 
 </script>
 
