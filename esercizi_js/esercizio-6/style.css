@@ -91,8 +91,7 @@ body {
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.5s;
-
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
 }
 
 .dots__dot:last-child {

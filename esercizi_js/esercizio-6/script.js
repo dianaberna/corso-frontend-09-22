@@ -29,6 +29,7 @@ const attivazioneDot = function (slide) {
     .querySelector(`.dots__dot[data-slide="${slide}"]`)
     .classList.add("dot__dot--attivo");
 };
+attivazioneDot(0);
 
 const slideIniziale = function (slide) {
   slides.forEach(
@@ -37,7 +38,7 @@ const slideIniziale = function (slide) {
   //Prima slide 0% | Seconda slide 100% | Terza slide 200% | Quarta slide 300%
 };
 slideIniziale(0);
-attivazioneDot(0);
+
 // slider.transform.overflow = "visible";
 
 //Slide dopo
