@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
 /* Reset  */
 
@@ -6,3 +6,17 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+};
+
+
+/* attempt to change background color of h1, h2 */
+h1, h2 {
+    backdrop-filter: invert(80%);
+};
