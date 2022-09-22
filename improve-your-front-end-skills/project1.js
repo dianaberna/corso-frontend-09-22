@@ -110,7 +110,7 @@ button.addEventListener("click", function () {
         // // DEBUG :
         // console.log(linearGrad)
         // document.body.style.backgroundColor = linearGrad;  // but... WHY!?
-        // document.body.style.background = linearGrad;
+        document.body.style.background = linearGrad;
 
         let hex1 = document.getElementById("hex-1");
         hex1.innerHTML = color1;

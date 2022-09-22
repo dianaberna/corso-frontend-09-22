@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
-/* Reset  */
+/* TODO : I want more than one font */
+:root {
+    --default-font: "Roboto", sans-serif;
+    --font-1: "" , serif;
+    --font-2: "" , serif;
+    --font-3: "" , serif;
+    --font-4: "" , serif;
+    --font-5: "" , serif;
+};
 
+
+/* Reset  */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +23,19 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
+};
+
+
+/*
+ * FIXME : this rules don't get applied
+ */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
 };
 
 
