@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>console.log ("ciao mondo!")</script>
+
+<script>
+
+// variabili
+/* console.log("variabile a");
+var a =1;
+console.log(a);
+a=5;
+console.log(a);
+
+console.log("variabile b");
+let b=2;
+console.log(b);
+b=5;
+console.log(b); */
+
+
+// costante
+/* console.log("costante");
+const costante =3;
+console.log(costante) */
+
+// sapere che tipo  è la variabile
+/* console.log("la variabile costante è di tipo: "+typeof(costante)); */
+
+
+//somma
+/* function somma(a,b){
+    let risultato= a+b;
+    console.log(risultato)
+}
+
+console.log("il risultato della funzione somma è: ");
+somma (1,2);
+somma (7,23);
+ */
+
+//moltiplicazione
+/* function moltiplicazione(a,b){
+    let risultato=a*b;
+    console.log(risultato);
+}
+
+console.log("il risultato della funzione moltiplicazione è: ");
+moltiplicazione (3,2);
+moltiplicazione (-3,-6);
+moltiplicazione (7,3); */
+
+
+//esercizio minore uguale a zero
+/* function lessThanOrEqualToZero(a){
+    if (a > 0){
+        console.log("False!");
+    }
+    else {
+        console.log("True!");
+    }
+}
+
+lessThanOrEqualToZero(4);
+lessThanOrEqualToZero(-5);
+
+//calcola età in giorni
+
+function calcAge(a){
+    let calcolo= a*365;
+    console.log(calcolo);
+}
+
+console.log("il risultato della funzione calcolo età è: ");
+calcAge (65); */
+
+// calcolo zampe
+/* function animals(a,b,c){
+    let polli = a*2;
+    let mucche = b*4;
+    let maiali = c*4;
+    somma = polli+mucche+maiali;
+    console.log(somma);
+}
+
+console.log("il risultato della funzione animals è: ");
+animals (2, 3, 5);
+ */
+
+//calcola il numero dei fiammiferi
+/* function matchHouses (a){
+    if (a==1){
+        matches=a*6
+    }
+    else{
+        matches=(a*6)-(a-1)
+    }
+    console.log(matches);
+}
+console.log("il risultato della funzione matchHouses è: ");
+
+matchHouses(1);
+matchHouses(4); */
+
+//alternativa con operatore tern
+/* function matchHouses2(step){
+    return (step==0) ? 0: (step*6)-(step-1)
+}  */
+//return a <= 0 ? true : false
+
+
+//conta valori True
+/* function countTrue () */
+
+
+
+//somma iterativa
+/* function addUp(a){
+    let numero=0;
+    let somma=0;
+    while (numero <= a){
+        
+        somma= somma+numero;
+        numero ++;
+        
+    }
+    console.log(somma);
+}
+console.log("il risultato della funzione addUp è: ");
+addUp(4); */
+
+
+
+
+
+
+
+//posizione alfabeto (switch case)
+/* 
+let numero=0;
+/* let lettera=a; */
+
+/* function letterAtPosition(numero){
+ */    /* controllo se numero intero */
+    /* if (Number.isInteger(numero)){
+
+        switch (numero){
+
+            case 1:
+            console.log("La lettera alla posizione "+numero+" è la 'a'");
+            break;
+
+            case 2:
+            console.log("La lettera alla posizione "+numero+" è la 'b'");
+            break;
+
+            case 3:
+            console.log("La lettera alla posizione "+numero+" è la 'c'");
+            break;
+
+            case 4:
+            console.log("La lettera alla posizione "+numero+" è la 'd'");
+            break;
+
+            case 5:
+            console.log("La lettera alla posizione "+numero+" è la 'e'");
+            break;
+
+            case"6":
+            console.log("La lettera alla posizione "+numero+" è la 'f'");
+            break;
+
+            case"7":
+            console.log("La lettera alla posizione "+numero+" è la 'g'");
+            break;
+
+            case"8":
+            console.log("La lettera alla posizione "+numero+" è la 'h'");
+            break;
+
+            case"9":
+            console.log("La lettera alla posizione "+numero+" è la 'i'");
+            break;
+
+            case"10":
+            console.log("La lettera alla posizione "+numero+" è la 'l'");
+            break;
+
+            case"11":
+            console.log("La lettera alla posizione "+numero+" è la 'm'");
+            break;
+
+            case"12":
+            console.log("La lettera alla posizione "+numero+" è la 'n'");
+            break;
+
+            case"13":
+            console.log("La lettera alla posizione "+numero+" è la 'a'");
+            break;
+
+            case"14":
+            console.log("La lettera alla posizione "+numero+" è la 'o'");
+            break;
+
+            case"15":
+            console.log("La lettera alla posizione "+numero+" è la 'p'");
+            break;
+
+            case"":
+            console.log("La lettera alla posizione "+numero+" è la 'q'");
+            break;
+
+            case"16":
+            console.log("La lettera alla posizione "+numero+" è la 'r'");
+            break;
+
+            case"17":
+            console.log("La lettera alla posizione "+numero+" è la 's'");
+            break;
+
+            case"18":
+            console.log("La lettera alla posizione "+numero+" è la 't'");
+            break;
+
+            case"19":
+            console.log("La lettera alla posizione "+numero+" è la 'u'");
+            break;
+
+            case"20":
+            console.log("La lettera alla posizione "+numero+" è la 'v'");
+            break;
+
+            case"21":
+            console.log("La lettera alla posizione "+numero+" è la 'z'");
+            break;
+
+
+            default: console.log("Invalid (numero è '0')");
+        }
+    }else{
+        console.log ("Invalid (not integer)");
+    }
+    
+} */
+
+/* console.log("il risultato dello switch è: ");
+letterAtPosition(4); */
+
+
+//posizione alfabeto (array)
+ /* const a=["invalid","a","b","c","d","e","f","g","h","i","l","m","n","o","p","q","r","s","t","u","v","z"]
+let posizione=0;
+
+
+ function leggo(posizione){
+    for  (element of a){
+        console.log(element)
+    }
+    return
+ }
+leggo(4);
+console.log ("alla posizione "+ posizione+" dell'array corrisponde la lettera: "+ leggo()) */
+
+
+
+//trova lo sconto
+
+/* let prezzo=0;
+let sconto=0;
+
+function trovaSconto(prezzo, sconto){
+    let percentuale=sconto*0.01;
+    let prezzoScontato=prezzo-(prezzo*percentuale);
+    console.log(prezzoScontato);
+    console.log(percentuale);
+    console.log(prezzoScontato);
+
+}
+
+console.log(trovaSconto(100, 25));
+ */
+
+
+//calcolatrice di base
+/* let a=0;
+let b=0;
+let segno="";
+
+function calcolatrice(a,b,segno){
+    if (segno=="+"){
+        console.log(a+b);
+    }
+    else if (segno=="-"){
+        console.log(a-b);
+    }
+    else if (segno=="*"){
+        console.log(a*b);
+    }
+    else if (segno=="/"){
+        if (b==0){
+            console.log("non si puo dividere per 0!");
+        }
+        else{
+            console.log(a/b);
+        }
+    }
+    else{
+        console.log("Operazione non valida, segno non corretto.")
+    }
+}
+
+console.log(calcolatrice(10,0,"*"));  */
+
+//somma valori array
+/* const array=[4,2,10,2];
+
+function sumArray(array){
+    let somma=0;
+    for (element of array){
+        somma=somma+element;
+    }
+    console.log(somma);
+}
+console.log(sumArray(array)); */
+
+
+//quante volte è vero
+
+ /* const arrayTrue=[true, false, true];
+
+function quanteVolteTrue(arrayTrue){
+    contatore=0;
+    for (i of arrayTrue){ */
+        /* console.log(i) */ //mi serve per vedere legge bene i valori dell'array
+        /* if (i===true){
+            contatore++;
+        }
+    }
+    console.log(contatore);
+}
+console.log(quanteVolteTrue(arrayTrue));
+ */
+
+/* ---------------------------------------------------------------- */
+/* FINO QUI OK */
+
+
+//piegare pezzo di carta
+
+const spessoreFoglio=0.005;
+let numeroDiPiegature=0;
+
+function numLayers(numeroDiPiegature){
+    let spessoreCarta=spessoreFoglio**numeroDiPiegature;/* (numeroDiPiegature*spessoreFoglio)**2; */
+    console.log(spessoreCarta);
+    spessoreInMetri=spessoreCarta*1000;
+    console.log(spessoreInMetri);
+}
+console.log(numLayers(21));
+
+
+
+
+//sasso carta forbice
+/* let p1="player1";
+let p2="player2"; */
+const giocatori=["p1","p2"]
+/* const segno1="sasso";
+const segno2="carta";
+const segno3="forbice"; */
+const segno=["sasso","carta","forbice"]
+
+function giocoScf(giocatori,segno){
+    if (giocatori[0] && segno[0] && giocatori[0] && segno[1]){
+
+    }
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    font-family: "Lato";
+    background-color: #181823;
+    font-size: 1rem;
+    color: #DEECF9;
+}
+
+#portfolio{
+    display: flex;
+    gap: 2rem;
+}
+
+#portfolio .slider{
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .slider > button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #DEECF9;
+}
+
+#portfolio button#left {
+    margin-right: -20px;
+    z-index: 1;
+}
+
+#portfolio button#right {
+    margin-left: -20px;
+}
+
+#portfolio .text{
+    font-weight: 500;
+    color: #C7E0FA;
+} 
+
+#portfolio hr{
+    width: 120px; 
+    height: 5px; 
+    margin-left: 0; 
+    color:#683CB8; 
+    border-radius: 100px;
+    border: 0 ;
+    background-color: #683CB8;
+}
+
+#portfolio .text button{
+    background-color: #F03A76;
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 4rem;
+    white-space: nowrap;
+    color: #DEECF9;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#portfolio .text button:hover{
+    color:#683CB8;
+}

@@ -1,0 +1,151 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sidebar{
+    height: 100%;
+    margin: 10px;
+}
+
+.dashboard1{    
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+
+/*GRID AREA*/
+
+.header{
+    grid-area:  1 / 1 / 2 / 9;
+    height: 50px;
+}
+
+ #content-1{
+    grid-area:  2 / 1 / 3 / 3;
+}
+
+ #content-2{
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+ #content-3{
+    grid-area: 2 / 5 / 3 / 7;
+}
+
+ #content-4{
+    grid-area:  2 / 7 / 3 / 9;
+}
+
+ #content-5{
+    grid-area: 3 / 1 / 4 / 5;
+}
+
+ #content-6{
+    grid-area:  3 / 5 / 4 / 9;
+}
+
+ .terza-riga{
+    grid-area: 4 / 1 / 5 / 9;
+}
+
+
+
+
+
+/* Altri stili NON riguardanti la Grid*/
+
+.dashboard1{
+    background-color: lightgrey;
+}
+
+.header{
+    height: 100px;
+    background-color: white;
+    box-shadow:  rgba(0,0,0,0.10)k;
+    border-color:  #000000;
+    border-radius: 14px;
+    margin: 10px;
+}
+
+.header > #navmenu{
+    background-color: white;
+    border-width: 10px;
+    border-color: #000000;
+    border-radius: 14px;
+}
+
+#content-1{
+    background-color: #A162F7;
+    font-style: normal; 
+    color: #ffffff;
+    border-color: darkgrey;
+    border-radius: 14px;
+}
+
+#content-2{
+    background-color: white;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 14px;
+}
+
+#content-3{
+    background-color: white;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 14px;
+}
+
+#content-4{
+    background-color: white;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 14px;
+}
+
+#content-5{
+    background-color: darkgrey;
+    border-radius: 14px;
+}
+
+#content-6{
+    background-color: peru;
+    border-radius: 14px;
+}
+
+.terza-riga{
+    flex-direction: row;
+}
+
+#content-7{
+    background: #E1DFA4;
+    border-radius: 14px;
+}
+
+#content-8{
+    background: #E3ECF1;
+    border-radius: 14px;
+}
+
+#content-9{
+    background: #F4E3E5;
+    border-radius: 14px;
+}
+
+#navmenu{
+    display:flex;
+    flex-direction: row;
+}
+
+#nav2{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
