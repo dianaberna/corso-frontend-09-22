@@ -2,18 +2,27 @@
 
 // LINK esercizi -> https://dev.to/codefoxx/25-beginner-javascript-project-ideas-3m9h
 //////// ES DEV - 7 /////
-const lufthansa = {
-  airline: "Lufthansa",
-  iataCode: "LH",
-  bookings: [],
-  //book: function(){
-  book(flightNum, name) {
-    console.log(
-      `${name} booked a set on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
-    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
-  },
+let d = new Date();
+const gg = function () {
+  const giorni = ["LUN", "MAR", "MER", "GIO", "VEN", "SAB", "DOM"];
+  let day = d.getDay();
+  document.querySelector(".cotnainerGiorno").textContent = giorni[day - 1];
 };
-// lufthansa.book(29, "Francesco");
-const book = lufthansa.book;
-bookLF(29, "Francesco");
+
+const hh = function () {
+  let h = d.getHours();
+  let m = d.getMinutes();
+  document.querySelector(".cotnainerOre").textContent = `${h}:${m}`;
+};
+
+const AMPM = function () {
+  if (d.getHours() < 12) {
+    document.querySelector(".cotnainerAMPM").textContent = "AM";
+  } else {
+    document.querySelector(".cotnainerAMPM").textContent = "PM";
+  }
+};
+//Chiamata funzioni
+gg();
+hh();
+AMPM();

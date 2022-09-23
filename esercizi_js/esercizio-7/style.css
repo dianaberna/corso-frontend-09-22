@@ -13,3 +13,41 @@ body {
 h1 {
   color: royalblue;
 }
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #6463639d;
+}
+.sliderContainer > div {
+  font-size: 30px;
+  margin: 10px;
+}
+.btn {
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #e2e6ea;
+  padding: 10px 20px;
+  box-shadow: 0 0 0 0.2rem rgb(216 217 219 / 50%);
+}
