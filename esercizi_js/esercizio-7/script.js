@@ -12,7 +12,11 @@ const gg = function () {
 const hh = function () {
   let h = d.getHours();
   let m = d.getMinutes();
-  document.querySelector(".cotnainerOre").textContent = `${h}:${m}`;
+  if (m > 10) {
+    document.querySelector(".cotnainerOre").textContent = `${h}:${m}`;
+  } else {
+    document.querySelector(".cotnainerOre").textContent = `${h}:0${m}`;
+  }
 };
 
 const AMPM = function () {
@@ -22,6 +26,37 @@ const AMPM = function () {
     document.querySelector(".cotnainerAMPM").textContent = "PM";
   }
 };
+
+//Import bacground
+const container = document.querySelector(".container");
+
+function newBackGround(background) {
+  document.querySelector(
+    ".container"
+  ).style.backgroundImage = `url(${background})`;
+}
+
+function getPhotos(images) {
+  images.map((image) => {
+    console.log(image);
+  });
+}
+
+async function setImgBackground() {
+  let day = d.getDay();
+  let imgUrl = " ";
+  let result = await fetch("https://api.pexels.com/v1/search?query=universe", {
+    headers: {
+      Authorization: "563492ad6f917000010000018e7df5e85c834bdaac8b311cf6c8d1ad",
+    },
+  });
+  const resultImgArray = await result.json();
+  const immagineUrl = resultImgArray.photos[day].src.large;
+  console.log(resultImgArray.photos[0]);
+  newBackGround(immagineUrl);
+}
+setImgBackground();
+
 //Chiamata funzioni
 gg();
 hh();

@@ -25,16 +25,19 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.sliderContainer {
+.card {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 20rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #6463639d;
+  background-color: white;
 }
-.sliderContainer > div {
+.card > div {
   font-size: 30px;
   margin: 10px;
 }
