@@ -116,6 +116,13 @@ button.addEventListener("click", function () {
         hex1.innerHTML = color1;
         let hex2 = document.getElementById("hex-2");
         hex2.innerHTML = color2;
+
+
+        // RANDOMIZE FONTS
+        // how many fonts I have: 9, but default is ""index"" 0 and last ""index"" 8 BUT random generated numInt hardly touched 8 ... IDK how to make it more smart (i.e. if I add one more in CSS I need to change something here too).
+        let whichFont = numInt(9);  // better tell it the human count, instead of computer count to allow reaching --font-8
+        console.log(whichFont);
+        document.body.style.fontFamily = `var(--font-${whichFont})`;
     }
 );
 

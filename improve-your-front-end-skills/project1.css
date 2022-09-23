@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('http://fonts.cdnfonts.com/css/new-gothic-style');
+@import url('http://fonts.cdnfonts.com/css/plainblack');
 
 /* TODO : I want more than one font */
 :root {
-    --default-font: "Roboto", sans-serif;
-    --font-1: "" , serif;
-    --font-2: "" , serif;
-    --font-3: "" , serif;
-    --font-4: "" , serif;
-    --font-5: "" , serif;
+    /* --default-font renamed into --font-0 */
+    --font-0: "Roboto", sans-serif;
+    --font-1: "Bungee Spice" , cursive;
+    --font-2: "Dancing Script" , cursive;
+    --font-3: "Pacifico" , cursive;
+    --font-4: "Arvo" , serif;
+    --font-5: "DotGothic16" , sans-serif;
+    --font-6: "MedievalSharp" , serif;
+    --font-7: "New Gothic Style" , sans-serif;
+    --font-8: "PlainBlack" , sans-serif;
 };
 
 
@@ -28,9 +40,9 @@ body {
 
 
 /*
- * FIXME : this rules don't get applied
- */
-main {
+ FIXME : this rules don't get applied
+*/
+body > main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
