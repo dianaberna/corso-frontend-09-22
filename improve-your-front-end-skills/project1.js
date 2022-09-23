@@ -106,7 +106,11 @@ button.addEventListener("click", function () {
         console.log(`color2 = ${color2} aka ${hashHexToRGB(color2)}`);
         // console.log(hashHexToRGB("#66ff88"));
 
+        // FIXME :
+        // SOMEHOW I GET ALL THE CSS RULES in the .css pushed inline and maybe this doesn't make things working
+        // TODO : this doesn't seem the culprit
         let linearGrad = `linear-gradient(to right, ${color1}, ${color2})`;
+        // let linearGrad = "linear-gradient(to right, " + color1 + "," + color2 + ")";
         // // DEBUG :
         // console.log(linearGrad)
         // document.body.style.backgroundColor = linearGrad;  // but... WHY!?

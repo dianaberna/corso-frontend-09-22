@@ -31,27 +31,25 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
 };
 
 
 /*
  FIXME : this rules don't get applied
+
+SOMEHOW now all the CSS properties are in-line after the DOM manipulation... so if I change something even in Firefox dev-tools it vanish from the tool and get pushed in-line
 */
-body > main {
+main{
+    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 };
 
 
 /* attempt to change background color of h1, h2 */
-h1, h2 {
+/* h1, h2 {
     backdrop-filter: invert(80%);
-};
+}; */
