@@ -70,6 +70,26 @@ body {
   outline: 0;
   background-color: #f5f5f5;
 }
+
+.btn {
+  margin: 10px;
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #e2e6ea;
+  padding: 10px 20px;
+  box-shadow: 0 0 0 0.2rem rgb(216 217 219 / 50%);
+}
+.btn:hover {
+  background-color: #b6b9bd;
+  box-shadow: 0 0 0 0.2rem rgba(172, 173, 174, 0.5);
+}
+
 .titolo2 {
   font-size: 20px;
   font-weight: 400;
