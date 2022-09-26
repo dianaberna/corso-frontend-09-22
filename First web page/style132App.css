@@ -17,7 +17,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
-svg {
+.svg {
     width: 6%;
     height: 10%;
     fill: white;
@@ -29,7 +29,7 @@ svg {
     margin-top: 5%;
     align-items: center;
 }
-.image > p {
+.image>p {
     width: 80%;
 }
 
@@ -68,6 +68,8 @@ button {
     width: 100%;
     color: white;
     margin-bottom: 5%;
+    height: 10vw;
+
 }
 
 footer {
@@ -96,5 +98,6 @@ footer {
 
     button {
         width: 50%;
+        height: 5vw;
     }
 }

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: cursive;
+    flex-direction: column;
+}
+.button{
+    background-color: transparent;
+    height: 5rem;
+    border-radius: 30px;
+    font-size: large;
+}

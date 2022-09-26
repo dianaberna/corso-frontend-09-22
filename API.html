@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener("load", ()=>{
+            console.log("funziona");
+
+            async function Meteo(){
+                let risultatoFetch= await fetch(" ");
+                let risultatoJson= await risultatoFetch.json();
+                console.log(risultatoJson);
+                console.log(risultatoJson.latitude);
+                
+            }
+
+            Meteo();
+
+        })
+    </script
+    
+</head>
+<body>
+    
+</body>
+</html>

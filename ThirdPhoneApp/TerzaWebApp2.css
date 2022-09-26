@@ -63,27 +63,32 @@ nav {
   margin-top: 20%;
   gap: 44px;
   display: flex;
+  justify-content: space-evenly;
 }
+
 
 .heart {
   display: flex;
   gap: 13px;
-  justify-content: flex-end;
+  align-items: center;
 }
-.heart > svg {
-  width: 15%;
-  fill: #0089d9;
+.heart > img, svg {
+  width: 1.2rem;
+  height: 1.2rem;
+fill: #0089d9;
 }
 
 .steps {
   display: flex;
   gap: 10px;
-  justify-content: flex-start;
+  align-items: center;
+
 }
 
-.steps > svg {
-  width: 15%;
-  fill: #f25700;
+.steps > img, svg {
+  width: 1.2rem;
+  height: 1.2rem;
+fill: #f25700;
 }
 
 .calorie {

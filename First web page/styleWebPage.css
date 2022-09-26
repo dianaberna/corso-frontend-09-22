@@ -5,7 +5,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h2 {
+#h2 {
   margin-top: 40px;
   font-weight: 700;
   color: white;
@@ -20,7 +20,7 @@ h2 {
   width: 50px;
 }
 
-div + form {
+ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@ div + form {
   color: #C7E0FA;
 }
 
-form div.left #email {
+.left #email {
   border-radius: 6px;
   width: 440px;
   color: #C7E0FA;
@@ -42,7 +42,7 @@ form div.left #email {
 }
 
 
-form div.left #message {
+.left #message {
   border-radius: 6px;
   color: #C7E0FA;
   width: 440px;
@@ -93,7 +93,7 @@ form div.right #title {
 }
 
 .button {
-  margin-top: -47px;
+  margin-top: 10px;
   margin-left: 1100px;
 }
 

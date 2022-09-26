@@ -1,0 +1,66 @@
+body{
+  background: rgb(231,249,247);
+  background: linear-gradient(-90deg, rgb(209, 239, 235) 24%, rgba(93,243,249,1) 65%);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.padre{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.mainClass{
+  box-shadow: 0px 0px 22px 3px rgb(0 0 0 / 65%);
+    display: flex;
+    width: 50%;
+    height: 30vw;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+hr{
+  width: 95%;
+    border-style: solid;
+    border-width: 0.1px;
+}
+
+.messaggio{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  margin-top: -4rem;
+
+}
+
+.mainClass>p:first-child{
+  font-size: x-large;
+    font-weight: bolder;
+    margin-block-end: 0;
+}
+
+input{
+  margin-bottom: 1.5rem;
+  width: 90%;
+
+
+}
+
+.button{
+  background-color: transparent;
+    border: dashed;
+    color: blue;
+}
+
+.messaggio>p:first-child{
+  font-size: 18px;
+    font-weight: 900;
+    margin-block-end: 0.5em;
+}
