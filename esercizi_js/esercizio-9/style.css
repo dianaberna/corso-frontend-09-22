@@ -24,13 +24,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
 }
 .containerLista {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  margin: 20px;
+  padding: 10px;
   width: 80%;
   box-shadow: 5px 5px 15px 5px #6463639d;
   border-radius: 12px;
@@ -91,7 +91,7 @@ body {
 }
 
 .titolo2 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -100,9 +100,29 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 12px;
+  justify-content: flex-start;
   padding: 20px;
-  width: 80%;
-  box-shadow: 5px 5px 15px 5px #625d5d67;
+  flex-wrap: wrap;
+}
+.testoPromemoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  box-shadow: 5px 5px 15px 5px #625d5d31;
+}
+.testoPromemoria > button {
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  margin-left: 10px;
 }
