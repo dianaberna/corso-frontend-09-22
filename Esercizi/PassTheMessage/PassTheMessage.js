@@ -11,7 +11,7 @@ CreaSenzaAttributi("p", "Inserisci il messaggio", document.getElementsByClassNam
 let inp=document.createTextNode(" ");
 let ElementoInp= document.createElement("input");
 ElementoInp.type="text";
-ElementoInp.value="ciao";
+ElementoInp.value=" ";
 
 ElementoInp.appendChild(inp);
 
@@ -19,24 +19,28 @@ let nodo=document.getElementsByClassName("messaggio")[0];
 nodo.appendChild(ElementoInp);
 
 CreaClasse("button", "SUBMIT", document.getElementsByClassName("messaggio")[0],"button");
-CreaClasse("p"," ",document.getElementsByClassName("mainClass")[0], "out");
+CreaClasse("p"," ",document.getElementsByClassName("messaggio")[0], "out");
 
 let bottone=document.getElementsByClassName("button")[0];
-bottone.addEventListener("click", ()=>{
-    AggMessaggio();
-    console.log("ciao")
+bottone.addEventListener("click",()=>{
+    AggMessaggio(ElementoInp);
+
+})
+ 
+document.getElementsByTagName("input")[0].addEventListener('keydown', (event)=>{
+    if(event.key=='Enter'|| event.key==' ') {
+
+        AggMessaggio(ElementoInp);
+    }
+   
+    
+
 })
 
 })
 
-function AggMessaggio(){
-/*     let agg= document.getElementsByTagName("out")[0].textContent=document.getElementsByTagName("input")[0].value;
- *//*     let aggI = document.getElementsByClassName("input")[0].value=" ";
- */    
-let valore=" ";
-let AltroValore= document.getElementsByTagName("input").value = valore;
+function AggMessaggio(text){
+let valore=text.value;
+document.getElementsByClassName("out")[0].innerHTML=valore;
 
-console.log(valore +"M")
-/* document.getElementsByClassName("out")[0].innerHTML=agg;
- */
 }
