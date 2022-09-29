@@ -1,0 +1,193 @@
+[
+    {
+        "titolo_sezione": "Modulo 0 - Client/Server & Git",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/12yykWkLFdj8f6BRgSGZ2J-DESNKRitG6GNXZoO5H8U0/edit?usp=sharing",
+                "titolo": "Slide Introduzione al web"
+            },
+            {
+                "url": "https://docs.google.com/presentation/d/1FmmY3dI6m_8k_j3n7_W9IXNk3-b002VEZltqDwStLvw/edit?usp=sharing",
+                "titolo": "Slide Client"
+            },
+            {
+                "url": "https://docs.google.com/presentation/d/1DKE3R2m4RRfrPFQjfStXDfgL6UvEVbEifkaFFni_Sfo/edit?usp=sharing",
+                "titolo": "Slide Server"
+            },
+            {
+                "url": "https://docs.google.com/presentation/d/1CwatfrRqqsajue86lu5iBblNNRWWX2fWvM3Nnfoov6c/edit?usp=sharing",
+                "titolo": "Slide Problem Solving"
+            },
+            {
+                "url": "https://docs.google.com/presentation/d/1viIcBxu_MNav_wr9ovQrrRdcX_86YqIa6JAupbcCgus/edit?usp=sharing",
+                "titolo": "Slide Git / Github"
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 1 - HTML",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/1Hvx67slor2ltym-VDFDoamjYNOb2xfx6wZqBsddO5ig/edit?usp=sharing",
+                "titolo": "Slide HTML"
+            },
+            {
+                "url": "./html/tag.html",
+                "titolo": "Tag generici",
+                "fatto": false
+            },
+            {
+                "url": "./html/form.html",
+                "titolo": "Form",
+                "fatto": false
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 1 - CSS",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/18yy-AcFybKCtNRxD2pABHsv0f4FMICB7ylIXE4TTKzs/edit?usp=sharing",
+                "titolo": "Slide CSS"
+            },
+            {
+                "url": "https://www.figma.com/file/BnPY6MVL6o5U3o4G3OKjmx/corso-frontend-(09%2F22)?node-id=0%3A1",
+                "titolo": "File figma di riferimento",
+                "fatto": false
+            },
+            {
+                "url": "./css/beautiful-page.html",
+                "titolo": "Pagina selettori",
+                "fatto": false
+            },
+            {
+                "url": "./webpage1/index.html",
+                "titolo": "Prima Landing Page",
+                "fatto": false
+            },
+            {
+                "url": "./webpage2/index.html",
+                "titolo": "Seconda Landing Page",
+                "fatto": false
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 2 - UI/UX & Accessibilità",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/1s8KF2bnQp02EgF0w5dM9zHeF2gC9l2ZcVrdPkfh8pH0/edit?usp=sharing",
+                "titolo": "Slide"
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 3 - Esercizi/Teoria JS - Parte 1",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/1BOO8nTXjfwaJrnBWO9AgABjVblhxpDOaYqag7oz97R0/edit?usp=sharing",
+                "titolo": "Slide Parte 1"
+            },
+            {
+                "url": "./js/pt1/base.html",
+                "titolo": "Javascript Base",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt1/soluzioni.html",
+                "titolo": "Soluzioni esercizi pt. 1",
+                "fatto": false
+            }
+        ]
+    },
+
+    {
+        "titolo_sezione": "Modulo 3 - Esercizi/Teoria JS - Parte 2",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/1XkcYiOMJBGLGMkBSg44YuNJrA0oTsG-wpEUXrpdzyMY/edit?usp=sharing",
+                "titolo": "Slide Parte 2"
+            },
+            {
+                "url": "./js/pt2/eventListener.html",
+                "titolo": "Event & Event Listener",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt2/dom.html",
+                "titolo": "Manipolazione del DOM",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt2/shop.html",
+                "titolo": "Shop con cookie",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt2/localstorage.html",
+                "titolo": "Esempio con LocalStorage",
+                "fatto": false
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 3 - Esercizi/Teoria JS - Parte 3",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/1ontJD9BxJMB8C-nH7MpgMaZgGv_ufa6Td2sIVqWGtK8/edit?usp=sharing",
+                "titolo": "Slide Parte 3"
+            },
+            {
+                "url": "./js/pt3/moduli.html",
+                "titolo": "Modularità con import/export",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt3/dati.html",
+                "titolo": "Gestione dato JSON",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt3/oop.html",
+                "titolo": "Programmazione ad oggetti",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt3/promise.html",
+                "titolo": "Promise & async/await",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt3/github.html",
+                "titolo": "API Github",
+                "fatto": false
+            },
+            {
+                "url": "./js/pt3/unsplash.html",
+                "titolo": "API Unsplash",
+                "fatto": false
+            }
+        ]
+    },
+    {
+        "titolo_sezione": "Modulo 4/5 - React JS & SPA",
+        "elenco": [
+            {
+                "url": "https://docs.google.com/presentation/d/15CsMk_Ge6LjuVe8npsq-Ty09qSzUfsqQwlsCYNxp_XI/edit?usp=sharing",
+                "titolo": "Slide Parte 1"
+            },
+            {
+                "url": "https://github.com/dianaberna/prima-app-react-corso-frontend-09-22",
+                "titolo": "Repo Prima App React"
+            },
+            {
+                "url": "https://docs.google.com/presentation/d/1dhR1xdVdBYSRPgBwLgFDwJ3JTLftkIgEMwR88VC6Pdw/edit?usp=sharing",
+                "titolo": "Slide Parte 2"
+            },
+            {
+                "url": "https://github.com/dianaberna/shop-corso-frontend",
+                "titolo": "Repo Shop"
+            }
+        ]
+    }
+]
