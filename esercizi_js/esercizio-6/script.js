@@ -20,7 +20,9 @@ const createDots = function () {
 };
 createDots();
 
-const attivazioneDot = function (slide) {
+const attivazioneDot = function (p) {
+  let slide = parseInt(p)
+
   document
     .querySelectorAll(".dots__dot")
     .forEach((dot) => dot.classList.remove("dots__dot--attivo"));
@@ -32,6 +34,8 @@ const attivazioneDot = function (slide) {
 attivazioneDot(0);
 
 const slideIniziale = function (slide) {
+  console.log("stampo slide in slideiniziale: "+slide+" -- curSlide: "+curSlide)
+  
   slides.forEach(
     (e, i) => (e.style.transform = `translateX(${100 * (i - curSlide)}%)`)
   );
@@ -73,9 +77,14 @@ document.addEventListener("keydown", function (e) {
 });
 // non funziona
 dotContainer.addEventListener("click", function (e) {
+  console.log("ho cliccato un bottone")
+ /*  let slide = parseInt(p)
+  console.log(typeof p) */
   if (e.target.classList.contains("dots__dot")) {
     const { slide } = e.target.dataset;
-    slideIniziale(slide);
-    attivazioneDot(slide);
+    console.log("stampo slide: "+slide)
+    slideIniziale(parseInt(slide));
+    attivazioneDot(parseInt(slide));
+    // aggiungere aggiornamento curSlide con nextslide e beforeslide
   }
 });
