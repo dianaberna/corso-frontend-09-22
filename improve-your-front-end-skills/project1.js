@@ -130,6 +130,5 @@ button.addEventListener("click", function () {
     }
 );
 
-// TODO : I want to randomize a bit even different kinds of fonts
-
 // TODO : maybe even add a backdrop-filter for the text background or outline ("offset") too
+// OOOR at very least the text color change with async await and setTimeout
