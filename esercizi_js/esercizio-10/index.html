@@ -10,18 +10,27 @@
   </head>
   <body>
     <div class="container">
+      <!-- <div class="risultato">
+        La mancia da lasciara è 100€, devi pagare 130€
+      </div> -->
       <div class="containerApp">
         <div class="element">
           <div>Bill Amount</div>
-          <div><button class="btn">💲</button><input type="text" /></div>
+          <div>
+            <button class="btn">💲</button
+            ><input type="text" class="billAmount" />
+          </div>
         </div>
         <div class="element">
           <div>Number Guest</div>
-          <div><button class="btn">👤</button><input type="text" /></div>
+          <div>
+            <button class="btn">👤</button
+            ><input type="text" class="guestAmount" />
+          </div>
         </div>
         <div class="quality">
           <div>Service Quality</div>
-          <div class="select">
+          <div class="selectQ">
             <select name="qualityService" id="service">
               <option value="0.3">30% - Outstanding</option>
               <option value="0.2">20% - Good</option>
@@ -30,6 +39,9 @@
               <option value="0.05">5% - Terrible</option>
             </select>
           </div>
+        </div>
+        <div>
+          <button id="submit" class="btn btn-light">Calcola</button>
         </div>
       </div>
     </div>
