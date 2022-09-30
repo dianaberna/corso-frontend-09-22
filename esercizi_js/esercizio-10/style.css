@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: royalblue;
+}
+/* GENERALE  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.containerApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: 25rem;
+  width: 25rem;
+  box-shadow: 5px 5px 15px 5px #6463639d;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+}
+
+.element input[type="text"] {
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  border-radius: 6px;
+  width: 15rem;
+  height: 45px;
+  background-color: white;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  outline: none;
+  text-align: center;
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #e2e6ea;
+  padding: 10px 20px;
+  box-shadow: 0 0 0 0.2rem rgb(216 217 219 / 50%);
+  height: 50px;
+}
+.btn:hover {
+  background-color: #b6b9bd;
+  box-shadow: 0 0 0 0.2rem rgba(172, 173, 174, 0.5);
+}
+.select {
+  position: relative;
+}
+.select .qualityService {
+  position: relative;
+}
+select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
